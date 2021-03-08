@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 using UnityEngine;
-using Valve.VR.InteractionSystem;
+//using Valve.VR.InteractionSystem;
 
 public class InformPatientDiaglog : MonoBehaviour
 {
@@ -18,7 +18,7 @@ public class InformPatientDiaglog : MonoBehaviour
     public Animator canvasQuestionOn;
 
 
-    public Click objects;
+    //public Click objects;
     public List<GameObject> Popup;
    
     public GameObject nextStep;
