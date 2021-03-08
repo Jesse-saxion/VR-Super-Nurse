@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.nasalgastrictube.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "D:\\Mycourses\\4rdyear\\Graduation\\VRSupernurse\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "Nasal Tube 2 [Testing]"
+        }
+      }
+    }
+  ]
+}
