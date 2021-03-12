@@ -2,7 +2,7 @@
   "source": "Unity",
   "applications": [
     {
-      "app_key": "application.generated.unity.nasalgastrictube.exe",
+      "app_key": "application.generated.unity.nasaltube2.exe",
       "launch_type": "url",
       "url": "steam://launch/",
       "action_manifest_path": "D:\\Mycourses\\4rdyear\\Graduation\\VRSupernurse\\Assets\\StreamingAssets\\SteamVR\\actions.json",

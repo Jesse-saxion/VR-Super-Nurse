@@ -30,7 +30,7 @@ public class Triggerenter : MonoBehaviour
             audio.PlayOneShot(success, 2f);
             isPlayed = true;
             checkList.UpdateCheckList("Select material");
-            Destroy(GameObject.FindGameObjectWithTag("trayold"));
+            //Destroy(GameObject.FindGameObjectWithTag("trayold"));
             traynew.SetActive(true);
             Destroy(GameObject.FindGameObjectWithTag("materialstep3"));
             Destroy(GameObject.FindGameObjectWithTag("notcorrect"));

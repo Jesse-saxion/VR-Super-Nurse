@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 174a98a8e4e97a741813e4f7f375c627
+=======
+guid: 11f7b36ded9797b45b6eb226b42f981e
+>>>>>>> project-refactor
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
