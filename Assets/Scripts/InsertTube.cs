@@ -9,10 +9,10 @@ public class InsertTube : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Tube")
+        if (other.gameObject.tag == "TubeStart")
         {
-            insertionTube.gameObject.SetActive(true);
-            insertionTube.transform.GetChild(0).GetComponent<MeshRenderer>().material = measurementTube.transform.GetChild(0).GetComponent<MeshRenderer>().material;
+            insertionTube.gameObject.SetActive(true);                               //Set the marked material to the insertion tube
+            insertionTube.transform.GetChild(0).GetComponent<MeshRenderer>().material = measurementTube.transform.GetChild(0).GetComponent<MeshRenderer>().material;  
             Destroy(measurementTube);
         }
     }

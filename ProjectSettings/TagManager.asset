@@ -28,6 +28,7 @@ TagManager:
   - trigger
   - highlight
   - notcorrect_s
+  - TubeStart
   layers:
   - Default
   - TransparentFX
