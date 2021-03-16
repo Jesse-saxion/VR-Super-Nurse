@@ -26,7 +26,6 @@ public class Triggerenter : MonoBehaviour
     {
         if (isPlayed == false)
         { 
-            Debug.Log("inthezone");
             audio.PlayOneShot(success, 2f);
             isPlayed = true;
             checkList.UpdateCheckList("Select material");
@@ -36,7 +35,7 @@ public class Triggerenter : MonoBehaviour
             Destroy(GameObject.FindGameObjectWithTag("notcorrect"));
             GameObject.FindGameObjectWithTag("glovesBox").GetComponent<BoxCollider>().enabled = true;
             GameObject.FindGameObjectWithTag("glovesBox").GetComponent<MeshRenderer>().enabled = true;
-            GameObject.Find("Button").GetComponent<Click>().enabled = true;
+            //GameObject.Find("Button").GetComponent<Click>().enabled = true;
            
         }
         if (other.tag == "Tubeold" && isPlayed==true)
@@ -44,8 +43,6 @@ public class Triggerenter : MonoBehaviour
             Destroy(tube);
             canvas.SetActive(true);
         }
-
-
     }
 }
 

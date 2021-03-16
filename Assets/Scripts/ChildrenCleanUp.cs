@@ -16,7 +16,6 @@ public class ChildrenCleanUp : MonoBehaviour
             children.Add(child.gameObject);
         }
 
-        Debug.Log(children.Count);
     }
 
     void OnDestroy()

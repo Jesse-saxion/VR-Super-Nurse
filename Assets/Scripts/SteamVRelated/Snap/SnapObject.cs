@@ -6,7 +6,6 @@ using Valve.VR.InteractionSystem;
 public class SnapObject : MonoBehaviour
 {
     public GameObject Snaplocation;
-    public GameObject rocket;
     public bool isSnapped;
     [SerializeField]private bool objectSnapped;
     [SerializeField] private bool grabbed;
@@ -15,12 +14,11 @@ public class SnapObject : MonoBehaviour
     {
         grabbed = GetComponent<Interactable>().attachedToHand;
         objectSnapped = Snaplocation.GetComponent<SnapToLocation>().Snapped;
+
         if(objectSnapped == true)
         {
             //GetComponent<Rigidbody>().isKinematic = true;
-            transform.SetParent(rocket.transform);
             isSnapped = true;
-           // Debug.Log("isSnapped");
         }
 
         if(objectSnapped == false && grabbed == false)
