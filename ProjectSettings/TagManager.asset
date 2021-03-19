@@ -29,6 +29,8 @@ TagManager:
   - highlight
   - notcorrect_s
   - TubeStart
+  - ItemResetZone
+  - Item
   layers:
   - Default
   - TransparentFX

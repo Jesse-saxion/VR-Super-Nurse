@@ -1,51 +1,47 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Valve.VR.InteractionSystem;
 
+
+//This class communicates with the specified Item and calls its methods.
 public class SnapToLocation : MonoBehaviour
 {
-    private bool grabbed;
-    private bool insideSnapZone;
-    public bool Snapped;
-    public bool isPlayed = false;
-
     public GameObject Item;
 
-    private void OnTriggerExit(Collider other)
+    //In case you want to use this class separetly from the Handler, you can add a collider to the game object
+    //Otherwise the handler will call the snap 
+    void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == Item.name)
+        if (other == Item)
         {
-            insideSnapZone = false;
+            SetSnapLocation();
+            Snap();
+        }
+        else if (other.tag == "Item") //This is in case you want to use this class for other items other than the specified one
+        {
+            other.GetComponent<Item>().SetSnapLocation(transform.position);
+            other.GetComponent<Item>().SnapToSetLocation();
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void Snap()
     {
-        if (other.gameObject.name == Item.name)
-        {
-            insideSnapZone = true;
-            isPlayed = false;
-        }
+        Item.GetComponent<Item>().Snap(transform.position);
     }
 
-    void SnapObject()
+    public void SnapToSetLocation()
     {
-        if (grabbed == false && insideSnapZone == true)
-        {
-            Item.gameObject.transform.position = gameObject.transform.position;
-            Item.gameObject.transform.rotation = gameObject.transform.rotation;
-            Item.gameObject.GetComponent<Rigidbody>().angularVelocity = new Vector3(0, 0, 0);
-            Snapped = true;
-
-            Debug.Log(this.gameObject.name);
-        }
+        Item.GetComponent<Item>().SnapToSetLocation();
     }
 
-    void Update()
+    public void SetSnapLocation()
     {
-        grabbed = Item.GetComponent<Interactable>().attachedToHand;
-        SnapObject();
+        Item.GetComponent<Item>().SetSnapLocation(transform.position);
     }
 
+  
+    public void EnableInteractivity()
+    {
+        Item.GetComponent<Item>().EnableInteractivity();
+    }
 }
