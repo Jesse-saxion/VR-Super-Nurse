@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9aa90262-9af7-42d8-8a01-ac71358ed4b4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Cup.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MergeExport2.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MergeExport3.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MergedPackage1.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/SteamVRelated/Btn_Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/SteamVRelated/Btn_Manager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Snap/SteamVRelated/SnapObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Snap/SteamVRelated/SnapObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Snap/SteamVRelated/SnapToLocation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Snap/SteamVRelated/SnapToLocation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SteamVR_Resources/Resources/SteamVR_Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SteamVR_Resources/Resources/SteamVR_Settings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/medical equipment/render.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Сup2.unitypackage.meta" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Snap/SteamVRelated/SnapObject.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+              <folding>
+                <marker date="1616168382394" expanded="true" signature="6:78" ph="..." />
+                <marker date="1616168382394" expanded="true" signature="126:861" ph="{...}" />
+                <marker date="1616168382394" expanded="true" signature="335:859" ph="{...}" />
+                <marker date="1616168382394" expanded="true" signature="529:629" ph="{...}" />
+                <marker date="1616168382394" expanded="true" signature="701:853" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Snap/SteamVRelated/SnapToLocation.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="945">
+              <caret line="69" column="48" selection-start-line="69" selection-start-column="48" selection-end-line="69" selection-end-column="48" />
+              <folding>
+                <marker date="1616168524985" expanded="true" signature="6:78" ph="..." />
+                <marker date="1616168524985" expanded="true" signature="130:1291" ph="{...}" />
+                <marker date="1616168524985" expanded="true" signature="353:483" ph="{...}" />
+                <marker date="1616168524985" expanded="true" signature="421:477" ph="{...}" />
+                <marker date="1616168524985" expanded="true" signature="543:704" ph="{...}" />
+                <marker date="1616168524985" expanded="true" signature="611:698" ph="{...}" />
+                <marker date="1616168524985" expanded="true" signature="730:1168" ph="{...}" />
+                <marker date="1616168524985" expanded="true" signature="806:1162" ph="{...}" />
+                <marker date="1616168524985" expanded="true" signature="1190:1289" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Menu/SteamVRelated/Btn_Manager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+              <folding>
+                <marker date="1616168649500" expanded="true" signature="6:113" ph="..." />
+                <marker date="1616168649500" expanded="true" signature="162:1122" ph="{...}" />
+                <marker date="1616168649500" expanded="true" signature="309:521" ph="{...}" />
+                <marker date="1616168649500" expanded="true" signature="352:394" ph="{...}" />
+                <marker date="1616168649500" expanded="true" signature="411:469" ph="{...}" />
+                <marker date="1616168649500" expanded="true" signature="552:706" ph="{...}" />
+                <marker date="1616168649500" expanded="true" signature="741:864" ph="{...}" />
+                <marker date="1616168649500" expanded="true" signature="895:1049" ph="{...}" />
+                <marker date="1616168649500" expanded="true" signature="1080:1120" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Menu/SteamVRelated/Btn_Manager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Snap/SteamVRelated/SnapToLocation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Snap/SteamVRelated/SnapObject.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/Snap/SteamVRelated/SnapObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Snap/SteamVRelated/SnapToLocation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Menu/SteamVRelated/Btn_Manager.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/.idea.VR-Super-Nurse/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/.idea.VR-Super-Nurse/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/.idea.VR-Super-Nurse/.idea/indexLayout.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="440" />
+    <option name="y" value="-20" />
+    <option name="width" value="1025" />
+    <option name="height" value="1105" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="FileSystemExplorer" />
+      <pane id="AssemblyExplorer" />
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9aa90262-9af7-42d8-8a01-ac71358ed4b4" name="Default Changelist" comment="" />
+      <created>1616168238107</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1616168238107</updated>
+      <workItem from="1616168242555" duration="142000" />
+      <workItem from="1616168444580" duration="82000" />
+      <workItem from="1616168579120" duration="74000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="298000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25637585" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Unit Tests" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="12" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Errors In Solution" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Snap/SteamVRelated/SnapObject.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+          <folding>
+            <marker date="1616168382394" expanded="true" signature="6:78" ph="..." />
+            <marker date="1616168382394" expanded="true" signature="126:861" ph="{...}" />
+            <marker date="1616168382394" expanded="true" signature="335:859" ph="{...}" />
+            <marker date="1616168382394" expanded="true" signature="529:629" ph="{...}" />
+            <marker date="1616168382394" expanded="true" signature="701:853" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Snap/SteamVRelated/SnapToLocation.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="69" column="48" selection-start-line="69" selection-start-column="48" selection-end-line="69" selection-end-column="48" />
+          <folding>
+            <marker date="1616168524985" expanded="true" signature="6:78" ph="..." />
+            <marker date="1616168524985" expanded="true" signature="130:1291" ph="{...}" />
+            <marker date="1616168524985" expanded="true" signature="353:483" ph="{...}" />
+            <marker date="1616168524985" expanded="true" signature="421:477" ph="{...}" />
+            <marker date="1616168524985" expanded="true" signature="543:704" ph="{...}" />
+            <marker date="1616168524985" expanded="true" signature="611:698" ph="{...}" />
+            <marker date="1616168524985" expanded="true" signature="730:1168" ph="{...}" />
+            <marker date="1616168524985" expanded="true" signature="806:1162" ph="{...}" />
+            <marker date="1616168524985" expanded="true" signature="1190:1289" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Menu/SteamVRelated/Btn_Manager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+          <folding>
+            <marker date="1616168649500" expanded="true" signature="6:113" ph="..." />
+            <marker date="1616168649500" expanded="true" signature="162:1122" ph="{...}" />
+            <marker date="1616168649500" expanded="true" signature="309:521" ph="{...}" />
+            <marker date="1616168649500" expanded="true" signature="352:394" ph="{...}" />
+            <marker date="1616168649500" expanded="true" signature="411:469" ph="{...}" />
+            <marker date="1616168649500" expanded="true" signature="552:706" ph="{...}" />
+            <marker date="1616168649500" expanded="true" signature="741:864" ph="{...}" />
+            <marker date="1616168649500" expanded="true" signature="895:1049" ph="{...}" />
+            <marker date="1616168649500" expanded="true" signature="1080:1120" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

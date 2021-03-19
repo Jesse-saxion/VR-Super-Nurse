@@ -1,33 +1,61 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Valve.VR.InteractionSystem;
 
-public class SnapObject : MonoBehaviour
+
+public class SnapObject :
+    MonoBehaviour
+
+
 {
-    public GameObject Snaplocation;
-    public GameObject rocket;
+    public GameObject SnapLocation;
+
+
     public bool isSnapped;
-    [SerializeField]private bool objectSnapped;
-    [SerializeField] private bool grabbed;
+
+
+    [SerializeField] private
+        bool objectSnapped;
+
+
+    [SerializeField] private
+        bool grabbed;
+
 
     private void Update()
+
+
     {
-        grabbed = GetComponent<Interactable>().attachedToHand;
-        objectSnapped = Snaplocation.GetComponent<SnapToLocation>().Snapped;
-        if(objectSnapped == true)
+        grabbed = GetComponent<OVRGrabbable>().isGrabbed;
+
+
+        objectSnapped = SnapLocation.GetComponent<SnapToLocation>().Snapped;
+
+
+        if (objectSnapped ==
+            true)
+
+
         {
-            //GetComponent<Rigidbody>().isKinematic = true;
-            transform.SetParent(rocket.transform);
+//GetComponent<Rigidbody>().isKinematic = true;
+
+
             isSnapped = true;
-           // Debug.Log("isSnapped");
         }
 
-        if(objectSnapped == false && grabbed == false)
+
+        if (objectSnapped ==
+            false && grabbed == false)
+
+
         {
             isSnapped = false;
-            //GetComponent<Rigidbody>().isKinematic = false;
-           // GetComponent<Rigidbody>().useGravity = true;
+
+
+//GetComponent<Rigidbody>().isKinematic = false;
+
+
+// GetComponent<Rigidbody>().useGravity = true;
         }
     }
 }
