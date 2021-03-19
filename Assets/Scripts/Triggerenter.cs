@@ -17,8 +17,7 @@ public class Triggerenter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        audio = GetComponent<AudioSource>();
-        
+        audio = GetComponent<AudioSource>();        
     }
 
     // Update is called once per frame
@@ -29,14 +28,12 @@ public class Triggerenter : MonoBehaviour
             audio.PlayOneShot(success, 2f);
             isPlayed = true;
             checkList.UpdateCheckList("Select material");
-            //Destroy(GameObject.FindGameObjectWithTag("trayold"));
+
             traynew.SetActive(true);
             Destroy(GameObject.FindGameObjectWithTag("materialstep3"));
             Destroy(GameObject.FindGameObjectWithTag("notcorrect"));
             GameObject.FindGameObjectWithTag("glovesBox").GetComponent<BoxCollider>().enabled = true;
-            GameObject.FindGameObjectWithTag("glovesBox").GetComponent<MeshRenderer>().enabled = true;
-            //GameObject.Find("Button").GetComponent<Click>().enabled = true;
-           
+            GameObject.FindGameObjectWithTag("glovesBox").GetComponent<MeshRenderer>().enabled = true;           
         }
         if (other.tag == "Tubeold" && isPlayed==true)
         {

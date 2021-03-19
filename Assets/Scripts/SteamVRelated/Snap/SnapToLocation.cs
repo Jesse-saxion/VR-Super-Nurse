@@ -37,6 +37,8 @@ public class SnapToLocation : MonoBehaviour
             Item.gameObject.transform.rotation = gameObject.transform.rotation;
             Item.gameObject.GetComponent<Rigidbody>().angularVelocity = new Vector3(0, 0, 0);
             Snapped = true;
+
+            Debug.Log(this.gameObject.name);
         }
     }
 

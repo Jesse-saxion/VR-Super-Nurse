@@ -41,7 +41,7 @@ public class Triggerstep1 : MonoBehaviour
     {
         if (!alreadyPlayed)
         {
-            canvasgrabobj.SetActive(true);
+            //canvasgrabobj.SetActive(true);
             alreadyPlayed = true;
           
         }
