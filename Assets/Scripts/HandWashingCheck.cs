@@ -37,7 +37,7 @@ public class HandWashingCheck : MonoBehaviour
             GameObject.Find("TriggerStep1").GetComponent<AudioSource>().enabled = false;
             nextStep.SetActive(true);
             notfinish.SetActive(false);
-            checkList.UpdateCheckList("washed hands");
+            checkList.UpdateCheckList("Wash hands");
             // invoke
             audio.PlayOneShot(success, Volume);
 

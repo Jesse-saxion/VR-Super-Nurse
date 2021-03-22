@@ -10,6 +10,8 @@ public class Item : MonoBehaviour
     Quaternion snapRotation;
     Vector3 snapScale;
 
+    public bool IsPickedUp;
+
     void Start()
     {
         //Set the initial transform (on the table)
@@ -37,6 +39,7 @@ public class Item : MonoBehaviour
         //Reset the velocity
         GetComponent<Rigidbody>().velocity = Vector3.zero;
         GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+        //GetComponent<Rigidbody>().isKinematic = true;
     }
 
     public void SnapToSetLocation()
@@ -55,7 +58,18 @@ public class Item : MonoBehaviour
         if (TryGetComponent<Click>(out Click click))
         {
             GetComponent<Click>().enabled = true;
-            GetComponent<Throwable>().enabled = false;
-        }       
+            Destroy(GetComponent<Throwable>());
+            GetComponent<Rigidbody>().isKinematic = true;
+        }
+    }
+
+    public void PickedUp()
+    {
+       IsPickedUp = true;
+    }
+
+    public void Dropped()
+    {
+        IsPickedUp = false;
     }
 }

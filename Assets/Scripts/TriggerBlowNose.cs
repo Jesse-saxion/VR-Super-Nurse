@@ -62,7 +62,7 @@ public class TriggerBlowNose : MonoBehaviour
     {
         tissuenew.SetActive(false);
         audio.PlayOneShot(A55);
-        checkList.UpdateCheckList("Blow Nose");
+        checkList.UpdateCheckList("Blow the patient's  nose");
         Invoke("PlaySoundA61", 1f);
         GameObject.Find("Manny").GetComponent<InformPatientDiaglog>(). areadyPlayedStep5 = true;
     }

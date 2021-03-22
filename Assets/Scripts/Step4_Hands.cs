@@ -37,7 +37,7 @@ public class Step4_Hands : MonoBehaviour
         {
             Tissue.GetComponent<TriggerNoTissue>().isGlove = true;
             InformPatientScript.GetComponent<InformPatientDiaglog>().alreadyPlayedStep3 = true;
-            checkList.UpdateCheckList("Medical Gloves");
+            checkList.UpdateCheckList("Put on medical gloves");
             // invoke
             audio.PlayOneShot(success, Volume);
           

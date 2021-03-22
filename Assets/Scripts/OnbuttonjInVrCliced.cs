@@ -10,6 +10,7 @@ public class OnbuttonjInVrCliced : Valve.VR.InteractionSystem.UIElement
     public bool DissableItSelf = false;
     [SerializeField] private AudioSource sound;
     [SerializeField] private AudioClip click;
+    [SerializeField] private CheckList checkList;
 
     public float Time;
 
@@ -45,6 +46,8 @@ public class OnbuttonjInVrCliced : Valve.VR.InteractionSystem.UIElement
         {
             gameObject.SetActive(false);
         }
+
+        checkList.UpdateCheckList("Inform the patient");
     }
 
     public void ClickSound()
