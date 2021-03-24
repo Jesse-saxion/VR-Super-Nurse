@@ -38,7 +38,6 @@ public class Curtains : MonoBehaviour
         item.startPos = SpawnPoint;
         parts.Add(item);
         start = true;
-        Debug.Log("Close");
     }
 
     // Update is called once per frame

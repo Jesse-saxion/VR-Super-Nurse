@@ -13,8 +13,8 @@ public class TriggerTissue1 : MonoBehaviour
     public float Volume;
 
     [SerializeField] private GameObject Canvas;
-    [SerializeField] private GameObject CanvasConfirm
-        ;
+    //[SerializeField] private GameObject CanvasConfirm
+        
     // Start is called before the first frame update
     void Start()
     {
@@ -27,7 +27,7 @@ public class TriggerTissue1 : MonoBehaviour
         tissue.SetActive(true);
        // Instantiate(tissue, Spawnpoint.position, Spawnpoint.rotation);
         Canvas.SetActive(false);
-        CanvasConfirm.SetActive(true);
+        //CanvasConfirm.SetActive(true);
     }
 
 

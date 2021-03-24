@@ -19,19 +19,17 @@ public class Step4_Hands : MonoBehaviour
 
     private void Start()
     {
-        audio = GetComponent<AudioSource>();
-       
+        audio = GetComponent<AudioSource>();       
     }
-
 
     public void OnObjectClicked()
     {
         objects[index].enabled = false;
         index++;
+
         if (index <= objects.Count - 1)
         {
             objects[index].enabled = true;
-
         }
         else
         {

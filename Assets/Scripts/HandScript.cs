@@ -10,12 +10,12 @@ public class HandScript : MonoBehaviour
     public Material waterMat;
     public Material soapMat;
     public Material glovesMat;
+    public GameObject bubblePrefab;
+    GameObject bubble;
     GameObject soap;
     GameObject towelBox;
     GameObject glovesBox;
     GameObject MeasuringObj;
-
-    GameObject bubble;
 
 
     List<GameObject> MeasuringCheckPoints = new List<GameObject>();
@@ -23,15 +23,16 @@ public class HandScript : MonoBehaviour
     LineRenderer line;
     private int index = 0;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         soap = GameObject.FindGameObjectWithTag("soap");
         towelBox = GameObject.FindGameObjectWithTag("towelBox");
-         glovesBox = GameObject.FindGameObjectWithTag("glovesBox");
-         soap.GetComponent<Click>().OnClick.AddListener(OnSoapClicked);
+        glovesBox = GameObject.Find("GlovesBox");
+        soap.GetComponent<Click>().OnClick.AddListener(OnSoapClicked);
         towelBox.GetComponent<Click>().OnClick.AddListener(OnHandTowelPressed);
-         glovesBox.GetComponent<Click>().OnClick.AddListener(OnGlovesBoxClicked);
-        bubble = GameObject.FindGameObjectWithTag("bubble");
+        glovesBox.GetComponent<Click>().OnClick.AddListener(OnGlovesBoxClicked);
+        bubble = Instantiate(bubblePrefab, Vector3.zero, Quaternion.identity, transform);
+        //bubble = GameObject.FindGameObjectWithTag("bubble");
 
         bubble.SetActive(false);
     }
@@ -50,7 +51,6 @@ public class HandScript : MonoBehaviour
     }
     private void OnGlovesBoxClicked()
     {
-        Debug.Log("clicking");
         gameObject.GetComponent<SkinnedMeshRenderer>().material = glovesMat;
     }
     private void OnTriggerEnter(Collider other)

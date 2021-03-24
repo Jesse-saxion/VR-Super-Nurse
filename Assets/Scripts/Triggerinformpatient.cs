@@ -9,19 +9,15 @@ public class Triggerinformpatient : MonoBehaviour
     AudioSource audio;
     public float Volume;
     public bool alreadyPlayed = false;
-  //  public GameObject UIicon;
-
-
-
-   
+    //  public GameObject UIicon;
 
     // Start is called before the first frame update
     void Start()
     {
         audio = GetComponent<AudioSource>();
 
-       
-      //  UIicon.SetActive(false);
+
+        //  UIicon.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -30,15 +26,15 @@ public class Triggerinformpatient : MonoBehaviour
         {
             if (!alreadyPlayed)
             {
-                GameObject.Find("Sink Environment").GetComponent<AudioSource>().enabled = false;
+                //GameObject.Find("Sink Environment").GetComponent<AudioSource>().enabled = false;
                 audio.PlayOneShot(SoundtoPlay, Volume);
                 alreadyPlayed = true;
                 // UIicon.SetActive(true);
-               
+
             }
         }
 
     }
 
-    
+
 }

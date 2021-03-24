@@ -10,9 +10,6 @@ public class TriggerBlowNose : MonoBehaviour
     AudioSource audio;
     bool isPlayed = false;
     [SerializeField] private bool Step5isdone = false;
-
-
-    [SerializeField] private GameObject Tube;
     [SerializeField] private GameObject Step6_Measuring;
    // [SerializeField] private GameObject NewTube;
 
@@ -50,9 +47,6 @@ public class TriggerBlowNose : MonoBehaviour
         {
             if (other.tag == "Tube")
             {
-                Debug.Log("off");
-                // Destroy(Tube);
-                Tube.SetActive(false);
                 Step6_Measuring.SetActive(true);
             }
         }
@@ -64,7 +58,7 @@ public class TriggerBlowNose : MonoBehaviour
         audio.PlayOneShot(A55);
         checkList.UpdateCheckList("Blow the patient's  nose");
         Invoke("PlaySoundA61", 1f);
-        GameObject.Find("Manny").GetComponent<InformPatientDiaglog>(). areadyPlayedStep5 = true;
+        GameObject.Find("Patient").GetComponent<InformPatientDiaglog>(). areadyPlayedStep5 = true;
     }
 
     void PlaySoundA61()

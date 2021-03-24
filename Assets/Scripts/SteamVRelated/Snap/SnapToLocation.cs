@@ -7,6 +7,7 @@ using UnityEngine;
 public class SnapToLocation : MonoBehaviour
 {
     public GameObject Item;
+    public GameObject ItemNameCanvas;
 
     //In case you want to use this class separetly from the Handler, you can add a collider to the game object
     //Otherwise the handler will call the snap 
@@ -27,6 +28,7 @@ public class SnapToLocation : MonoBehaviour
     public void Snap()
     {
         Item.GetComponent<Item>().Snap(transform.position);
+       
     }
 
     public void SnapToSetLocation()
@@ -37,6 +39,13 @@ public class SnapToLocation : MonoBehaviour
     public void SetSnapLocation()
     {
         Item.GetComponent<Item>().SetSnapLocation(transform.position);
+
+        //Rotate the UI name
+        if (ItemNameCanvas != null)
+        {
+            ItemNameCanvas.gameObject.transform.Rotate(new Vector3(0, 90, 0), Space.Self); 
+            ItemNameCanvas.gameObject.transform.Translate(new Vector3(0.1f, 0, 0), Space.Self); 
+        }
     }
 
   

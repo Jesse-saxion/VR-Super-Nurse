@@ -10,8 +10,6 @@ public class Item : MonoBehaviour
     Quaternion snapRotation;
     Vector3 snapScale;
 
-    public bool IsPickedUp;
-
     void Start()
     {
         //Set the initial transform (on the table)
@@ -34,7 +32,7 @@ public class Item : MonoBehaviour
         //Set the transform
         transform.position = pSnapPosition;
         transform.rotation = snapRotation;
-        transform.localScale = snapScale;
+        //transform.localScale = snapScale;
 
         //Reset the velocity
         GetComponent<Rigidbody>().velocity = Vector3.zero;
@@ -63,13 +61,4 @@ public class Item : MonoBehaviour
         }
     }
 
-    public void PickedUp()
-    {
-       IsPickedUp = true;
-    }
-
-    public void Dropped()
-    {
-        IsPickedUp = false;
-    }
 }

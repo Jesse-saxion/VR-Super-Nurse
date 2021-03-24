@@ -3,7 +3,13 @@ guid: 1e72b488ced4b9c4e99496b8de6405ae
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - GloveMaterial: {fileID: 2100000, guid: 94f92a1754853024f837ffc790bd5c46, type: 2}
+  - waterMat: {fileID: 2100000, guid: 8b659742110a72b4197227f511ae6991, type: 2}
+  - soapMat: {fileID: 2100000, guid: 0cad1e64ad90ad44dad88453b844f2c4, type: 2}
+  - glovesMat: {fileID: 2100000, guid: 94f92a1754853024f837ffc790bd5c46, type: 2}
+  - bubblePrefab: {fileID: 2417248873123631837, guid: bd7e5bd9312d55f468fd5b60cedeb719,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

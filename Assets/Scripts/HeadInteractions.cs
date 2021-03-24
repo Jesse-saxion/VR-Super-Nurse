@@ -18,8 +18,7 @@ public class HeadInteractions : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-
-        if (other.gameObject.tag == "Cup")
+        if (other.gameObject.name == "Cup")
         {
             patientReactions.StartSwallowing();
             Destroy(other.gameObject);

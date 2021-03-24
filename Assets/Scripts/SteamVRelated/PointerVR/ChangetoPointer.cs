@@ -37,9 +37,7 @@ public class ChangetoPointer : MonoBehaviour
             {
                 pointer.SetActive(false);
                 VRInput.SetActive(false);
-            }
-                
-                Debug.Log("BtnApressed");
+            }               
            
         }
     }
