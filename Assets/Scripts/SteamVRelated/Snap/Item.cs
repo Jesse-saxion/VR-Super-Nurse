@@ -29,6 +29,12 @@ public class Item : MonoBehaviour
 
     public void Snap(Vector3 pSnapPosition)
     {
+        //Detach the Item from the hand if attached 
+        if (GetComponent<Throwable>().GetIfAttached())
+        {
+            GetComponent<Interactable>().attachedToHand.DetachObject(gameObject, true);           
+        }
+
         //Set the transform
         transform.position = pSnapPosition;
         transform.rotation = snapRotation;

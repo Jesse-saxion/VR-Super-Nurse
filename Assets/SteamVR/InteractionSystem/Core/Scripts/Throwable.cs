@@ -277,7 +277,12 @@ namespace Valve.VR.InteractionSystem
             if (velocityEstimator != null)
                 velocityEstimator.FinishEstimatingVelocity();
 		}
-	}
+
+        public bool GetIfAttached()
+        {
+            return attached;
+        }
+    }
 
     public enum ReleaseStyle
     {
@@ -286,4 +291,6 @@ namespace Valve.VR.InteractionSystem
         ShortEstimation,
         AdvancedEstimation,
     }
+
+   
 }
