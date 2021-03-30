@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR;
 
-public class ChangetoPointer : MonoBehaviour
+public class ChangeToPointer : MonoBehaviour
 {
     public SteamVR_ActionSet actionset;
     public SteamVR_Action_Boolean booleanaction;

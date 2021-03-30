@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class pickupsound : MonoBehaviour
+public class PickUpSound : MonoBehaviour
 {
     [SerializeField] private AudioClip A63;
     AudioSource audio;

@@ -6,7 +6,7 @@ using UnityEngine;
 using Valve.VR.InteractionSystem;
 
 
-public class Step3_CheckLish : MonoBehaviour
+public class Step3_CheckList : MonoBehaviour
 {
     [SerializeField] private AudioClip A33;
     //AudioSource audio;

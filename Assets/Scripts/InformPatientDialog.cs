@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 //using Valve.VR.InteractionSystem;
 
-public class InformPatientDiaglog : MonoBehaviour
+public class InformPatientDialog : MonoBehaviour
 {
     [SerializeField] private AudioClip SoundtoPlay;
     AudioSource audio;

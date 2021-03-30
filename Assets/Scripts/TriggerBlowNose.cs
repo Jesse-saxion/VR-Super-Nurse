@@ -58,7 +58,7 @@ public class TriggerBlowNose : MonoBehaviour
         audio.PlayOneShot(A55);
         checkList.UpdateCheckList("Blow the patient's  nose");
         Invoke("PlaySoundA61", 1f);
-        GameObject.Find("Patient").GetComponent<InformPatientDiaglog>(). areadyPlayedStep5 = true;
+        GameObject.Find("Patient").GetComponent<InformPatientDialog>(). areadyPlayedStep5 = true;
     }
 
     void PlaySoundA61()

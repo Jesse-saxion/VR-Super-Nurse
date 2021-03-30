@@ -4,11 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Valve.VR;
 
-public class Btn_Manager : MonoBehaviour
+public class ButtonManager : MonoBehaviour
 {
     
     public int currScene = 0;
-    static Btn_Manager s = null;
+    static ButtonManager s = null;
     public string[] levelsNames;
 
     private void Start()

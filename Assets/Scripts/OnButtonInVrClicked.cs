@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR;
 
-public class OnbuttonjInVrCliced : Valve.VR.InteractionSystem.UIElement
+public class OnButtonInVrClicked : Valve.VR.InteractionSystem.UIElement
 {
     public GameObject CurrentScreen;
     public GameObject ScreenToChangeTo;

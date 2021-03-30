@@ -41,7 +41,7 @@ public class TriggerSoundRemind : MonoBehaviour
             Debug.Log("play");
             Material_Step3.SetActive(false);
 
-            Manny.GetComponent<InformPatientDiaglog>().enabled = false;
+            Manny.GetComponent<InformPatientDialog>().enabled = false;
             Manny.GetComponent<Click>().enabled = false;
             enablezone.SetActive(false);
             Trigger_InformPatient.GetComponent<Triggerinformpatient>().enabled = false;
@@ -66,7 +66,7 @@ public class TriggerSoundRemind : MonoBehaviour
 
             Material_Step3.SetActive(true);
             enablezone.SetActive(true);
-            Manny.GetComponent<InformPatientDiaglog>().enabled = true;
+            Manny.GetComponent<InformPatientDialog>().enabled = true;
             Manny.GetComponent<Click>().enabled = true;
             Trigger_InformPatient.GetComponent<Triggerinformpatient>().enabled = true;
             Trigger_InformPatient.GetComponent<BoxCollider>().enabled = true;
