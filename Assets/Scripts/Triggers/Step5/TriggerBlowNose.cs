@@ -7,24 +7,19 @@ public class TriggerBlowNose : MonoBehaviour
     [SerializeField] private AudioClip A55;
     [SerializeField] private AudioClip A61;
     [SerializeField] private AudioClip BlowNoseSound;
-    AudioSource audio;
-    bool isPlayed = false;
     [SerializeField] private bool Step5isdone = false;
     [SerializeField] private GameObject Step6_Measuring;
-   // [SerializeField] private GameObject NewTube;
-
-    //[SerializeField] private GameObject tissueold;
     [SerializeField] private GameObject tissuenew;
 
+    AudioSource audio;
+    bool isPlayed = false;
     public CheckList checkList;
-    // Start is called before the first frame update
+
     void Start()
     {
         audio = GetComponent<AudioSource>();
-
     }
 
-    // Update is called once per frame
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "tissue")
@@ -37,11 +32,7 @@ public class TriggerBlowNose : MonoBehaviour
                 Invoke("PlaySoundEndStep5", 10f);
                 isPlayed = true;
                 Step5isdone = true;
-
-            }
-
-            
-
+            }           
         }
         if (Step5isdone == true)
         {

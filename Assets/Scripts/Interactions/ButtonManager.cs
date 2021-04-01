@@ -5,30 +5,24 @@ using UnityEngine.SceneManagement;
 using Valve.VR;
 
 public class ButtonManager : MonoBehaviour
-{
-    
+{    
     public int currScene = 0;
-    static ButtonManager s = null;
+    static ButtonManager buttonManager = null;
     public string[] levelsNames;
 
     private void Start()
     {
-        if (s == null)
+        if (buttonManager == null)
         {
-            s = this;
+            buttonManager = this;
         }
         else
         {
             Destroy(this.gameObject);
-
         }
 
         DontDestroyOnLoad(this.gameObject);
     }
-
-
-
-
 
     public void MainRoom()
     {

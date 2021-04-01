@@ -9,34 +9,21 @@ public class TriggerSoundRemind : MonoBehaviour
     AudioSource audio;
     public float Volume;
 
-
     [SerializeField] private GameObject Material_Step3;
-    [SerializeField] private GameObject Manny; 
+    [SerializeField] private GameObject Manny;
     [SerializeField] private GameObject enablezone;
     [SerializeField] private GameObject Trigger_InformPatient;
-
-
-    //public bool alreadyPlayed = false;
-
-
-    // [SerializeField] private GameObject tutorialcanvas;
 
     // Start is called before the first frame update
     void Start()
     {
         audio = GetComponent<AudioSource>();
-
-       
-
     }
 
     private void OnTriggerEnter(Collider other)
     {
-      
+        if (other.CompareTag("Player"))        {
 
-        if (other.CompareTag("Player"))
-        {
-            
             audio.PlayOneShot(SoundtoPlay, Volume);
             Debug.Log("play");
             Material_Step3.SetActive(false);
@@ -51,14 +38,10 @@ public class TriggerSoundRemind : MonoBehaviour
             GameObject.Find("Sink Environment").GetComponent<AudioSource>().enabled = true;
 
         }
-
     }
 
     private void OnTriggerExit(Collider other)
     {
-      
-       
-
         if (other.CompareTag("Player"))
         {
             Debug.Log("out");
