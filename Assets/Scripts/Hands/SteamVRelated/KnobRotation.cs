@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Numerics;
 using UnityEngine;
-using UnityEngine.XR;
 
 public class KnobRotation : MonoBehaviour
 {
@@ -13,14 +12,11 @@ public class KnobRotation : MonoBehaviour
     [SerializeField] private AudioClip WaterOff;
     AudioSource audioOn;
   
-
+// Start is called before the first frame update
     private void Start()
     {
         audioOn = GetComponent<AudioSource>();
     }
-
-    // Start is called before the first frame update
-    //Valve.VR.InteractionSystem.Hand hand;
 
 
     public void Interact()
