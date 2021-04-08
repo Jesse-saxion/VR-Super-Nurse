@@ -21,7 +21,7 @@ public class KnobRotation : MonoBehaviour
 
     public void Interact()
     { 
-        if (gameObject.transform.localRotation.eulerAngles.y == RotationY1)
+        if (Waterfall.activeSelf == false)
         {
             Waterfall.SetActive(true);
             gameObject.transform.Rotate(0,RotationY2,0);
