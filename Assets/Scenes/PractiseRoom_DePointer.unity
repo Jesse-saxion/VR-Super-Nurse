@@ -12419,6 +12419,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnUnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &939202603 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: c969ccb2b26e10049ad52014c53c2bd8,
@@ -13785,12 +13788,7 @@ MonoBehaviour:
     lastquestion: 0
   rightans: {fileID: 8300000, guid: 7d9fe5f9c70755b45ad0e073771b3114, type: 3}
   wrongtans: {fileID: 8300000, guid: 7c9723e28308ce3448468484887e4e9c, type: 3}
-  A66: {fileID: 0}
   Popup: {fileID: 0}
-  triggerA63: {fileID: 0}
-  outline: {fileID: 0}
-  TriggerHandschoen: {fileID: 0}
-  MenuManager: {fileID: 0}
 --- !u!4 &1041274895
 Transform:
   m_ObjectHideFlags: 0
@@ -18626,7 +18624,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1384462332}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d29bdab115ef69244a7656eb00ba3a66, type: 3}
+  m_Script: {fileID: 11500000, guid: f17ab86a8fe56d9479c8dd649fe6ef1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Canvas: {fileID: 202285164}
@@ -18819,10 +18817,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1419545403}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d29bdab115ef69244a7656eb00ba3a66, type: 3}
+  m_Script: {fileID: 11500000, guid: f17ab86a8fe56d9479c8dd649fe6ef1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Canvas: {fileID: 1783742835}
+  Canvas: {fileID: 202285164}
   Text: {fileID: 0}
 --- !u!65 &1419545406
 BoxCollider:
@@ -26599,6 +26597,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnUnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1988457498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28728,6 +28729,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  OnUnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &8183206463201339829
 Transform:
   m_ObjectHideFlags: 0

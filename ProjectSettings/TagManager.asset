@@ -28,6 +28,9 @@ TagManager:
   - trigger
   - highlight
   - notcorrect_s
+  - TubeStart
+  - ItemResetZone
+  - Item
   layers:
   - Default
   - TransparentFX
@@ -41,7 +44,7 @@ TagManager:
   - Hands
   - Head
   - Body
-  - 
+  - Items
   - 
   - 
   - 

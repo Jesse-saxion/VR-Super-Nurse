@@ -1792,9 +1792,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77bfd50f02054e8429ad99ea5472ffa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Snapped: 0
-  isPlayed: 0
-  Item: {fileID: 0}
 --- !u!33 &86409633
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3163,9 +3160,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77bfd50f02054e8429ad99ea5472ffa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Snapped: 0
-  isPlayed: 0
-  Item: {fileID: 0}
 --- !u!33 &145684387
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4197,8 +4191,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f74be391002f3cc49afc125e11133001, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  insertionTube: {fileID: 1697777122}
-  measurementTube: {fileID: 669960754}
 --- !u!114 &170681696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4941,7 +4933,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58209b6df0f5f414481bcd0a9aa8a6bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 222652350}
 --- !u!95 &222652350
 Animator:
   serializedVersion: 3
@@ -5309,9 +5300,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77bfd50f02054e8429ad99ea5472ffa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Snapped: 0
-  isPlayed: 0
-  Item: {fileID: 0}
 --- !u!135 &241925375
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5676,9 +5664,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77bfd50f02054e8429ad99ea5472ffa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Snapped: 0
-  isPlayed: 0
-  Item: {fileID: 0}
 --- !u!33 &253246528
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -6372,10 +6357,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a17d025fa123dbe4eb45afeee1ccf6c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SnapLocation: {fileID: 0}
-  isSnapped: 0
-  objectSnapped: 0
-  grabbed: 0
 --- !u!114 &257322269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16458,9 +16439,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77bfd50f02054e8429ad99ea5472ffa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Snapped: 0
-  isPlayed: 0
-  Item: {fileID: 0}
 --- !u!33 &477361201
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -21318,6 +21296,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Tube
       objectReference: {fileID: 0}
+    - target: {fileID: 3719584472308654676, guid: 321476ea84beb3d43ba7ef0e97dc93d4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3743625167613371531, guid: 321476ea84beb3d43ba7ef0e97dc93d4,
         type: 3}
       propertyPath: m_TagString
@@ -21365,12 +21348,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 321476ea84beb3d43ba7ef0e97dc93d4, type: 3}
---- !u!1 &669960754 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3719584472308654676, guid: 321476ea84beb3d43ba7ef0e97dc93d4,
-    type: 3}
-  m_PrefabInstance: {fileID: 669960753}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &672007761
 GameObject:
   m_ObjectHideFlags: 0
@@ -21430,8 +21407,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f31d04bfca497234cae803c074d181ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TubePrefab: {fileID: 4562486137524238389, guid: d687d7123d6537645be719e9643938be,
-    type: 3}
 --- !u!4 &688511453
 Transform:
   m_ObjectHideFlags: 0
@@ -22173,7 +22148,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9153f71123789f4597cfe87ba44659d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  D53: {fileID: 1987257639}
 --- !u!95 &734897320
 Animator:
   serializedVersion: 3
@@ -22940,9 +22914,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77bfd50f02054e8429ad99ea5472ffa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Snapped: 0
-  isPlayed: 0
-  Item: {fileID: 0}
 --- !u!135 &747254950
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -23115,10 +23086,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a17d025fa123dbe4eb45afeee1ccf6c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SnapLocation: {fileID: 0}
-  isSnapped: 0
-  objectSnapped: 0
-  grabbed: 0
 --- !u!114 &750044987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24638,9 +24605,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41c7f08abad636146bb621ad03040eee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CanvasQuestion: {fileID: 1502011183}
-  D21: {fileID: 734897318}
-  TutorialDepointer: {fileID: 0}
 --- !u!114 &808432654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24960,11 +24924,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f4612c3e658ed34faf74e6b0c251c88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RotationY1: 0
-  RotationY2: 90
-  Waterfall: {fileID: 453817321}
-  WaterOn: {fileID: 0}
-  WaterOff: {fileID: 0}
 --- !u!114 &811913680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25814,9 +25773,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77bfd50f02054e8429ad99ea5472ffa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Snapped: 0
-  isPlayed: 0
-  Item: {fileID: 0}
 --- !u!33 &830442978
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -27376,9 +27332,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77bfd50f02054e8429ad99ea5472ffa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Snapped: 0
-  isPlayed: 0
-  Item: {fileID: 0}
 --- !u!33 &895070354
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -27633,9 +27586,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77bfd50f02054e8429ad99ea5472ffa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Snapped: 0
-  isPlayed: 0
-  Item: {fileID: 0}
 --- !u!135 &912913672
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -27701,8 +27651,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18a11a3cf99c1b54e8283ff1312f2a52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: fe2d57adef3d8334799b277e872c3cf3, type: 3}
-  source: {fileID: 914732839}
 --- !u!82 &914732839
 AudioSource:
   m_ObjectHideFlags: 0
@@ -28218,9 +28166,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77bfd50f02054e8429ad99ea5472ffa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Snapped: 0
-  isPlayed: 0
-  Item: {fileID: 0}
 --- !u!33 &932020864
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -32541,12 +32486,6 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 2452187091912640942, guid: dc1e6f3acd3dc4647976a535b6f8670f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: dc1e6f3acd3dc4647976a535b6f8670f, type: 3}
---- !u!1 &1133286312 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2452187091467094322, guid: dc1e6f3acd3dc4647976a535b6f8670f,
-    type: 3}
-  m_PrefabInstance: {fileID: 1133286311}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1133922609
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33013,10 +32952,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a17d025fa123dbe4eb45afeee1ccf6c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SnapLocation: {fileID: 0}
-  isSnapped: 0
-  objectSnapped: 0
-  grabbed: 0
 --- !u!114 &1143103797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33369,9 +33304,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41c7f08abad636146bb621ad03040eee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CanvasQuestion: {fileID: 1502011183}
-  D21: {fileID: 1641961116}
-  TutorialDepointer: {fileID: 0}
 --- !u!114 &1147394817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34458,10 +34390,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e90941b02527874f98fe207d21abd58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SoundtoPlay: {fileID: 8300000, guid: 04a6d41bef0996f43aa87deb35dc30cf, type: 3}
-  Volume: 2
-  alreadyPlayed: 0
-  tutorialcanvas: {fileID: 1133286312}
 --- !u!82 &1167358800
 AudioSource:
   m_ObjectHideFlags: 0
@@ -34849,9 +34777,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77bfd50f02054e8429ad99ea5472ffa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Snapped: 0
-  isPlayed: 0
-  Item: {fileID: 0}
 --- !u!135 &1181536600
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -36219,9 +36144,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b6d91eaa60448b4a98c96b5f9adfa80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currScene: 0
-  levelsNames:
-  - MainMenu
 --- !u!1 &1240050718
 GameObject:
   m_ObjectHideFlags: 0
@@ -36623,10 +36545,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a17d025fa123dbe4eb45afeee1ccf6c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SnapLocation: {fileID: 0}
-  isSnapped: 0
-  objectSnapped: 0
-  grabbed: 0
 --- !u!114 &1250035884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37540,10 +37458,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a17d025fa123dbe4eb45afeee1ccf6c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SnapLocation: {fileID: 0}
-  isSnapped: 0
-  objectSnapped: 0
-  grabbed: 0
 --- !u!114 &1276886673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38186,10 +38100,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a17d025fa123dbe4eb45afeee1ccf6c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SnapLocation: {fileID: 0}
-  isSnapped: 0
-  objectSnapped: 0
-  grabbed: 0
 --- !u!135 &1284453218
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -39129,22 +39039,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18fe70b27b861ed48a1efbd493a04cd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MeasuringCheckPoints:
-  - {fileID: 1553267025}
-  - {fileID: 604961319}
-  - {fileID: 1282159858}
-  IncorrectCheckPoints:
-  - {fileID: 1814583846}
-  - {fileID: 1154018950}
-  - {fileID: 1967851990}
-  MeasuringCanvas: {fileID: 318983141}
-  Tube: {fileID: 1284453216}
-  InputMaterial: {fileID: 2100000, guid: 3d938759d8b7a414988ec3261fb5265d, type: 2}
-  ErrorMaterial: {fileID: 2100000, guid: dd33abb8dd0bd4c46b024efeabb8c50f, type: 2}
-  text: {fileID: 0}
-  line: {fileID: 1353899189}
-  sucess: {fileID: 8300000, guid: 7d9fe5f9c70755b45ad0e073771b3114, type: 3}
-  wrong: {fileID: 8300000, guid: 7c9723e28308ce3448468484887e4e9c, type: 3}
 --- !u!1 &1313151961
 GameObject:
   m_ObjectHideFlags: 0
@@ -39190,9 +39084,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77bfd50f02054e8429ad99ea5472ffa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Snapped: 0
-  isPlayed: 0
-  Item: {fileID: 0}
 --- !u!135 &1313151964
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -39332,9 +39223,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77bfd50f02054e8429ad99ea5472ffa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Snapped: 0
-  isPlayed: 0
-  Item: {fileID: 0}
 --- !u!135 &1315080600
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -39653,6 +39541,7 @@ MonoBehaviour:
   - {fileID: 1656143960}
   - {fileID: 1031134199}
   - {fileID: 596584739}
+  clipBoard: {fileID: 0}
 --- !u!4 &1332324253
 Transform:
   m_ObjectHideFlags: 0
@@ -40339,9 +40228,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77bfd50f02054e8429ad99ea5472ffa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Snapped: 0
-  isPlayed: 0
-  Item: {fileID: 0}
 --- !u!135 &1349415440
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -42114,9 +42000,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77bfd50f02054e8429ad99ea5472ffa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Snapped: 0
-  isPlayed: 0
-  Item: {fileID: 0}
 --- !u!33 &1400773819
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -42253,9 +42136,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 390d701a716d42b46861ef7fc9cd938f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SoundtoPlay: {fileID: 8300000, guid: 9ba2c02abb3d76c4c9d674605718a9bc, type: 3}
-  Volume: 1
-  alreadyPlayed: 0
 --- !u!65 &1402765866
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42336,9 +42216,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77bfd50f02054e8429ad99ea5472ffa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Snapped: 0
-  isPlayed: 0
-  Item: {fileID: 0}
 --- !u!65 &1403669874
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42784,9 +42661,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77bfd50f02054e8429ad99ea5472ffa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Snapped: 0
-  isPlayed: 0
-  Item: {fileID: 0}
 --- !u!135 &1422907553
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -43805,11 +43679,11 @@ GameObject:
   - component: {fileID: 1467701371}
   - component: {fileID: 1467701370}
   - component: {fileID: 1467701369}
-  - component: {fileID: 1467701364}
   - component: {fileID: 1467701367}
   - component: {fileID: 1467701365}
   - component: {fileID: 1467701366}
   - component: {fileID: 1467701368}
+  - component: {fileID: 1467701362}
   m_Layer: 0
   m_Name: Knob.004
   m_TagString: Untagged
@@ -43817,6 +43691,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1467701362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467701361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39baf3b91eae46a4f812396ceaad0116, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RotationY1: 90
+  RotationY2: 0
+  Waterfall: {fileID: 453817321}
+  WaterOn: {fileID: 8300000, guid: a05d082cd207b4b12a47c089be8b7a62, type: 3}
+  WaterOff: {fileID: 8300000, guid: e7346ee68df583a48846a36a789691eb, type: 3}
 --- !u!4 &1467701363
 Transform:
   m_ObjectHideFlags: 0
@@ -43831,23 +43722,6 @@ Transform:
   m_Father: {fileID: 575729711}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1467701364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1467701361}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f4612c3e658ed34faf74e6b0c251c88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RotationY1: 0
-  RotationY2: -90
-  Waterfall: {fileID: 453817321}
-  WaterOn: {fileID: 8300000, guid: bd8e1c18469d42c44b9b230f3b4cf6de, type: 3}
-  WaterOff: {fileID: 8300000, guid: e7346ee68df583a48846a36a789691eb, type: 3}
 --- !u!82 &1467701365
 AudioSource:
   m_ObjectHideFlags: 0
@@ -44030,7 +43904,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1467701364}
+      - m_Target: {fileID: 1467701362}
         m_MethodName: Interact
         m_Mode: 1
         m_Arguments:
@@ -46351,9 +46225,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77bfd50f02054e8429ad99ea5472ffa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Snapped: 0
-  isPlayed: 0
-  Item: {fileID: 0}
 --- !u!33 &1544140036
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -48436,10 +48307,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a17d025fa123dbe4eb45afeee1ccf6c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SnapLocation: {fileID: 0}
-  isSnapped: 0
-  objectSnapped: 0
-  grabbed: 0
 --- !u!114 &1650710058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48946,9 +48813,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77bfd50f02054e8429ad99ea5472ffa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Snapped: 0
-  isPlayed: 0
-  Item: {fileID: 0}
 --- !u!135 &1666678753
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -49326,9 +49190,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1da8319b36f0c6e4c8f5e976d8dff673, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objects:
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!120 &1677677109
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -50068,12 +49929,6 @@ PrefabInstance:
 --- !u!4 &1697777121 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7571579487131868685, guid: 2088f21dbc6b36c4abd31095d617683f,
-    type: 3}
-  m_PrefabInstance: {fileID: 1697777120}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1697777122 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7571579487131868691, guid: 2088f21dbc6b36c4abd31095d617683f,
     type: 3}
   m_PrefabInstance: {fileID: 1697777120}
   m_PrefabAsset: {fileID: 0}
@@ -54653,10 +54508,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a17d025fa123dbe4eb45afeee1ccf6c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SnapLocation: {fileID: 0}
-  isSnapped: 0
-  objectSnapped: 0
-  grabbed: 0
 --- !u!114 &1872410143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57543,10 +57394,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a17d025fa123dbe4eb45afeee1ccf6c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SnapLocation: {fileID: 0}
-  isSnapped: 0
-  objectSnapped: 0
-  grabbed: 0
 --- !u!54 &1928899813
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -57660,10 +57507,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a17d025fa123dbe4eb45afeee1ccf6c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SnapLocation: {fileID: 0}
-  isSnapped: 0
-  objectSnapped: 0
-  grabbed: 0
 --- !u!114 &1928984286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57910,8 +57753,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41dc30912d22c1b4598bc81a5064ce49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  A63: {fileID: 8300000, guid: f46b92888ef401745800a6c2d15ef8e1, type: 3}
-  finishasked: 1
 --- !u!114 &1935816999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57936,10 +57777,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a17d025fa123dbe4eb45afeee1ccf6c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SnapLocation: {fileID: 0}
-  isSnapped: 0
-  objectSnapped: 0
-  grabbed: 0
 --- !u!135 &1935817001
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -59117,9 +58954,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77bfd50f02054e8429ad99ea5472ffa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Snapped: 0
-  isPlayed: 0
-  Item: {fileID: 0}
 --- !u!33 &1957424484
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -60037,9 +59871,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41c7f08abad636146bb621ad03040eee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CanvasQuestion: {fileID: 1502011183}
-  D21: {fileID: 1952539253}
-  TutorialDepointer: {fileID: 0}
 --- !u!114 &1987257643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61087,9 +60918,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77bfd50f02054e8429ad99ea5472ffa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Snapped: 0
-  isPlayed: 0
-  Item: {fileID: 0}
 --- !u!23 &2036638385
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -61417,10 +61245,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a17d025fa123dbe4eb45afeee1ccf6c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SnapLocation: {fileID: 0}
-  isSnapped: 0
-  objectSnapped: 0
-  grabbed: 0
 --- !u!54 &2045833168
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -63682,9 +63506,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77bfd50f02054e8429ad99ea5472ffa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Snapped: 0
-  isPlayed: 0
-  Item: {fileID: 0}
 --- !u!33 &2103613239
 MeshFilter:
   m_ObjectHideFlags: 0
