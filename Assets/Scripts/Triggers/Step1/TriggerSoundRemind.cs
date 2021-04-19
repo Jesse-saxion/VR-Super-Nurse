@@ -31,8 +31,8 @@ public class TriggerSoundRemind : MonoBehaviour
             Manny.GetComponent<InformPatientDialog>().enabled = false;
             Manny.GetComponent<Click>().enabled = false;
             enablezone.SetActive(false);
-            Trigger_InformPatient.GetComponent<Triggerinformpatient>().enabled = false;
-            Trigger_InformPatient.GetComponent<Triggerinformpatient>().alreadyPlayed = false;
+            Trigger_InformPatient.GetComponent<TriggerInformPatient>().enabled = false;
+            Trigger_InformPatient.GetComponent<TriggerInformPatient>().alreadyPlayed = false;
             Trigger_InformPatient.GetComponent<BoxCollider>().enabled = false;
             Trigger_InformPatient.GetComponent<AudioSource>().enabled = false;
             GameObject.Find("Sink Environment").GetComponent<AudioSource>().enabled = true;
@@ -51,7 +51,7 @@ public class TriggerSoundRemind : MonoBehaviour
             enablezone.SetActive(true);
             Manny.GetComponent<InformPatientDialog>().enabled = true;
             Manny.GetComponent<Click>().enabled = true;
-            Trigger_InformPatient.GetComponent<Triggerinformpatient>().enabled = true;
+            Trigger_InformPatient.GetComponent<TriggerInformPatient>().enabled = true;
             Trigger_InformPatient.GetComponent<BoxCollider>().enabled = true;
             Trigger_InformPatient.GetComponent<AudioSource>().enabled = true;
         }

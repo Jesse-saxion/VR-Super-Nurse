@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Triggerinformpatient : MonoBehaviour
+public class TriggerInformPatient : MonoBehaviour
 {
     [SerializeField] private AudioClip SoundtoPlay;
 
