@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Step3ItemHandler : MonoBehaviour
+public class Step3ItemHandler : StepHandler
 {
     [SerializeField]
     List<GameObject> requiredItems;
