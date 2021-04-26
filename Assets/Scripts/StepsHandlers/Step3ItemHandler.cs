@@ -1,92 +1,92 @@
-﻿//using System.Collections;
-//using System.Collections.Generic;
-//using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-//public class Step3ItemHandler : MonoBehaviour
-//{
-//    [SerializeField]
-//    List<GameObject> requiredItems;
-//    List<GameObject> addedItems;
+public class Step3ItemHandler : StepHandler
+{
+    [SerializeField]
+    List<GameObject> requiredItems;
+    List<GameObject> addedItems;
 
-//    [SerializeField]
-//    GameObject button;
-//    [SerializeField]
-//    public CheckList checkList;
+    [SerializeField]
+    GameObject button;
+    [SerializeField]
+    public CheckList checkList;
 
-//    [Header("Audio queues")]
-//    [SerializeField]
-//    AudioClip correctItem;
-//    [SerializeField]
-//    AudioClip wrongItem;
-//    [SerializeField]
-//    AudioClip allItems;
+    [Header("Audio queues")]
+    [SerializeField]
+    AudioClip correctItem;
+    [SerializeField]
+    AudioClip wrongItem;
+    [SerializeField]
+    AudioClip allItems;
 
-//    AudioSource audioSource;
-    
-//    bool firstItem = true;
+    AudioSource audioSource;
 
-//    void Start()
-//    {
-//        audioSource = GetComponent<AudioSource>();
-//        addedItems = new List<GameObject>();
-//    }
+    bool firstItem = true;
 
-//    void OnTriggerEnter(Collider other)
-//    {
-//        if (other.tag == "Item" && !addedItems.Contains(other.gameObject))
-//        {
-//            for (int i = 0; i < transform.childCount; i++) //Go through all the snap zones and find the corresponding location for the Item
-//            {
-//                if (transform.GetChild(i).TryGetComponent<SnapToLocation>(out SnapToLocation snapToLocation)) //In case there a objects that don't have SnapToLocation 
-//                {
-//                    if (snapToLocation.Item.name == other.name)
-//                    {
-//                        requiredItems.Remove(other.gameObject);
-//                        addedItems.Add(other.gameObject);
-//                        CorrectItem(snapToLocation);
-//                        return;
-//                    }
-//                }
-//            }
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+        addedItems = new List<GameObject>();
+    }
 
-//            //If didn't find the right place for the Item
-//            WrongItem(other.gameObject);
-//        }
-//    }
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Item" && !addedItems.Contains(other.gameObject))
+        {
+            for (int i = 0; i < transform.childCount; i++) //Go through all the snap zones and find the corresponding location for the Item
+            {
+                if (transform.GetChild(i).TryGetComponent<SnapToLocation>(out SnapToLocation snapToLocation)) //In case there a objects that don't have SnapToLocation 
+                {
+                    if (snapToLocation.Item.name == other.name)
+                    {
+                        requiredItems.Remove(other.gameObject);
+                        addedItems.Add(other.gameObject);
+                        CorrectItem(snapToLocation);
+                        return;
+                    }
+                }
+            }
 
-//    void CorrectItem(SnapToLocation pSnapLocation)
-//    {
-//        //Snap the Item to the new position and activate it in case it's interactable 
-//        pSnapLocation.SetSnapLocation();
-//        pSnapLocation.SnapToSetLocation();
-//        pSnapLocation.EnableInteractivity();
+            //If didn't find the right place for the Item
+            WrongItem(other.gameObject);
+        }
+    }
 
-//        //For the first correct item, play an audio queue
-//        if (firstItem)
-//        {
-//            audioSource.PlayOneShot(correctItem);
-//            firstItem = false;
-//        }
+    void CorrectItem(SnapToLocation pSnapLocation)
+    {
+        //Snap the Item to the new position and activate it in case it's interactable 
+        pSnapLocation.SetSnapLocation();
+        pSnapLocation.SnapToSetLocation();
+        pSnapLocation.EnableInteractivity();
 
-//        if (requiredItems.Count == 0)
-//        {
-//            AllItems();
-//        }
-//    }
+        //For the first correct item, play an audio queue
+        if (firstItem)
+        {
+            audioSource.PlayOneShot(correctItem);
+            firstItem = false;
+        }
 
-//    void WrongItem(GameObject pOther)
-//    {
-//        //Snap to the old position (without setting the new one) if wrong Item
-//        pOther.GetComponent<Item>().SnapToSetLocation();
-//        audioSource.PlayOneShot(wrongItem);
-//    }
+        if (requiredItems.Count == 0)
+        {
+            AllItems();
+        }
+    }
 
-//    void AllItems()
-//    {
-//        audioSource.PlayOneShot(allItems);
-//        audioSource.Play(); //Success sound
+    void WrongItem(GameObject pOther)
+    {
+        //Snap to the old position (without setting the new one) if wrong Item
+        pOther.GetComponent<Item>().SnapToSetLocation();
+        audioSource.PlayOneShot(wrongItem);
+    }
 
-//        button.SetActive(true);
-//        checkList.UpdateCheckList("Select and place items");
-//    }
-//}
+    void AllItems()
+    {
+        audioSource.PlayOneShot(allItems);
+        audioSource.Play(); //Success sound
+
+        button.SetActive(true);
+        checkList.UpdateCheckList("Select and place items");
+    }
+}
