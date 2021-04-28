@@ -33,16 +33,16 @@ public class TriggerNoTissue : MonoBehaviour
         }
         else
         {
-            if (isTalk == false)
-            {
-                audio.PlayOneShot(A52, Volume);
-            }
-            else
-            {
-                Tissue();
-                tissue.SetActive(true);
-                triggerBlowNose.SetActive(true);
-            }
+            //if (isTalk == false)
+            //{
+            //    audio.PlayOneShot(A52, Volume);
+            //}
+            //else
+            //{
+            //}
+            Tissue();
+            tissue.SetActive(true);
+            triggerBlowNose.SetActive(true);
         }
     }
 
