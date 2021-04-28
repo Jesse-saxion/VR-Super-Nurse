@@ -6,7 +6,7 @@ public class HandWashingCheck : MonoBehaviour
 {
     public GameObject[] objects;
     private int index = 0;
-    private bool[] stepsComplete = new bool[5];
+    private bool[] stepsComplete = new bool[6];
     public GameObject nextStep;
     public GameObject notfinish;
     public CheckList checkList;
@@ -22,28 +22,19 @@ public class HandWashingCheck : MonoBehaviour
        
     }
 
-    private bool checkIfHandWashingComplete() {
-        foreach(bool value in stepsComplete) {
-                if(value == false) {
-                    return false;
-                }
-            }
-            return true;
-    }
-
     public void OnKnobRotated()
     {
         if(stepsComplete[0] == false) {
             Debug.Log("Step 1 of hand washing complete: Turn knob on");
             stepsComplete[0] = true;
-        } else if(checkIfHandWashingComplete()){
+        } else if(stepsComplete[5] == false && stepsComplete[4] == true){
             Debug.Log("All steps of hand washing complete. Now continuing to the next step of the nasogastric tube procedure");
             GameObject.Find("TriggerStep1").GetComponent<AudioSource>().enabled = false;
             nextStep.SetActive(true);
             notfinish.SetActive(false);
             checkList.UpdateCheckList("washed hands");
             audio.PlayOneShot(success, Volume);
-        }
+          }
     }
 
     public void OnHandUnderFaucet() {
@@ -56,6 +47,7 @@ public class HandWashingCheck : MonoBehaviour
             Debug.Log("Step 4 of hand washing complete: Wash hands with soap");
             stepsComplete[3] = true;
         }
+        Debug.Log("Hand put under water, but no steps completed");
     }
 
     public void OnHandSoaped() {
@@ -70,5 +62,14 @@ public class HandWashingCheck : MonoBehaviour
             Debug.Log("Step 5 of hand washing complete: Dry hands");
             stepsComplete[4] = true;
         }
+    }
+
+    public void OnHandSanitized() {
+        Debug.Log("Hand cleaned using sanitizer, proceeding to next step of the procedure");
+        GameObject.Find("TriggerStep1").GetComponent<AudioSource>().enabled = false;
+        nextStep.SetActive(true);
+        notfinish.SetActive(false);
+        checkList.UpdateCheckList("washed hands");
+        audio.PlayOneShot(success, Volume);
     }
 }
