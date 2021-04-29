@@ -36,6 +36,7 @@ public class Item : MonoBehaviour
         {           
             GetComponent<XRGrabInteractable>().trackPosition = false;
             GetComponent<XRGrabInteractable>().trackRotation = false;
+            
         }
 
         //Set the transform

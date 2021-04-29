@@ -12,8 +12,9 @@ public class InsertTube : MonoBehaviour
         if (other.gameObject.tag == "TubeStart")
         {
             insertionTube.gameObject.SetActive(true);                               //Set the marked material to the insertion tube
-            insertionTube.transform.GetChild(0).GetComponent<MeshRenderer>().material = measurementTube.transform.GetChild(0).GetComponent<MeshRenderer>().material;  
-            Destroy(measurementTube);
+            insertionTube.transform.GetChild(0).GetComponent<MeshRenderer>().material = measurementTube.transform.GetChild(0).GetComponent<MeshRenderer>().material;
+            //Destroy(measurementTube);
+            measurementTube.SetActive(false);
         }
     }
 }
