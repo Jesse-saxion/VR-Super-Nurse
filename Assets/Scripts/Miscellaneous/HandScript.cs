@@ -28,7 +28,7 @@ public class HandScript : MonoBehaviour
        towelBox = GameObject.FindGameObjectWithTag("towelBox");
        glovesBox = GameObject.Find("GlovesBox");
        bubble = Instantiate(bubblePrefab, Vector3.zero, Quaternion.identity, transform);
-       bubble = GameObject.FindGameObjectWithTag("bubble");
+       //bubble = GameObject.FindGameObjectWithTag("bubble");
 
        bubble.SetActive(false);
    }

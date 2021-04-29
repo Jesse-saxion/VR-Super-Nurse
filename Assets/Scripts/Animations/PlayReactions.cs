@@ -164,7 +164,7 @@ public class PlayReactions : MonoBehaviour
         Transform water = cup.transform.GetChild(0);
         if (water.localPosition.z > 0f)
         {
-            water.localPosition -= new Vector3(0, 0, 0.001f);
+            water.localPosition -= new Vector3(0, 0, 0.00005f);
         }
     }
 
