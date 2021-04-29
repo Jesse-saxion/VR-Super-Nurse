@@ -66,7 +66,8 @@ public class MoveTubeAnimation : MonoBehaviour
 
     public void StartMoving()
     {
-        grabbedHand = GetComponent<XRGrabInteractable>().selectingInteractor;
+        grabbedHand = GetComponent<XRSimpleInteractable>().hoveringInteractors[0];
+        Debug.Log(grabbedHand);
         //if (leftHand.GetGrabStarting() != GrabTypes.None)
         //{
         //    grabbedHand = leftHand;
@@ -83,7 +84,7 @@ public class MoveTubeAnimation : MonoBehaviour
     public void StopMoving()
     {
         oldTime = time;
-        moving = false;
+        moving = false;        
     }
 
     public float GetTubeMovement()
