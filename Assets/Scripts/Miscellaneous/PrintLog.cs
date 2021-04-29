@@ -5,6 +5,6 @@ using UnityEngine;
 public class PrintLog : MonoBehaviour
 {
     public void printStuff() {
-        Debug.Log("This object has been activated");
+        Debug.Log("Print stuff");
     }
 }

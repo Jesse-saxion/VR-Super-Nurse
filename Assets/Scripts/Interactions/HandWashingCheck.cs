@@ -30,15 +30,17 @@ public class HandWashingCheck : MonoBehaviour
         } else if(stepsComplete[5] == false && stepsComplete[4] == true){
             Debug.Log("All steps of hand washing complete. Now continuing to the next step of the nasogastric tube procedure");
             GameObject.Find("TriggerStep1").GetComponent<AudioSource>().enabled = false;
-            nextStep.SetActive(true);
-            notfinish.SetActive(false);
-            checkList.UpdateCheckList("washed hands");
+            stepsComplete[5] = true;
+            //nextStep.SetActive(true);
+            //notfinish.SetActive(false);
+            //checkList.UpdateCheckList("cleaned hands");
             audio.PlayOneShot(success, Volume);
           }
     }
 
     public void OnHandUnderFaucet() {
-        if(stepsComplete[1] == false) {
+        if(GameObject.FindGameObjectWithTag("water").GetComponent<Collider>().enabled == true) {
+            if(stepsComplete[1] == false) {
             Debug.Log("Step 2 of hand washing complete: Make hands wet");
             stepsComplete[1] = true;
         }
@@ -46,15 +48,22 @@ public class HandWashingCheck : MonoBehaviour
         else if(stepsComplete[3] == false && stepsComplete[2] == true) {
             Debug.Log("Step 4 of hand washing complete: Wash hands with soap");
             stepsComplete[3] = true;
+            GameObject.FindGameObjectWithTag("water").GetComponent<Collider>().enabled = false;
         }
         Debug.Log("Hand put under water, but no steps completed");
+        }
+        
     }
 
     public void OnHandSoaped() {
-        if(stepsComplete[2] == false && stepsComplete[1] == true) {
-            Debug.Log("Step 3 of hand washing complete: Soap hands");
-            stepsComplete[2] = true;
+        if(GameObject.FindGameObjectWithTag("soap").GetComponent<Collider>().enabled == true) {
+            if(stepsComplete[2] == false && stepsComplete[1] == true) {
+                Debug.Log("Step 3 of hand washing complete: Soap hands");
+                stepsComplete[2] = true;
+                GameObject.FindGameObjectWithTag("soap").GetComponent<Collider>().enabled = false;
+            }
         }
+
     }
 
     public void OnHandDried() {
@@ -67,9 +76,9 @@ public class HandWashingCheck : MonoBehaviour
     public void OnHandSanitized() {
         Debug.Log("Hand cleaned using sanitizer, proceeding to next step of the procedure");
         GameObject.Find("TriggerStep1").GetComponent<AudioSource>().enabled = false;
-        nextStep.SetActive(true);
-        notfinish.SetActive(false);
-        checkList.UpdateCheckList("washed hands");
+        //nextStep.SetActive(true);
+        //notfinish.SetActive(false);
+        //checkList.UpdateCheckList("cleaned hands");
         audio.PlayOneShot(success, Volume);
     }
 }
