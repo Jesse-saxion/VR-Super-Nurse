@@ -34,26 +34,26 @@ public class HandScript : MonoBehaviour
    }
    public void OnSoapClicked()
    {
-       gameObject.GetComponent<SkinnedMeshRenderer>().material = soapMat;
-       bubble.SetActive(true);
+       if(GameObject.FindGameObjectWithTag("soap").GetComponent<Collider>().enabled == true) {
+            Debug.Log("Lmao soap here to fuck up your day :))))");
+            gameObject.GetComponent<SkinnedMeshRenderer>().material = soapMat;
+            bubble.SetActive(true);
+       }
+       
    }
    public void OnHandTowelPressed()
    {
        gameObject.GetComponent<SkinnedMeshRenderer>().material = GloveMaterial;
-
+       bubble.SetActive(false);
    }
    public void OnGlovesBoxClicked()
    {
        gameObject.GetComponent<SkinnedMeshRenderer>().material = glovesMat;
    }
-   public void OnTriggerEnter(Collider other)
+   public void OnHandOnWater()
    {
-       if (other.CompareTag("water"))
-       {
-        Debug.Log(gameObject.GetComponentInChildren<SkinnedMeshRenderer>().material);
         Debug.Log("Applying water texture");
         gameObject.GetComponent<SkinnedMeshRenderer>().material =  waterMat;
         bubble.SetActive(false);
-       }
    }
 }
