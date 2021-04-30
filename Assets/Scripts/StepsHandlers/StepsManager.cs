@@ -5,7 +5,7 @@ using UnityEngine;
 public class StepsManager : MonoBehaviour
 {
     public List<StepHandler> steps;
-    public List<StepHandler> completedSteps;
+    List<StepHandler> completedSteps;
 
     void Start()
     {

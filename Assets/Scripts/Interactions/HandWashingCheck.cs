@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class HandWashingCheck : MonoBehaviour
 {
-    public GameObject[] objects;
-    private int index = 0;
     private bool[] stepsComplete = new bool[6];
     public GameObject nextStep;
     public GameObject notfinish;

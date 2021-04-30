@@ -65725,8 +65725,8 @@ GameObject:
   - component: {fileID: 3371600945752609536}
   - component: {fileID: 3430635381790132306}
   - component: {fileID: 3430635381790132307}
-  - component: {fileID: 3430635381790132311}
   - component: {fileID: 3430635381790132312}
+  - component: {fileID: 3430635381790132311}
   m_Layer: 0
   m_Name: Patient
   m_TagString: Player
