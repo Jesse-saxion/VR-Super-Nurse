@@ -5,15 +5,12 @@ using UnityEngine;
 
 public class Step4_Hands : MonoBehaviour
 {
-    private int index = 0;
-
     public CheckList checkList;
     [SerializeField] private AudioClip success;
     AudioSource audio;
     public float Volume;
     public GameObject Tissue;
     public GameObject InformPatientScript;
-    // Start is called before the first frame update
 
     private void Start()
     {

@@ -7,17 +7,22 @@ public class StepHandler : MonoBehaviour
     [Header("Step Handler")]
     public bool completed;
     public bool active = true;
+    public AudioClip successSound;
+    public float audioVolume = 10f;
 
     private StepsManager stepsManager;
+    private AudioSource audioSource;
 
     void Start()
     {
         stepsManager = GameObject.FindWithTag("StepsManager").GetComponent<StepsManager>();
+        SetAudio();       
     }
 
     public void CompleteStep()
     {
         completed = true;
+        audioSource.Play();
         stepsManager.StepCompleted(this);
     }
 
@@ -34,5 +39,17 @@ public class StepHandler : MonoBehaviour
     public bool IsActive()
     {
         return active;
+    }
+
+    private void SetAudio()
+    {
+        TryGetComponent<AudioSource>(out audioSource);
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+
+        audioSource.clip = successSound;
+        audioSource.volume = audioVolume;
     }
 }
