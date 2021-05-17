@@ -19,7 +19,6 @@ public class Step5_Question : MonoBehaviour
 
     private void DestroyStep2()
     {
-
         Destroy(GameObject.Find("B2.1"));
         Destroy(GameObject.Find("D2.1"));
     }

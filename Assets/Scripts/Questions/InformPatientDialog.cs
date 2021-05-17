@@ -32,8 +32,6 @@ public class InformPatientDialog : MonoBehaviour
         canvasQuestionOn = canvasQuestionOn.GetComponent<Animator>();
     }
 
-
-
     public void ClickonPatient()
     {
         if (!alreadyPlayedStep1)
@@ -44,8 +42,6 @@ public class InformPatientDialog : MonoBehaviour
             alreadyPlayedStep1 = true;
             audio.PlayOneShot(SoundtoPlay, Volume);
             //nextStep.SetActive(true);
-
-
         }
         else if (alreadyPlayedStep3==true)
         {
@@ -67,10 +63,4 @@ public class InformPatientDialog : MonoBehaviour
         }
 
     }
-
-
-
-    // Update is called once per frame
-
-    
 }
