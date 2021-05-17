@@ -12,8 +12,15 @@ public class HeadInteractions : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         patientReactions = tube.GetComponent<PlayReactions>();
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            TiltHead();
+        }
     }
 
     void OnTriggerEnter(Collider other)
@@ -22,6 +29,11 @@ public class HeadInteractions : MonoBehaviour
         {
             patientReactions.StartSwallowing();
             Destroy(other.gameObject);
+        }
+
+        if (other.gameObject.name == "Hand")
+        {
+            TiltHead();
         }
     }
 
@@ -38,6 +50,5 @@ public class HeadInteractions : MonoBehaviour
             head.transform.Rotate(new Vector3(-15f, 0f, 0f), Space.Self);
             tilted = false;
         }
-
     }
 }

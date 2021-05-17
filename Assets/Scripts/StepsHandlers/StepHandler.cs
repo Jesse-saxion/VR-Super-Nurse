@@ -78,12 +78,13 @@ public class StepHandler : MonoBehaviour
         CompleteStep();
     }
 
-    public void ActivateQuestion(GameObject question)
+    public void ActivateQuestion(QuestionHandler question)
     {
         if (question == null)
             return;
 
-        question.SetActive(true);        
+        question.gameObject.SetActive(true);
+        question.PlayAnimation();
     }
 
     public void PlayAudioClip(AudioClip clip)

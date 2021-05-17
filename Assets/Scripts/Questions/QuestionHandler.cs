@@ -12,6 +12,11 @@ public class QuestionHandler : MonoBehaviour
     [Header("Audio")]
     public AudioClip wrongAnswer;
     public float audioVolume = 10f;
+    [SerializeField]
+    private Animator animator;
+    [SerializeField]
+    private List<Animation> animations;
+
     public void CheckAnswer(int index)
     {
         // Check if correct button press was done to answer the question.
@@ -31,6 +36,11 @@ public class QuestionHandler : MonoBehaviour
 
         // Play no audio because the StepHandler already does by completing the step.
         stepHandler.CompleteSubStep(); 
+    }
+
+    public void PlayAnimation()
+    {
+        
     }
 
     private void WrongAnswer()
