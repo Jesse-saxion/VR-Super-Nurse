@@ -64,6 +64,20 @@ public class StepHandler : MonoBehaviour
         CompleteStep(); 
     }
 
+    // Method overloading so we don't have to give questions a substep number
+    public void CompleteSubStep()
+    {
+        for (int i = 0; i < subSteps; i++)
+        {
+            if (!subStepsList[i])
+            {
+                subStepsList[i] = true;
+                return;
+            }
+        }
+        CompleteStep();
+    }
+
     public void ActivateQuestion(GameObject question)
     {
         if (question == null)
