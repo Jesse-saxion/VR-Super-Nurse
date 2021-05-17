@@ -25726,8 +25726,8 @@ MonoBehaviour:
         m_MethodName: ActivateQuestion
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1749994956}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 1749994958}
+          m_ObjectArgumentAssemblyTypeName: QuestionHandler, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -26937,6 +26937,8 @@ MonoBehaviour:
   stepHandler: {fileID: 1417813354}
   wrongAnswer: {fileID: 8300000, guid: 7c9723e28308ce3448468484887e4e9c, type: 3}
   audioVolume: 10
+  animator: {fileID: 0}
+  animations: []
 --- !u!1 &1427684911
 GameObject:
   m_ObjectHideFlags: 0
@@ -32428,6 +32430,8 @@ MonoBehaviour:
   stepHandler: {fileID: 1749994959}
   wrongAnswer: {fileID: 8300000, guid: 7c9723e28308ce3448468484887e4e9c, type: 3}
   audioVolume: 10
+  animator: {fileID: 0}
+  animations: []
 --- !u!114 &1749994959
 MonoBehaviour:
   m_ObjectHideFlags: 0
