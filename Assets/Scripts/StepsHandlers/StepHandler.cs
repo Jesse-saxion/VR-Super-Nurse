@@ -41,7 +41,7 @@ public class StepHandler : MonoBehaviour
         checkList.UpdateCheckList(stepName);
     }
 
-    public void CoompleteSubStep(int index)
+    public void CompleteSubStep(int index)
     {
         if (subStepsList == null)
         {
