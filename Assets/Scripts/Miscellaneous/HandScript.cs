@@ -34,11 +34,8 @@ public class HandScript : MonoBehaviour
    }
    public void OnSoapClicked()
    {
-       if(GameObject.FindGameObjectWithTag("soap").GetComponent<Collider>().enabled == true) {
-            Debug.Log("Lmao soap here to fuck up your day :))))");
-            gameObject.GetComponent<SkinnedMeshRenderer>().material = soapMat;
-            bubble.SetActive(true);
-       }
+        gameObject.GetComponent<SkinnedMeshRenderer>().material = soapMat;
+        bubble.SetActive(true);
        
    }
    public void OnHandTowelPressed()
