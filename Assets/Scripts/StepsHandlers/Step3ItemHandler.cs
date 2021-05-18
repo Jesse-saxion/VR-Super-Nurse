@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Step3ItemHandler : StepHandler
 {
+    [Space]
     [SerializeField]
     List<GameObject> requiredItems;
     List<GameObject> addedItems;
@@ -11,23 +12,24 @@ public class Step3ItemHandler : StepHandler
     [SerializeField]
     GameObject button;
     [SerializeField]
-    public CheckList checkList;
+    //public CheckList checkList;
 
     [Header("Audio queues")]
-    [SerializeField]
+    //[SerializeField]
     AudioClip correctItem;
     [SerializeField]
     AudioClip wrongItem;
     [SerializeField]
     AudioClip allItems;
 
-    AudioSource audioSource;
+    //AudioSource audioSource;
 
     bool firstItem = true;
 
-    void Start()
+    protected override void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        base.Start();
+        //audioSource = GetComponent<AudioSource>();
         addedItems = new List<GameObject>();
     }
 
@@ -64,7 +66,7 @@ public class Step3ItemHandler : StepHandler
         //For the first correct item, play an audio queue
         if (firstItem)
         {
-            audioSource.PlayOneShot(correctItem);
+            //audioSource.PlayOneShot(correctItem);
             firstItem = false;
         }
 
@@ -78,15 +80,15 @@ public class Step3ItemHandler : StepHandler
     {
         //Snap to the old position (without setting the new one) if wrong Item
         pOther.GetComponent<Item>().SnapToSetLocation();
-        audioSource.PlayOneShot(wrongItem);
+        //audioSource.PlayOneShot(wrongItem);
     }
 
     void AllItems()
     {
-        audioSource.PlayOneShot(allItems);
-        audioSource.Play(); //Success sound
+        //audioSource.PlayOneShot(allItems);
+        //audioSource.Play(); //Success sound
 
         button.SetActive(true);
-        checkList.UpdateCheckList("Select and place items");
+        //checkList.UpdateCheckList("Select and place items");
     }
 }
