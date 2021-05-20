@@ -12,10 +12,9 @@ public class QuestionHandler : MonoBehaviour
     [Header("Audio")]
     public AudioClip wrongAnswer;
     public float audioVolume = 10f;
+    [Header("Animation")]
     [SerializeField]
-    private Animator animator;
-    [SerializeField]
-    private List<Animation> animations;
+    public Animator nurseAnimator;
 
     public void CheckAnswer(int index)
     {
@@ -36,17 +35,18 @@ public class QuestionHandler : MonoBehaviour
 
         // Play no audio because the StepHandler already does by completing the step.
         stepHandler.CompleteSubStep(); 
-    }
-
-    public void PlayAnimation()
-    {
         
+        // Play the Yes animation 
+        nurseAnimator.SetTrigger("Yes");
     }
 
     private void WrongAnswer()
     {
         // Play wrong answer soundclip
         audioSource.Play();
+        
+        // play the No Animation
+        nurseAnimator.SetTrigger("No");
     }
 
     private void setQuestionCanvasInactive()
