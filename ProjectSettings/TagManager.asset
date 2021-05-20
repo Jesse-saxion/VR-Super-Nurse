@@ -12,6 +12,7 @@ TagManager:
   - glovesBox
   - Measuring
   - Cup
+  - Hand
   - bubble
   - notcorrect
   - correct
@@ -31,7 +32,7 @@ TagManager:
   - ItemResetZone
   - Item
   - StepsManager
-  - Hand
+  - KidneyDish
   layers:
   - Default
   - TransparentFX

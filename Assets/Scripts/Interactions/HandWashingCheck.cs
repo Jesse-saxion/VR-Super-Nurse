@@ -11,6 +11,7 @@ public class HandWashingCheck : MonoBehaviour
     [SerializeField] private AudioClip success;
     AudioSource audio;
     public float Volume;
+    public bool audioPlayed = false;
 
     // Start is called before the first frame update
 
@@ -77,6 +78,11 @@ public class HandWashingCheck : MonoBehaviour
         //nextStep.SetActive(true);
         //notfinish.SetActive(false);
         //checkList.UpdateCheckList("cleaned hands");
+
+        if (!audioPlayed)
+        {
         audio.PlayOneShot(success, Volume);
+            audioPlayed = true;
+        }
     }
 }

@@ -8,6 +8,12 @@ public class PlaceMark : MonoBehaviour
     public Material markedTube;
     public GameObject ropeMesh;
 
+
+    void OnCollisionEnter(Collision other)
+    {
+       GetComponentInParent<Step6Handler>().CollisionDetected(other);      
+       
+    }
     public void DrawMark()
     {
         switch (point)
