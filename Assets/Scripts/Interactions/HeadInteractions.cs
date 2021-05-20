@@ -30,11 +30,6 @@ public class HeadInteractions : MonoBehaviour
             patientReactions.StartSwallowing();
             Destroy(other.gameObject);
         }
-
-        if (other.gameObject.name == "Hand")
-        {
-            TiltHead();
-        }
     }
 
     public void TiltHead()

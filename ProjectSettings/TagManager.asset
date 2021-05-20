@@ -12,7 +12,6 @@ TagManager:
   - glovesBox
   - Measuring
   - Cup
-  - Hand
   - bubble
   - notcorrect
   - correct
@@ -32,6 +31,7 @@ TagManager:
   - ItemResetZone
   - Item
   - StepsManager
+  - Hand
   layers:
   - Default
   - TransparentFX
