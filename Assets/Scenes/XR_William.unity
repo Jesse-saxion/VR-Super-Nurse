@@ -26932,7 +26932,7 @@ MonoBehaviour:
   stepHandler: {fileID: 1417813354}
   wrongAnswer: {fileID: 8300000, guid: 7c9723e28308ce3448468484887e4e9c, type: 3}
   audioVolume: 10
-  nurseAnimator: {fileID: 0}
+  nurseAnimator: {fileID: 1783555432}
 --- !u!1 &1427684911
 GameObject:
   m_ObjectHideFlags: 0
@@ -32424,7 +32424,7 @@ MonoBehaviour:
   stepHandler: {fileID: 1749994959}
   wrongAnswer: {fileID: 8300000, guid: 7c9723e28308ce3448468484887e4e9c, type: 3}
   audioVolume: 10
-  nurseAnimator: {fileID: 0}
+  nurseAnimator: {fileID: 1783555432}
 --- !u!114 &1749994959
 MonoBehaviour:
   m_ObjectHideFlags: 0

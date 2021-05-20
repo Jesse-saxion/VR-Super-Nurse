@@ -40,11 +40,6 @@ public class QuestionHandler : MonoBehaviour
         nurseAnimator.SetTrigger("Yes");
     }
 
-    public void PlayAnimation()
-    {
-        
-    }
-
     private void WrongAnswer()
     {
         // Play wrong answer soundclip

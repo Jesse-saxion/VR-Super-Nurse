@@ -84,7 +84,6 @@ public class StepHandler : MonoBehaviour
             return;
 
         question.gameObject.SetActive(true);
-        question.PlayAnimation();
     }
 
     public void PlayAudioClip(AudioClip clip)
