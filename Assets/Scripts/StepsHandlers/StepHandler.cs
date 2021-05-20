@@ -78,6 +78,10 @@ public class StepHandler : MonoBehaviour
         CompleteStep();
     }
 
+    public bool CheckIfSubstepComplete(int index) {
+        return subStepsList[index-1];
+    }
+
     public void ActivateQuestion(QuestionHandler question)
     {
         if (question == null)
