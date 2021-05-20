@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9aa90262-9af7-42d8-8a01-ac71358ed4b4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Cup.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MergeExport2.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MergeExport3.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MergedPackage1.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/SteamVRelated/Btn_Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/SteamVRelated/Btn_Manager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Snap/SteamVRelated/SnapObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Snap/SteamVRelated/SnapObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Snap/SteamVRelated/SnapToLocation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Snap/SteamVRelated/SnapToLocation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SteamVR_Resources/Resources/SteamVR_Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SteamVR_Resources/Resources/SteamVR_Settings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/medical equipment/render.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Сup2.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.VR-Super-Nurse/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR-Super-Nurse/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.VR-Super-Nurse/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR-Super-Nurse/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Ch16_nonPBR.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Ch16_nonPBR.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/MetalTray/Materials/Metal_Base_Color.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/MetalTray/Materials/Metal_Base_Color.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/AreaLights/Walls.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/AreaLights/Walls.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ChristianTesting.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ChristianTesting.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Questions/QuestionHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Questions/QuestionHandler.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,57 +18,73 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Snap/SteamVRelated/SnapObject.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-              <folding>
-                <marker date="1616168382394" expanded="true" signature="6:78" ph="..." />
-                <marker date="1616168382394" expanded="true" signature="126:861" ph="{...}" />
-                <marker date="1616168382394" expanded="true" signature="335:859" ph="{...}" />
-                <marker date="1616168382394" expanded="true" signature="529:629" ph="{...}" />
-                <marker date="1616168382394" expanded="true" signature="701:853" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Snap/SteamVRelated/SnapToLocation.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="945">
-              <caret line="69" column="48" selection-start-line="69" selection-start-column="48" selection-end-line="69" selection-end-column="48" />
-              <folding>
-                <marker date="1616168524985" expanded="true" signature="6:78" ph="..." />
-                <marker date="1616168524985" expanded="true" signature="130:1291" ph="{...}" />
-                <marker date="1616168524985" expanded="true" signature="353:483" ph="{...}" />
-                <marker date="1616168524985" expanded="true" signature="421:477" ph="{...}" />
-                <marker date="1616168524985" expanded="true" signature="543:704" ph="{...}" />
-                <marker date="1616168524985" expanded="true" signature="611:698" ph="{...}" />
-                <marker date="1616168524985" expanded="true" signature="730:1168" ph="{...}" />
-                <marker date="1616168524985" expanded="true" signature="806:1162" ph="{...}" />
-                <marker date="1616168524985" expanded="true" signature="1190:1289" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Menu/SteamVRelated/Btn_Manager.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Questions/QuestionHandler.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+            <state relative-caret-position="510">
+              <caret line="53" column="39" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
               <folding>
-                <marker date="1616168649500" expanded="true" signature="6:113" ph="..." />
-                <marker date="1616168649500" expanded="true" signature="162:1122" ph="{...}" />
-                <marker date="1616168649500" expanded="true" signature="309:521" ph="{...}" />
-                <marker date="1616168649500" expanded="true" signature="352:394" ph="{...}" />
-                <marker date="1616168649500" expanded="true" signature="411:469" ph="{...}" />
-                <marker date="1616168649500" expanded="true" signature="552:706" ph="{...}" />
-                <marker date="1616168649500" expanded="true" signature="741:864" ph="{...}" />
-                <marker date="1616168649500" expanded="true" signature="895:1049" ph="{...}" />
-                <marker date="1616168649500" expanded="true" signature="1080:1120" ph="{...}" />
+                <marker date="1621342598758" expanded="true" signature="6:78" ph="..." />
+                <marker date="1621342598758" expanded="true" signature="124:2020" ph="{...}" />
+                <marker date="1621342598758" expanded="true" signature="487:705" ph="{...}" />
+                <marker date="1621342598758" expanded="true" signature="598:647" ph="{...}" />
+                <marker date="1621342598758" expanded="true" signature="652:699" ph="{...}" />
+                <marker date="1621342598758" expanded="true" signature="739:1085" ph="{...}" />
+                <marker date="1621342598758" expanded="true" signature="1118:1139" ph="{...}" />
+                <marker date="1621342598758" expanded="true" signature="1171:1332" ph="{...}" />
+                <marker date="1621342598758" expanded="true" signature="1378:1427" ph="{...}" />
+                <marker date="1621342598758" expanded="true" signature="1498:1530" ph="{...}" />
+                <marker date="1621342598758" expanded="true" signature="1588:1609" ph="{...}" />
+                <marker date="1621342598758" expanded="true" signature="1656:1720" ph="{...}" />
+                <marker date="1621342598758" expanded="true" signature="1749:2018" ph="{...}" />
+                <marker date="1621342598758" expanded="true" signature="1843:1929" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/StepsHandlers/StepHandler.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <marker date="1621322793646" expanded="true" signature="6:78" ph="..." />
+                <marker date="1621322793646" expanded="true" signature="120:2774" ph="{...}" />
+                <marker date="1621322793646" expanded="true" signature="292:360" ph="/* [Header(&quot;Questions&quot;)] ... */" />
+                <marker date="1621322793646" expanded="true" signature="632:927" ph="{...}" />
+                <marker date="1621322793646" expanded="true" signature="665:732" ph="{...}" />
+                <marker date="1621322793646" expanded="true" signature="959:1112" ph="{...}" />
+                <marker date="1621322793646" expanded="true" signature="1156:1623" ph="{...}" />
+                <marker date="1621322793646" expanded="true" signature="1196:1244" ph="{...}" />
+                <marker date="1621322793646" expanded="true" signature="1432:1538" ph="{...}" />
+                <marker date="1621322793646" expanded="true" signature="1476:1528" ph="{...}" />
+                <marker date="1621322793646" expanded="true" signature="1736:1961" ph="{...}" />
+                <marker date="1621322793646" expanded="true" signature="1785:1931" ph="{...}" />
+                <marker date="1621322793646" expanded="true" signature="1829:1921" ph="{...}" />
+                <marker date="1621322793646" expanded="true" signature="2021:2163" ph="{...}" />
+                <marker date="1621322793646" expanded="true" signature="2210:2274" ph="{...}" />
+                <marker date="1621322793646" expanded="true" signature="2305:2343" ph="{...}" />
+                <marker date="1621322793646" expanded="true" signature="2375:2410" ph="{...}" />
+                <marker date="1621322793646" expanded="true" signature="2438:2473" ph="{...}" />
+                <marker date="1621322793646" expanded="true" signature="2502:2772" ph="{...}" />
+                <marker date="1621322793646" expanded="true" signature="2596:2682" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Questions/QuestionManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <marker date="1621258944145" expanded="true" signature="6:78" ph="..." />
+                <marker date="1621258944145" expanded="true" signature="124:696" ph="{...}" />
+                <marker date="1621258944145" expanded="true" signature="235:524" ph="{...}" />
+                <marker date="1621258944145" expanded="true" signature="378:518" ph="{...}" />
+                <marker date="1621258944145" expanded="true" signature="439:508" ph="{...}" />
+                <marker date="1621258944145" expanded="true" signature="594:615" ph="{...}" />
+                <marker date="1621258944145" expanded="true" signature="673:694" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -84,9 +96,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Menu/SteamVRelated/Btn_Manager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Snap/SteamVRelated/SnapToLocation.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Snap/SteamVRelated/SnapObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StepsHandlers/StepsManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StepsHandlers/StepHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Questions/QuestionHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Questions/QuestionManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StepsHandlers/Step3ItemHandler.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -94,6 +108,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Snap/SteamVRelated/SnapObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Snap/SteamVRelated/SnapToLocation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Menu/SteamVRelated/Btn_Manager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Questions/QuestionHandler.cs" />
       </list>
     </option>
   </component>
@@ -106,29 +121,36 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="440" />
-    <option name="y" value="-20" />
-    <option name="width" value="1025" />
-    <option name="height" value="1105" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1939" />
+    <option name="height" value="1049" />
   </component>
   <component name="ProjectView">
     <navigator currentView="SolutionExplorer" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="FileSystemExplorer" />
-      <pane id="AssemblyExplorer" />
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
       </pane>
+      <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -157,11 +179,13 @@
       <workItem from="1616168242555" duration="142000" />
       <workItem from="1616168444580" duration="82000" />
       <workItem from="1616168579120" duration="74000" />
+      <workItem from="1621337397377" duration="1523000" />
+      <workItem from="1621342175875" duration="1678000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="298000" />
+    <option name="totallyTimeSpent" value="3499000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -173,9 +197,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1551" height="839" extended-state="1" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25637585" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.02009377" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -216,52 +240,106 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Snap/SteamVRelated/SnapObject.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Snap/SteamVRelated/SnapObject.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Snap/SteamVRelated/SnapToLocation.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Menu/SteamVRelated/Btn_Manager.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/StepsHandlers/StepsManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        <state>
           <folding>
-            <marker date="1616168382394" expanded="true" signature="6:78" ph="..." />
-            <marker date="1616168382394" expanded="true" signature="126:861" ph="{...}" />
-            <marker date="1616168382394" expanded="true" signature="335:859" ph="{...}" />
-            <marker date="1616168382394" expanded="true" signature="529:629" ph="{...}" />
-            <marker date="1616168382394" expanded="true" signature="701:853" ph="{...}" />
+            <element signature="e#0#78#0" expanded="true" />
+            <marker date="1620741282614" expanded="true" signature="121:552" ph="{...}" />
+            <marker date="1620741282614" expanded="true" signature="215:277" ph="{...}" />
+            <marker date="1620741282614" expanded="true" signature="326:547" ph="{...}" />
+            <marker date="1620741282614" expanded="true" signature="483:541" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Snap/SteamVRelated/SnapToLocation.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/StepsHandlers/Step3ItemHandler.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="69" column="48" selection-start-line="69" selection-start-column="48" selection-end-line="69" selection-end-column="48" />
+        <state>
           <folding>
-            <marker date="1616168524985" expanded="true" signature="6:78" ph="..." />
-            <marker date="1616168524985" expanded="true" signature="130:1291" ph="{...}" />
-            <marker date="1616168524985" expanded="true" signature="353:483" ph="{...}" />
-            <marker date="1616168524985" expanded="true" signature="421:477" ph="{...}" />
-            <marker date="1616168524985" expanded="true" signature="543:704" ph="{...}" />
-            <marker date="1616168524985" expanded="true" signature="611:698" ph="{...}" />
-            <marker date="1616168524985" expanded="true" signature="730:1168" ph="{...}" />
-            <marker date="1616168524985" expanded="true" signature="806:1162" ph="{...}" />
-            <marker date="1616168524985" expanded="true" signature="1190:1289" ph="{...}" />
+            <element signature="e#0#78#0" expanded="true" />
+            <marker date="1621241476026" expanded="true" signature="123:2665" ph="{...}" />
+            <marker date="1621241476026" expanded="true" signature="595:727" ph="{...}" />
+            <marker date="1621241476026" expanded="true" signature="768:1662" ph="{...}" />
+            <marker date="1621241476026" expanded="true" signature="849:1656" ph="{...}" />
+            <marker date="1621241476026" expanded="true" signature="999:1546" ph="{...}" />
+            <marker date="1621241476026" expanded="true" signature="1181:1532" ph="{...}" />
+            <marker date="1621241476026" expanded="true" signature="1263:1514" ph="{...}" />
+            <marker date="1621241476026" expanded="true" signature="1714:2210" ph="{...}" />
+            <marker date="1621241476026" expanded="true" signature="2018:2121" ph="{...}" />
+            <marker date="1621241476026" expanded="true" signature="2160:2204" ph="{...}" />
+            <marker date="1621241476026" expanded="true" signature="2249:2443" ph="{...}" />
+            <marker date="1621241476026" expanded="true" signature="2464:2663" ph="{...}" />
+            <marker date="1621241476026" expanded="true" signature="2479:2561" ph="/* audioSource.PlayOneShot(allItems); ... */" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Menu/SteamVRelated/Btn_Manager.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/StepsHandlers/StepHandler.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+        <state>
           <folding>
-            <marker date="1616168649500" expanded="true" signature="6:113" ph="..." />
-            <marker date="1616168649500" expanded="true" signature="162:1122" ph="{...}" />
-            <marker date="1616168649500" expanded="true" signature="309:521" ph="{...}" />
-            <marker date="1616168649500" expanded="true" signature="352:394" ph="{...}" />
-            <marker date="1616168649500" expanded="true" signature="411:469" ph="{...}" />
-            <marker date="1616168649500" expanded="true" signature="552:706" ph="{...}" />
-            <marker date="1616168649500" expanded="true" signature="741:864" ph="{...}" />
-            <marker date="1616168649500" expanded="true" signature="895:1049" ph="{...}" />
-            <marker date="1616168649500" expanded="true" signature="1080:1120" ph="{...}" />
+            <marker date="1621322793646" expanded="true" signature="6:78" ph="..." />
+            <marker date="1621322793646" expanded="true" signature="120:2774" ph="{...}" />
+            <marker date="1621322793646" expanded="true" signature="292:360" ph="/* [Header(&quot;Questions&quot;)] ... */" />
+            <marker date="1621322793646" expanded="true" signature="632:927" ph="{...}" />
+            <marker date="1621322793646" expanded="true" signature="665:732" ph="{...}" />
+            <marker date="1621322793646" expanded="true" signature="959:1112" ph="{...}" />
+            <marker date="1621322793646" expanded="true" signature="1156:1623" ph="{...}" />
+            <marker date="1621322793646" expanded="true" signature="1196:1244" ph="{...}" />
+            <marker date="1621322793646" expanded="true" signature="1432:1538" ph="{...}" />
+            <marker date="1621322793646" expanded="true" signature="1476:1528" ph="{...}" />
+            <marker date="1621322793646" expanded="true" signature="1736:1961" ph="{...}" />
+            <marker date="1621322793646" expanded="true" signature="1785:1931" ph="{...}" />
+            <marker date="1621322793646" expanded="true" signature="1829:1921" ph="{...}" />
+            <marker date="1621322793646" expanded="true" signature="2021:2163" ph="{...}" />
+            <marker date="1621322793646" expanded="true" signature="2210:2274" ph="{...}" />
+            <marker date="1621322793646" expanded="true" signature="2305:2343" ph="{...}" />
+            <marker date="1621322793646" expanded="true" signature="2375:2410" ph="{...}" />
+            <marker date="1621322793646" expanded="true" signature="2438:2473" ph="{...}" />
+            <marker date="1621322793646" expanded="true" signature="2502:2772" ph="{...}" />
+            <marker date="1621322793646" expanded="true" signature="2596:2682" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Questions/QuestionManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1621258944145" expanded="true" signature="6:78" ph="..." />
+            <marker date="1621258944145" expanded="true" signature="124:696" ph="{...}" />
+            <marker date="1621258944145" expanded="true" signature="235:524" ph="{...}" />
+            <marker date="1621258944145" expanded="true" signature="378:518" ph="{...}" />
+            <marker date="1621258944145" expanded="true" signature="439:508" ph="{...}" />
+            <marker date="1621258944145" expanded="true" signature="594:615" ph="{...}" />
+            <marker date="1621258944145" expanded="true" signature="673:694" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Questions/QuestionHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="53" column="39" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
+          <folding>
+            <marker date="1621342598758" expanded="true" signature="6:78" ph="..." />
+            <marker date="1621342598758" expanded="true" signature="124:2020" ph="{...}" />
+            <marker date="1621342598758" expanded="true" signature="487:705" ph="{...}" />
+            <marker date="1621342598758" expanded="true" signature="598:647" ph="{...}" />
+            <marker date="1621342598758" expanded="true" signature="652:699" ph="{...}" />
+            <marker date="1621342598758" expanded="true" signature="739:1085" ph="{...}" />
+            <marker date="1621342598758" expanded="true" signature="1118:1139" ph="{...}" />
+            <marker date="1621342598758" expanded="true" signature="1171:1332" ph="{...}" />
+            <marker date="1621342598758" expanded="true" signature="1378:1427" ph="{...}" />
+            <marker date="1621342598758" expanded="true" signature="1498:1530" ph="{...}" />
+            <marker date="1621342598758" expanded="true" signature="1588:1609" ph="{...}" />
+            <marker date="1621342598758" expanded="true" signature="1656:1720" ph="{...}" />
+            <marker date="1621342598758" expanded="true" signature="1749:2018" ph="{...}" />
+            <marker date="1621342598758" expanded="true" signature="1843:1929" ph="{...}" />
           </folding>
         </state>
       </provider>
