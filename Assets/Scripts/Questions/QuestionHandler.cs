@@ -38,6 +38,8 @@ public class QuestionHandler : MonoBehaviour
         
         // Play the Yes animation 
         nurseAnimator.SetTrigger("Yes");
+        Debug.Log("Yes Animation Plays");
+        
     }
 
     public void PlayAnimation()
@@ -52,6 +54,7 @@ public class QuestionHandler : MonoBehaviour
         
         // play the No Animation
         nurseAnimator.SetTrigger("No");
+        Debug.Log("No Animation Plays");
     }
 
     private void setQuestionCanvasInactive()
