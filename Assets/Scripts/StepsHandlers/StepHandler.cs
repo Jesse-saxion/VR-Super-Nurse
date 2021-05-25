@@ -23,13 +23,18 @@ public class StepHandler : MonoBehaviour
 
     protected virtual void Start()
     {
+        Instantiate();
+    }
+
+    protected void Instantiate()
+    {
         if (subSteps >= 1)
         {
             subStepsList = new bool[subSteps];
         }
 
         stepsManager = GameObject.FindWithTag("StepsManager").GetComponent<StepsManager>();
-        checkList = GameObject.Find("CheckList").GetComponent<CheckList>();
+        checkList = GameObject.FindWithTag("CheckList").GetComponent<CheckList>();
         SetAudio();
     }
 
@@ -117,5 +122,10 @@ public class StepHandler : MonoBehaviour
 
         audioSource.clip = successSound;
         audioSource.volume = audioVolume;
+    }
+
+    public bool CheckIfSubstepComplete(int index)
+    {
+        return subStepsList[index - 1];
     }
 }
