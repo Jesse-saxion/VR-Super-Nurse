@@ -22,7 +22,8 @@ public class QuestionHandler : MonoBehaviour
         if (answerList[index])
         {
             CorrectAnswer();
-        } else
+        }
+        else
         {
             WrongAnswer();
         }
@@ -31,22 +32,30 @@ public class QuestionHandler : MonoBehaviour
     private void CorrectAnswer()
     {
         // Make sure to disable the question canvas so the new question can appear.
-        setQuestionCanvasInactive(); 
+        setQuestionCanvasInactive();
 
         // Play no audio because the StepHandler already does by completing the step.
-        stepHandler.CompleteSubStep(); 
-        
+        stepHandler.CompleteSubStep();
+
         // Play the Yes animation 
         nurseAnimator.SetTrigger("Yes");
+        Debug.Log("Yes Animation Plays");
+
+    }
+
+    public void PlayAnimation()
+    {
+
     }
 
     private void WrongAnswer()
     {
         // Play wrong answer soundclip
         audioSource.Play();
-        
+
         // play the No Animation
         nurseAnimator.SetTrigger("No");
+        Debug.Log("No Animation Plays");
     }
 
     private void setQuestionCanvasInactive()
@@ -63,7 +72,7 @@ public class QuestionHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void PlayAudioClip(AudioClip clip)
