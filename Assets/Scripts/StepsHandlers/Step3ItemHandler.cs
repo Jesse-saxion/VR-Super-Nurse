@@ -26,9 +26,9 @@ public class Step3ItemHandler : StepHandler
 
     bool firstItem = true;
 
-    protected override void Start()
+    public void Start()
     {
-        base.Start();
+        Instantiate();
         //audioSource = GetComponent<AudioSource>();
         addedItems = new List<GameObject>();
     }
