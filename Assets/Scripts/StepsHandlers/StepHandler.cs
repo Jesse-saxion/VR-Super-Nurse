@@ -118,4 +118,9 @@ public class StepHandler : MonoBehaviour
         audioSource.clip = successSound;
         audioSource.volume = audioVolume;
     }
+
+    public bool CheckIfSubstepComplete(int index)
+    {
+        return subStepsList[index - 1];
+    }
 }
