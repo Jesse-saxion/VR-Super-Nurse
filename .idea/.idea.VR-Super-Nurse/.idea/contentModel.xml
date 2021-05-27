@@ -488,6 +488,7 @@
             <e p="MarkTube.cs" t="Include" />
             <e p="MoveTubeAnimation.cs" t="Include" />
             <e p="PlaceMark.cs" t="Include" />
+            <e p="Step6Handler.cs" t="Include" />
             <e p="WaterTube.cs" t="Include" />
           </e>
         </e>
