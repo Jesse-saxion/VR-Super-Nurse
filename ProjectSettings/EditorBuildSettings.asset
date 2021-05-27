@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Environment_Backup.unity
     guid: 580113b3928f7ec4ebe12a455409a62c
   - enabled: 1
-    path: Assets/Scenes/PractiseRoom_DePointer.unity
+    path: Assets/Scenes/Depricated_Tutorials/PractiseRoom_DePointer.unity
     guid: 143232838a472d4448caea7e7a9fd354
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: d41ffb6e75e7b0b44b21f140ac4aada0,
