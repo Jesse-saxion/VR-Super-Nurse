@@ -33,6 +33,7 @@ TagManager:
   - Item
   - StepsManager
   - KidneyDish
+  - CheckList
   layers:
   - Default
   - TransparentFX

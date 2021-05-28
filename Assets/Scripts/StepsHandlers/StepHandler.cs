@@ -23,13 +23,18 @@ public class StepHandler : MonoBehaviour
 
     protected virtual void Start()
     {
+        Instantiate();
+    }
+
+    protected void Instantiate()
+    {
         if (subSteps >= 1)
         {
             subStepsList = new bool[subSteps];
         }
 
         stepsManager = GameObject.FindWithTag("StepsManager").GetComponent<StepsManager>();
-        checkList = GameObject.Find("CheckList").GetComponent<CheckList>();
+        checkList = GameObject.FindWithTag("CheckList").GetComponent<CheckList>();
         SetAudio();
     }
 
@@ -78,16 +83,13 @@ public class StepHandler : MonoBehaviour
         CompleteStep();
     }
 
-    public bool CheckIfSubstepComplete(int index) {
-        return subStepsList[index-1];
-    }
-
     public void ActivateQuestion(QuestionHandler question)
     {
         if (question == null)
             return;
 
         question.gameObject.SetActive(true);
+        question.PlayAnimation();
     }
 
     public void PlayAudioClip(AudioClip clip)
@@ -120,5 +122,10 @@ public class StepHandler : MonoBehaviour
 
         audioSource.clip = successSound;
         audioSource.volume = audioVolume;
+    }
+
+    public bool CheckIfSubstepComplete(int index)
+    {
+        return subStepsList[index - 1];
     }
 }
