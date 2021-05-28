@@ -13,7 +13,6 @@ public class InformPatientDialog : MonoBehaviour
     public bool alreadyPlayedStep3;
     public bool areadyPlayedStep5 = false;
 
-
     public Animator canvas;
     public Animator canvasQuestionOn;
 
