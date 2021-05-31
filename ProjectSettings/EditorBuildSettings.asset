@@ -8,9 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 4acc9190d4567234796a4f0635e1b059
-  - enabled: 1
-    path: Assets/Scenes/Environment_Backup.unity
-    guid: 580113b3928f7ec4ebe12a455409a62c
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Depricated_Tutorials/PractiseRoom_DePointer.unity
     guid: 143232838a472d4448caea7e7a9fd354

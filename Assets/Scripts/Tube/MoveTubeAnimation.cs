@@ -66,6 +66,7 @@ public class MoveTubeAnimation : MonoBehaviour
 
     public void StartMoving()
     {
+        Debug.Log("Tube is being grabbed");
         grabbedHand = GetComponent<XRSimpleInteractable>().hoveringInteractors[0];
         Debug.Log(grabbedHand);
         //if (leftHand.GetGrabStarting() != GrabTypes.None)
