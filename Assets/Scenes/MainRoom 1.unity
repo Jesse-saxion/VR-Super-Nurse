@@ -2469,6 +2469,11 @@ PrefabInstance:
       propertyPath: nurseAnimator
       value: 
       objectReference: {fileID: 1215847172}
+    - target: {fileID: 6643002713530169327, guid: 31eef2782e5408344ae0bab2139b1127,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6643002713668536292, guid: 31eef2782e5408344ae0bab2139b1127,
         type: 3}
       propertyPath: m_PresetInfoIsWorld
@@ -2557,7 +2562,7 @@ PrefabInstance:
     - target: {fileID: 6643002713852815179, guid: 31eef2782e5408344ae0bab2139b1127,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6643002713969036597, guid: 31eef2782e5408344ae0bab2139b1127,
         type: 3}

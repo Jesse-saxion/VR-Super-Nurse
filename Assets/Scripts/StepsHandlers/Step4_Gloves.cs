@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
-public class Step4_Hands : MonoBehaviour
+public class Step4_Gloves : MonoBehaviour
 {
     public CheckList checkList;
     [SerializeField] private AudioClip success;
@@ -20,9 +19,8 @@ public class Step4_Hands : MonoBehaviour
     public void OnObjectClicked()
     {
         Tissue.GetComponent<TriggerNoTissue>().isGlove = true;
-        InformPatientScript.GetComponent<InformPatientDialog>().alreadyPlayedStep3 = true;
+        InformPatientScript.GetComponent<InformPatientDialog>().alreadyPlayedStep4 = true;
         checkList.UpdateCheckList("Put on medical gloves");
         audio.PlayOneShot(success, Volume);
     }
-
 }
