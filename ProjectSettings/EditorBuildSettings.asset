@@ -6,17 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: 4acc9190d4567234796a4f0635e1b059
-  - enabled: 0
-    path: Assets/Scenes/Environment_Backup.unity
-    guid: 580113b3928f7ec4ebe12a455409a62c
-  - enabled: 0
-    path: Assets/Scenes/PractiseRoom_DePointer.unity
-    guid: 143232838a472d4448caea7e7a9fd354
+    path: Assets/Scenes/MainRoom_Jesse.unity
+    guid: 7e4cfdc78fddc5e43b6b569b6a64a7c7
   - enabled: 1
-    path: Assets/Scenes/XR_Jesse.unity
-    guid: 27c7355cf4c45ea49ae103f4581752d2
+    path: Assets/Scenes/MainRoom.unity
+    guid: 6bda21d9bd74c52479eeaa445d3b8b57
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: d41ffb6e75e7b0b44b21f140ac4aada0,
       type: 2}
