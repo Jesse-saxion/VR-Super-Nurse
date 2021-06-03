@@ -34,6 +34,7 @@ TagManager:
   - StepsManager
   - KidneyDish
   - CheckList
+  - NoseBandage
   layers:
   - Default
   - TransparentFX

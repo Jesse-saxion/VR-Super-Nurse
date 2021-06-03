@@ -17,7 +17,7 @@ public class Step8Handler : StepHandler
     // Update is called once per frame
     void Update()
     {
-        if(tubeAnimator.GetCurrentAnimatorStateInfo(0).IsName("TubeInserted")) {
+        if(tubeAnimator.GetCurrentAnimatorStateInfo(0).IsName("TubeInserted") && !CheckIfSubstepComplete(2)) {
             //Tube is fully inserted, allowing the syringe to take out stomach fluids
             Debug.Log("Tube fully inserted");
             CompleteSubStep(2);
