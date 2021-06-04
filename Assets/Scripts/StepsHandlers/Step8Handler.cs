@@ -6,18 +6,29 @@ public class Step8Handler : StepHandler
 {
     public GameObject Nose;
     public GameObject NoseBandage;
-    public Animator tubeAnimator;
+    public GameObject tube;
+
+    private MoveTubeAnimation tubestuff;
 
     // Start is called before the first frame update
     void Start()
     {
+        Instantiate();
+
+        tubestuff = tube.GetComponent<MoveTubeAnimation>();
         
+        if(tubestuff == null){
+            Debug.Log("Tube animation is NULL");
+        }
+        else{
+            Debug.Log("Tube is FINE");
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(tubeAnimator.GetCurrentAnimatorStateInfo(0).IsName("TubeInserted") && !CheckIfSubstepComplete(2)) {
+        if(tubestuff.tubeInserted && !CheckIfSubstepComplete(2)) {
             //Tube is fully inserted, allowing the syringe to take out stomach fluids
             Debug.Log("Tube fully inserted");
             CompleteSubStep(2);
