@@ -89,6 +89,7 @@ public class Step3ItemHandler : StepHandler
         //audioSource.Play(); //Success sound
 
         button.SetActive(true);
+        CompleteStep();
         //checkList.UpdateCheckList("Select and place items");
     }
 }

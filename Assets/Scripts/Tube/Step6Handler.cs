@@ -22,7 +22,6 @@ public class Step6Handler : StepHandler
     }
 
     void SnapTube(GameObject tube) {
-        Debug.Log("It's vinegar you pussy");
         this.GetComponentInChildren<MeshRenderer>().material = WaterMaterial;
     }
 }

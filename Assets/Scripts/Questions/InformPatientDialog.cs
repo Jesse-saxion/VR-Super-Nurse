@@ -2,21 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InformPatientDialog : MonoBehaviour
+public class InformPatientDialog : StepHandler
 {
     [SerializeField] private AudioClip soundToPlayStep2;
     [SerializeField] private AudioClip soundToPlayStep4;
-    [SerializeField] private AudioClip soundToPlayStep10;
+    [SerializeField] private AudioClip soundToPlayStep12;
+    [SerializeField] public QuestionHandler questionStep2;
+    [SerializeField] public QuestionHandler questionStep4;
     AudioSource audio;
     public float volume;
     public bool alreadyPlayedStep2 = false;
-    public bool alreadyPlayedStep4;
-    public bool alreadyPlayedStep10 = false;
-
-    // public Click objects;
-    // public List<GameObject> Popup;
- 
-    // public GameObject nextStep;
+    public bool alreadyPlayedStep4 = false;
+    public bool alreadyPlayedStep12 = false;
 
     // Start is called before the first frame update
     void Start()
@@ -29,26 +26,24 @@ public class InformPatientDialog : MonoBehaviour
     {
         if (!alreadyPlayedStep2)
         {
-            // Popup[0].SetActive(true);
+            Debug.Log("Activating question 2.");
             alreadyPlayedStep2 = true;
             audio.PlayOneShot(soundToPlayStep2, volume);
-            // nextStep.SetActive(true);
+            ActivateQuestion(questionStep2);
         }
         else if (alreadyPlayedStep4==true)
         {
-            // Popup[1].SetActive(true);
-            // Popup[1].gameObject.GetComponent<Animator>().Play("User_B2_1");
-            // canvas.Play(0);
+            Debug.Log("Activating question 4.");
             alreadyPlayedStep4 = false;
-            // canvasQuestionOn.Play("QuestionCanvasOn");
             audio.PlayOneShot(soundToPlayStep4, volume);
+            ActivateQuestion(questionStep4);
         }
-        else if (alreadyPlayedStep10 == true)
+        else if (alreadyPlayedStep12 == true)
         {
-            // Popup[2].SetActive(true);
-            alreadyPlayedStep10 = false;
-            audio.PlayOneShot(soundToPlayStep10, volume);
+            Debug.Log("Informing patient about step 12: Secure bandaid.");
+            alreadyPlayedStep12 = false;
+            audio.PlayOneShot(soundToPlayStep12, volume);
+            CompleteSubStep();
         }
-
     }
 }
