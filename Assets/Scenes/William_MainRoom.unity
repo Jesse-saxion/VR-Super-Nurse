@@ -2484,7 +2484,7 @@ MonoBehaviour:
   completed: 0
   active: 1
   subSteps: 2
-  successSound: {fileID: 8300000, guid: bd8e1c18469d42c44b9b230f3b4cf6de, type: 3}
+  successSound: {fileID: 8300000, guid: 7d9fe5f9c70755b45ad0e073771b3114, type: 3}
   audioVolume: 10
 --- !u!114 &202688040 stripped
 MonoBehaviour:
@@ -4544,7 +4544,7 @@ PrefabInstance:
         type: 3}
       propertyPath: successSound
       value: 
-      objectReference: {fileID: 8300000, guid: bd8e1c18469d42c44b9b230f3b4cf6de, type: 3}
+      objectReference: {fileID: 8300000, guid: 7d9fe5f9c70755b45ad0e073771b3114, type: 3}
     - target: {fileID: 4445977085415007320, guid: 660c949752c647b4eb6b4462127f64dd,
         type: 3}
       propertyPath: InformPatientScript
@@ -8856,7 +8856,7 @@ MonoBehaviour:
   completed: 0
   active: 1
   subSteps: 2
-  successSound: {fileID: 8300000, guid: bd8e1c18469d42c44b9b230f3b4cf6de, type: 3}
+  successSound: {fileID: 8300000, guid: 7d9fe5f9c70755b45ad0e073771b3114, type: 3}
   audioVolume: 10
   requiredItems:
   - {fileID: 202688037}
@@ -12333,7 +12333,7 @@ PrefabInstance:
         type: 3}
       propertyPath: successSound
       value: 
-      objectReference: {fileID: 8300000, guid: bd8e1c18469d42c44b9b230f3b4cf6de, type: 3}
+      objectReference: {fileID: 8300000, guid: 7d9fe5f9c70755b45ad0e073771b3114, type: 3}
     - target: {fileID: 2517152307416069218, guid: 9cb83805fdf291c4bac74fc1d1d5a76a,
         type: 3}
       propertyPath: m_Mesh
@@ -12411,11 +12411,11 @@ MonoBehaviour:
   completed: 0
   active: 1
   subSteps: 2
-  successSound: {fileID: 8300000, guid: bd8e1c18469d42c44b9b230f3b4cf6de, type: 3}
+  successSound: {fileID: 8300000, guid: 7d9fe5f9c70755b45ad0e073771b3114, type: 3}
   audioVolume: 10
-  soundToPlayStep2: {fileID: 8300000, guid: 74288b2902d250e42873a42dd15a09c3, type: 3}
-  soundToPlayStep3: {fileID: 0}
-  soundToPlayStep11: {fileID: 0}
+  soundToPlayStep2: {fileID: 8300000, guid: 7c9723e28308ce3448468484887e4e9c, type: 3}
+  soundToPlayStep3: {fileID: 8300000, guid: 7c9723e28308ce3448468484887e4e9c, type: 3}
+  soundToPlayStep11: {fileID: 8300000, guid: 7c9723e28308ce3448468484887e4e9c, type: 3}
   questionStep2: {fileID: 0}
   questionStep3: {fileID: 0}
   volume: 3
@@ -19292,6 +19292,11 @@ PrefabInstance:
       propertyPath: stepName
       value: Put On Gloves
       objectReference: {fileID: 0}
+    - target: {fileID: 8195788751955948348, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: successSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 7d9fe5f9c70755b45ad0e073771b3114, type: 3}
     - target: {fileID: 8321195029631319440, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
         type: 3}
       propertyPath: m_Name
@@ -26340,7 +26345,7 @@ MonoBehaviour:
   completed: 0
   active: 1
   subSteps: 2
-  successSound: {fileID: 8300000, guid: bd8e1c18469d42c44b9b230f3b4cf6de, type: 3}
+  successSound: {fileID: 8300000, guid: 7d9fe5f9c70755b45ad0e073771b3114, type: 3}
   audioVolume: 10
 --- !u!1 &1432717969
 GameObject:
@@ -27449,7 +27454,7 @@ MonoBehaviour:
   completed: 0
   active: 1
   subSteps: 5
-  successSound: {fileID: 8300000, guid: bd8e1c18469d42c44b9b230f3b4cf6de, type: 3}
+  successSound: {fileID: 8300000, guid: 7d9fe5f9c70755b45ad0e073771b3114, type: 3}
   audioVolume: 10
 --- !u!1 &1521029608
 GameObject:
@@ -28195,6 +28200,11 @@ PrefabInstance:
       propertyPath: stepName
       value: Tools on Tray
       objectReference: {fileID: 0}
+    - target: {fileID: 8195788751955948348, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: successSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 7d9fe5f9c70755b45ad0e073771b3114, type: 3}
     - target: {fileID: 8321195029631319440, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
         type: 3}
       propertyPath: m_Name
@@ -29420,6 +29430,11 @@ PrefabInstance:
       propertyPath: subSteps
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 8195788751955948348, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: successSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 7d9fe5f9c70755b45ad0e073771b3114, type: 3}
     - target: {fileID: 8321195029631319440, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
         type: 3}
       propertyPath: m_Name
@@ -30194,6 +30209,11 @@ PrefabInstance:
       propertyPath: stepName
       value: Disinfect Hands
       objectReference: {fileID: 0}
+    - target: {fileID: 8195788751955948348, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: successSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 7d9fe5f9c70755b45ad0e073771b3114, type: 3}
     - target: {fileID: 8683958670578152206, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
         type: 3}
       propertyPath: m_text
@@ -44662,7 +44682,7 @@ MonoBehaviour:
   completed: 0
   active: 1
   subSteps: 5
-  successSound: {fileID: 8300000, guid: bd8e1c18469d42c44b9b230f3b4cf6de, type: 3}
+  successSound: {fileID: 8300000, guid: 7d9fe5f9c70755b45ad0e073771b3114, type: 3}
   audioVolume: 10
 --- !u!114 &3719584472332438262
 MonoBehaviour:
