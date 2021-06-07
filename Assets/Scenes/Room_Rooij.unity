@@ -33884,7 +33884,7 @@ PrefabInstance:
     - target: {fileID: 7714166318911318047, guid: ad3e60854548beb45ae3347dd72faa60,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.116
+      value: 1.597
       objectReference: {fileID: 0}
     - target: {fileID: 7714166318911318047, guid: ad3e60854548beb45ae3347dd72faa60,
         type: 3}
@@ -33894,7 +33894,7 @@ PrefabInstance:
     - target: {fileID: 7714166318911318047, guid: ad3e60854548beb45ae3347dd72faa60,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.199
+      value: 2.368
       objectReference: {fileID: 0}
     - target: {fileID: 7714166318911318047, guid: ad3e60854548beb45ae3347dd72faa60,
         type: 3}
@@ -38741,6 +38741,11 @@ MonoBehaviour:
   subSteps: 2
   successSound: {fileID: 8300000, guid: 7d9fe5f9c70755b45ad0e073771b3114, type: 3}
   audioVolume: 10
+  correctItem: {fileID: 8300000, guid: c9698e004332f2740a7eaafc9fd8ed6b, type: 3}
+  wrongItem: {fileID: 8300000, guid: c712eaddd1fe5d94c98853360daef8a8, type: 3}
+  allItems: {fileID: 8300000, guid: 8ec1d9af2e4325c4ca0640a501765fb9, type: 3}
+  questionStep2: {fileID: 1705831341}
+  volume: 10
   requiredItems:
   - {fileID: 734260641}
   - {fileID: 734260653}
@@ -38751,10 +38756,6 @@ MonoBehaviour:
   - {fileID: 734260645}
   - {fileID: 734260636}
   button: {fileID: 434394293}
-  correctItem: {fileID: 8300000, guid: c9698e004332f2740a7eaafc9fd8ed6b, type: 3}
-  wrongItem: {fileID: 8300000, guid: c712eaddd1fe5d94c98853360daef8a8, type: 3}
-  allItems: {fileID: 8300000, guid: 8ec1d9af2e4325c4ca0640a501765fb9, type: 3}
-  questionStep2: {fileID: 1705831341}
 --- !u!65 &2026488399
 BoxCollider:
   m_ObjectHideFlags: 0
