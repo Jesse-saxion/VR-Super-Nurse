@@ -10,6 +10,7 @@ public class InformPatientDialog : StepHandler
     [SerializeField] public QuestionHandler questionStep2;
     [SerializeField] public QuestionHandler questionStep3;
     AudioSource audio;
+
     public float volume;
     public bool alreadyPlayedStep2 = false;
     public bool alreadyPlayedStep3 = false;
