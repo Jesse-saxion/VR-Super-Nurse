@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Step3ItemHandler : StepHandler
+public class Step2ItemHandler : StepHandler
 {
     [Space]
     [SerializeField]

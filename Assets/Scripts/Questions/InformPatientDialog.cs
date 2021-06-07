@@ -5,15 +5,15 @@ using UnityEngine;
 public class InformPatientDialog : StepHandler
 {
     [SerializeField] private AudioClip soundToPlayStep2;
-    [SerializeField] private AudioClip soundToPlayStep4;
-    [SerializeField] private AudioClip soundToPlayStep12;
+    [SerializeField] private AudioClip soundToPlayStep3;
+    [SerializeField] private AudioClip soundToPlayStep11;
     [SerializeField] public QuestionHandler questionStep2;
-    [SerializeField] public QuestionHandler questionStep4;
+    [SerializeField] public QuestionHandler questionStep3;
     AudioSource audio;
     public float volume;
     public bool alreadyPlayedStep2 = false;
-    public bool alreadyPlayedStep4 = false;
-    public bool alreadyPlayedStep12 = false;
+    public bool alreadyPlayedStep3 = false;
+    public bool alreadyPlayedStep11 = false;
 
     // Start is called before the first frame update
     void Start()
@@ -31,18 +31,18 @@ public class InformPatientDialog : StepHandler
             audio.PlayOneShot(soundToPlayStep2, volume);
             ActivateQuestion(questionStep2);
         }
-        else if (alreadyPlayedStep4==true)
+        else if (alreadyPlayedStep3==true)
         {
-            Debug.Log("Activating question 4.");
-            alreadyPlayedStep4 = false;
-            audio.PlayOneShot(soundToPlayStep4, volume);
-            ActivateQuestion(questionStep4);
+            Debug.Log("Activating question 3.");
+            alreadyPlayedStep3 = false;
+            audio.PlayOneShot(soundToPlayStep3, volume);
+            ActivateQuestion(questionStep3);
         }
-        else if (alreadyPlayedStep12 == true)
+        else if (alreadyPlayedStep11 == true)
         {
-            Debug.Log("Informing patient about step 12: Secure bandaid.");
-            alreadyPlayedStep12 = false;
-            audio.PlayOneShot(soundToPlayStep12, volume);
+            Debug.Log("Informing patient about step 11: Secure bandaid.");
+            alreadyPlayedStep11 = false;
+            audio.PlayOneShot(soundToPlayStep11, volume);
             CompleteSubStep();
         }
     }
