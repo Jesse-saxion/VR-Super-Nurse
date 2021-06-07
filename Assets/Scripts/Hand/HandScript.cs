@@ -61,6 +61,12 @@ public class HandScript : MonoBehaviour
 
    public void OnSanitizerActivated() {
        SetHandMaterial(soapMat);
+       float alpha = 1.0f;
+       float fadespeed = 1.0f;
+       while(alpha > 0.0f) {
+           alpha -= fadespeed * Time.deltaTime;
+        //    HandMeshRenderers[0].color = new Color();
+       }
    }
 
    private void SetHandMaterial(Material mat) {
