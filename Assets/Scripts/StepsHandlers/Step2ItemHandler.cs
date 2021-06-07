@@ -2,8 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Step3ItemHandler : StepHandler
+public class Step2ItemHandler : StepHandler
 {
+    [Header("Audio queues")]
+    [SerializeField] private AudioClip correctItem;
+    [SerializeField] private AudioClip wrongItem;
+    [SerializeField] private AudioClip allItems;
+    [SerializeField] public QuestionHandler questionStep2;
+    AudioSource audio;
+    public float volume;
     [Space]
     [SerializeField]
     List<GameObject> requiredItems;
@@ -11,25 +18,12 @@ public class Step3ItemHandler : StepHandler
 
     [SerializeField]
     GameObject button;
-    [SerializeField]
-    //public CheckList checkList;
-
-    [Header("Audio queues")]
-    //[SerializeField]
-    AudioClip correctItem;
-    [SerializeField]
-    AudioClip wrongItem;
-    [SerializeField]
-    AudioClip allItems;
-
-    //AudioSource audioSource;
-
     bool firstItem = true;
 
     public void Start()
     {
-        //audioSource = GetComponent<AudioSource>();
         addedItems = new List<GameObject>();
+        audio = GetComponent<AudioSource>();
     }
 
     void OnTriggerEnter(Collider other)
@@ -50,7 +44,7 @@ public class Step3ItemHandler : StepHandler
                 }
             }
 
-            //If didn't find the right place for the Item
+            //If it didn't find the right place for the Item
             WrongItem(other.gameObject);
         }
     }
@@ -62,10 +56,13 @@ public class Step3ItemHandler : StepHandler
         pSnapLocation.SnapToSetLocation();
         pSnapLocation.EnableInteractivity();
 
+        audio.PlayOneShot(correctItem, volume);
+
+        Debug.Log("Placed a correct item on the tray.");
+
         //For the first correct item, play an audio queue
         if (firstItem)
         {
-            //audioSource.PlayOneShot(correctItem);
             firstItem = false;
         }
 
@@ -77,17 +74,18 @@ public class Step3ItemHandler : StepHandler
 
     void WrongItem(GameObject pOther)
     {
-        //Snap to the old position (without setting the new one) if wrong Item
+        audio.PlayOneShot(wrongItem, volume);
+        Debug.Log("Placed a wrong item on the tray.");
         pOther.GetComponent<Item>().SnapToSetLocation();
-        //audioSource.PlayOneShot(wrongItem);
     }
 
     void AllItems()
     {
-        //audioSource.PlayOneShot(allItems);
-        //audioSource.Play(); //Success sound
+        audio.PlayOneShot(allItems, volume);
 
+        Debug.Log("Placed all correct items, moving onto next question step.");
+        CompleteSubStep();
         button.SetActive(true);
-        //checkList.UpdateCheckList("Select and place items");
+        ActivateQuestion(questionStep2);
     }
 }

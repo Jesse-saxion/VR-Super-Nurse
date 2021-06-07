@@ -1,25 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class HandWashingCheck : MonoBehaviour
 {
     private bool[] stepsComplete = new bool[6];
     public GameObject nextStep;
     public GameObject notfinish;
-
-    public Collider HandSanitizerCollider;
     public CheckList checkList;
     [SerializeField] private AudioClip success;
     AudioSource audio;
     public float Volume;
-    public bool audioPlayed = false;
+    public bool stepCompleted = false;
+    public XRSimpleInteractable xRSimpleInteractable;
 
     // Start is called before the first frame update
 
     private void Start()
     {
         audio = GetComponent<AudioSource>();
+        xRSimpleInteractable = GetComponentInChildren<XRSimpleInteractable>();
     }
 
     public void OnKnobRotated()
@@ -75,14 +76,16 @@ public class HandWashingCheck : MonoBehaviour
 
     public void OnHandSanitized() {
         Debug.Log("Hand cleaned using sanitizer, proceeding to next step of the procedure");
-        if(!audioPlayed) {
-            audio.PlayDelayed(0.5f);
-            audioPlayed = true;
-        }
-        
         GameObject.Find("TriggerStep1").GetComponent<AudioSource>().enabled = false;
         //nextStep.SetActive(true);
         //notfinish.SetActive(false);
         //checkList.UpdateCheckList("cleaned hands");
+
+        if (!stepCompleted)
+        {
+            audio.PlayOneShot(success, Volume);
+            stepCompleted = true;
+            xRSimpleInteractable.enabled = false;
+        }
     }
 }

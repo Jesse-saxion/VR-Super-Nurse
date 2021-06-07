@@ -10,11 +10,6 @@ public class StepsManager : MonoBehaviour
     void Start()
     {
         completedSteps = new List<StepHandler>();
-
-        foreach (StepHandler step in steps)
-        {
-            step.Instantiate();
-        }
     }
 
     public void StepCompleted(StepHandler step)

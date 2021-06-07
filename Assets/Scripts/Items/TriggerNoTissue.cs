@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TriggerNoTissue : MonoBehaviour
+public class TriggerNoTissue : StepHandler
 {
     [SerializeField] private AudioClip A41;
 
@@ -40,6 +40,7 @@ public class TriggerNoTissue : MonoBehaviour
             //else
             //{
             //}
+            CompleteSubStep();
             Tissue();
             tissue.SetActive(true);
             triggerBlowNose.SetActive(true);

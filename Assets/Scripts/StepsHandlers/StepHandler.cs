@@ -26,15 +26,11 @@ public class StepHandler : MonoBehaviour
         Instantiate();
     }
 
-    public void Instantiate()
+    protected void Instantiate()
     {
         if (subSteps >= 1)
         {
             subStepsList = new bool[subSteps];
-            for (int i = 0; i < subSteps; i++)
-            {
-                subStepsList[i] = false;
-            }
         }
 
         stepsManager = GameObject.FindWithTag("StepsManager").GetComponent<StepsManager>();

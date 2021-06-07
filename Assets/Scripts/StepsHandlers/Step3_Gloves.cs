@@ -2,27 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
-public class Step4_Hands : MonoBehaviour
+public class Step3_Gloves : StepHandler
 {
-    public CheckList checkList;
-    [SerializeField] private AudioClip success;
-    AudioSource audio;
-    public float Volume;
     public GameObject Tissue;
     public GameObject InformPatientScript;
+    [SerializeField] public QuestionHandler questionStep3;
 
     private void Start()
     {
-        audio = GetComponent<AudioSource>();
+
     }
 
     public void OnObjectClicked()
     {
+        Debug.Log("Activated gloves box");
         Tissue.GetComponent<TriggerNoTissue>().isGlove = true;
         InformPatientScript.GetComponent<InformPatientDialog>().alreadyPlayedStep3 = true;
-        checkList.UpdateCheckList("Put on medical gloves");
-        audio.PlayOneShot(success, Volume);
+        CompleteSubStep();
+        ActivateQuestion(questionStep3);
     }
-
 }
