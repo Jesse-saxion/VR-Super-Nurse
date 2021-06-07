@@ -28,7 +28,6 @@ public class Step3ItemHandler : StepHandler
 
     public void Start()
     {
-        Instantiate();
         //audioSource = GetComponent<AudioSource>();
         addedItems = new List<GameObject>();
     }

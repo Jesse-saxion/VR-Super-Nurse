@@ -15,6 +15,7 @@ public class HandScript : MonoBehaviour
    GameObject towelBox;
    GameObject glovesBox;
    GameObject MeasuringObj;
+   SkinnedMeshRenderer[] HandMeshRenderers;
 
 
    List<GameObject> MeasuringCheckPoints = new List<GameObject>();
@@ -22,6 +23,10 @@ public class HandScript : MonoBehaviour
    LineRenderer line;
    private int index = 0;
    // Start is called before the first frame update
+   void Start() {
+       HandMeshRenderers = gameObject.GetComponentsInChildren<SkinnedMeshRenderer>();
+       Debug.Log(HandMeshRenderers);
+   }
    void Awake()
    {
        soap = GameObject.FindGameObjectWithTag("soap");
@@ -34,23 +39,38 @@ public class HandScript : MonoBehaviour
    }
    public void OnSoapClicked()
    {
-        gameObject.GetComponent<SkinnedMeshRenderer>().material = soapMat;
+        SetHandMaterial(soapMat);
         bubble.SetActive(true);
        
    }
    public void OnHandTowelPressed()
    {
-       gameObject.GetComponent<SkinnedMeshRenderer>().material = GloveMaterial;
+       SetHandMaterial(GloveMaterial);
        bubble.SetActive(false);
    }
    public void OnGlovesBoxClicked()
    {
-       gameObject.GetComponent<SkinnedMeshRenderer>().material = glovesMat;
+       SetHandMaterial(glovesMat);
    }
    public void OnHandOnWater()
    {
         Debug.Log("Applying water texture");
-        gameObject.GetComponent<SkinnedMeshRenderer>().material =  waterMat;
+        SetHandMaterial(waterMat);
         bubble.SetActive(false);
+   }
+
+   public void OnSanitizerActivated() {
+       SetHandMaterial(soapMat);
+       float alpha = 1.0f;
+       float fadespeed = 1.0f;
+       while(alpha > 0.0f) {
+           alpha -= fadespeed * Time.deltaTime;
+        //    HandMeshRenderers[0].color = new Color();
+       }
+   }
+
+   private void SetHandMaterial(Material mat) {
+       HandMeshRenderers[0].material = mat;
+       HandMeshRenderers[1].material = mat;
    }
 }

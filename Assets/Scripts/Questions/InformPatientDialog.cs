@@ -33,6 +33,8 @@ public class InformPatientDialog : MonoBehaviour
 
     public void ClickonPatient()
     {
+        Debug.Log("Touch the patient");
+
         if (!alreadyPlayedStep1)
         {
             Popup[0].SetActive(true);

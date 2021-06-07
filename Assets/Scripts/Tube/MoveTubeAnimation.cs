@@ -14,12 +14,13 @@ public class MoveTubeAnimation : MonoBehaviour
     [Tooltip("How much the hand movement is going to move the tube")]
     public float movingAmplification = 3f;
     [Range(0f, 1f)]
-    float time;
+    public float time;
 
     private float oldTime;
     float positionDiffirence;
     private bool moving;
     private float startPositionZ;
+    public bool tubeInserted;
 
     void Start()
     {
@@ -38,6 +39,7 @@ public class MoveTubeAnimation : MonoBehaviour
             time = oldTime + positionDiffirence * movingAmplification;
             animator.SetFloat("Time", time);
 
+            tubeInserted = false;
             //set time to 0 or 1 to avoid overkill
             if (time < 0)
             {
@@ -46,6 +48,7 @@ public class MoveTubeAnimation : MonoBehaviour
             if (time > 1)
             {
                 time = 1;
+                tubeInserted = true;
             }
         }
 
@@ -66,6 +69,7 @@ public class MoveTubeAnimation : MonoBehaviour
 
     public void StartMoving()
     {
+        Debug.Log("Tube is being grabbed");
         grabbedHand = GetComponent<XRSimpleInteractable>().hoveringInteractors[0];
         Debug.Log(grabbedHand);
         //if (leftHand.GetGrabStarting() != GrabTypes.None)

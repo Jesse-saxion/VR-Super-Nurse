@@ -6,6 +6,7 @@ public class HeadInteractions : MonoBehaviour
 {
     public GameObject tube;
     public GameObject head;
+    public StepHandler Step8Handler;
     PlayReactions patientReactions;
     bool tilted;
 
@@ -44,6 +45,7 @@ public class HeadInteractions : MonoBehaviour
         {
             head.transform.Rotate(new Vector3(15f, 0f, 0f), Space.Self);
             tilted = true;
+            Step8Handler.CompleteSubStep(1);
         }
         else
         {
