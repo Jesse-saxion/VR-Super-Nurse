@@ -21,7 +21,7 @@ public class HandScript : MonoBehaviour
    List<GameObject> MeasuringCheckPoints = new List<GameObject>();
    GameObject CanvasPart;
    LineRenderer line;
-   private int index = 0;
+   // private int index = 0;
    // Start is called before the first frame update
    void Start() {
        HandMeshRenderers = gameObject.GetComponentsInChildren<SkinnedMeshRenderer>();

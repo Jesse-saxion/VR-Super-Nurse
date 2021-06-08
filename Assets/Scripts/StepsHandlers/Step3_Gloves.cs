@@ -18,7 +18,7 @@ public class Step3_Gloves : StepHandler
         Debug.Log("Activated gloves box");
         Tissue.GetComponent<TriggerNoTissue>().isGlove = true;
         InformPatientScript.GetComponent<InformPatientDialog>().alreadyPlayedStep3 = true;
-        CompleteSubStep();
+        CompleteSubStep(1);
         ActivateQuestion(questionStep3);
     }
 }

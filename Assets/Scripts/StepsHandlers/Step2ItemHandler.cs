@@ -18,8 +18,7 @@ public class Step2ItemHandler : StepHandler
 
     [SerializeField] public Animator tvAnimator;
 
-    [SerializeField]
-    GameObject button;
+    // [SerializeField] GameObject button;
     bool firstItem = true;
 
     public void Start()
@@ -83,12 +82,15 @@ public class Step2ItemHandler : StepHandler
 
     void AllItems()
     {
-        audio.PlayOneShot(allItems, volume);
-
         Debug.Log("Placed all correct items, moving onto next question step.");
-        CompleteSubStep();
-        button.SetActive(true);
+        audio.PlayOneShot(allItems, volume);
+        
+        // button.SetActive(true);
+        Debug.Log("Lowering the TV mount.");
         tvAnimator.SetTrigger("QuestionAsked");
+        CompleteSubStep(1);
+        Debug.Log("Completed first substep of Step 2.");
         ActivateQuestion(questionStep2);
+        Debug.Log("Activated Question2.1U.");
     }
 }

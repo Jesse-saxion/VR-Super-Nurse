@@ -14,7 +14,7 @@ public class ApplyNoseBandage : MonoBehaviour
     }
     //When clicked on and collider overlaps
     void OnTriggerEnter(Collider other) {
-        bool triggerValue;
+        // bool triggerValue;
         Debug.Log("NoseBandage collided");
         Debug.Log(inputDevices);
         //&& inputDevices[0].TryGetFeatureValue(UnityEngine.XR.CommonUsages.triggerButton, out triggerValue) && triggerValue

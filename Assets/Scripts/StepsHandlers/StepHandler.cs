@@ -31,6 +31,7 @@ public class StepHandler : MonoBehaviour
         if (subSteps >= 1)
         {
             subStepsList = new bool[subSteps];
+            Debug.Log("Instantiated " + subSteps + "substeps.");
         }
 
         stepsManager = GameObject.FindWithTag("StepsManager").GetComponent<StepsManager>();
@@ -41,7 +42,7 @@ public class StepHandler : MonoBehaviour
     public void CompleteStep()
     {
         completed = true;
-        audioSource.Play();
+        // audioSource.Play();
         stepsManager.StepCompleted(this);
         checkList.UpdateCheckList(stepName);
     }
@@ -50,6 +51,7 @@ public class StepHandler : MonoBehaviour
     {
         if (subStepsList == null)
         {
+            Debug.Log("Substep list is null");
             CompleteStep();
         }
 
@@ -66,6 +68,7 @@ public class StepHandler : MonoBehaviour
         }
 
         //Called only when all the substeps are TRUE
+        Debug.Log("All substeps are complete, completing step.");
         CompleteStep(); 
     }
 

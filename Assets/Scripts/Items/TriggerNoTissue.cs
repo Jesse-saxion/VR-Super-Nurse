@@ -40,7 +40,9 @@ public class TriggerNoTissue : StepHandler
             //else
             //{
             //}
-            CompleteSubStep();
+            Debug.Log("Completed Subtep 1 of Step 3");
+            CompleteSubStep(1); // Or 2?
+            Debug.Log("Activated tissue box");
             Tissue();
             tissue.SetActive(true);
             triggerBlowNose.SetActive(true);

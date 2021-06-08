@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Step6Handler : StepHandler
+public class Step5Handler : StepHandler
 {
  
    public Material WaterMaterial;
