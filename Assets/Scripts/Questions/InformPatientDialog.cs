@@ -10,6 +10,7 @@ public class InformPatientDialog : StepHandler
     [SerializeField] public QuestionHandler questionStep2;
     [SerializeField] public QuestionHandler questionStep3;
     AudioSource audio;
+    [SerializeField] public Animator tvAnimator;
 
     public float volume;
     public bool alreadyPlayedStep2 = false;
@@ -30,6 +31,7 @@ public class InformPatientDialog : StepHandler
             Debug.Log("Activating question 2.");
             alreadyPlayedStep2 = true;
             audio.PlayOneShot(soundToPlayStep2, volume);
+            tvAnimator.SetTrigger("QuestionAsked");
             ActivateQuestion(questionStep2);
         }
         else if (alreadyPlayedStep3==true)
@@ -37,6 +39,7 @@ public class InformPatientDialog : StepHandler
             Debug.Log("Activating question 3.");
             alreadyPlayedStep3 = false;
             audio.PlayOneShot(soundToPlayStep3, volume);
+            tvAnimator.SetTrigger("QuestionAsked");
             ActivateQuestion(questionStep3);
         }
         else if (alreadyPlayedStep11 == true)

@@ -34,7 +34,7 @@ public class StepHandler : MonoBehaviour
         }
 
         stepsManager = GameObject.FindWithTag("StepsManager").GetComponent<StepsManager>();
-        checkList = GameObject.FindWithTag("CheckList").GetComponent<CheckList>();
+        // checkList = GameObject.FindWithTag("CheckList").GetComponent<CheckList>(); unused for now
         SetAudio();
     }
 

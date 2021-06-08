@@ -8,6 +8,7 @@ public class PlaceMark : StepHandler
     public Material markedTube;
     public GameObject ropeMesh;
     [SerializeField] public QuestionHandler questionStep5;
+    [SerializeField] public Animator tvAnimator;
 
     public void DrawMark()
     {
@@ -35,6 +36,7 @@ public class PlaceMark : StepHandler
 
         ropeMesh.GetComponent<MeshRenderer>().material = markedTube;
         CompleteSubStep();
+        tvAnimator.SetTrigger("QuestionAsked");
         ActivateQuestion(questionStep5);
     }
 }

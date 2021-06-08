@@ -69,4 +69,13 @@ public class PhysicsButton : MonoBehaviour
         onReleased.Invoke();
         Debug.Log("Released");
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("Button trigger entered");
+        if(other.tag=="hand")
+        {
+            Pressed();
+        }
+    }
 }

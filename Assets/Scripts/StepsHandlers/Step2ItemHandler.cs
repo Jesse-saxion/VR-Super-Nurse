@@ -16,6 +16,8 @@ public class Step2ItemHandler : StepHandler
     List<GameObject> requiredItems;
     List<GameObject> addedItems;
 
+    [SerializeField] public Animator tvAnimator;
+
     [SerializeField]
     GameObject button;
     bool firstItem = true;
@@ -86,6 +88,7 @@ public class Step2ItemHandler : StepHandler
         Debug.Log("Placed all correct items, moving onto next question step.");
         CompleteSubStep();
         button.SetActive(true);
+        tvAnimator.SetTrigger("QuestionAsked");
         ActivateQuestion(questionStep2);
     }
 }

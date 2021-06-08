@@ -13,8 +13,8 @@ public class QuestionHandler : MonoBehaviour
     public AudioClip wrongAnswer;
     public float audioVolume = 10f;
     [Header("Animation")]
-    [SerializeField]
-    public Animator nurseAnimator;
+    [SerializeField] public Animator nurseAnimator;
+    [SerializeField] public Animator tvAnimator;
 
     public void CheckAnswer(int index)
     {
@@ -40,6 +40,8 @@ public class QuestionHandler : MonoBehaviour
         // Play the Yes animation 
         nurseAnimator.SetTrigger("Yes");
         Debug.Log("Yes Animation Plays");
+
+        tvAnimator.SetTrigger("QuestionAnsweredCorrect");
         
     }
 
@@ -67,6 +69,7 @@ public class QuestionHandler : MonoBehaviour
     void Start()
     {
         SetAudio();
+        tvAnimator.SetTrigger("QuestionAsked");
     }
 
     // Update is called once per frame

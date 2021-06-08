@@ -1,0 +1,903 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6477899293976364838
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6477899293976364839}
+  - component: {fileID: 6477899293976364834}
+  - component: {fileID: 6477899293976364837}
+  - component: {fileID: 6477899293976364836}
+  m_Layer: 5
+  m_Name: QuestionCanvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6477899293976364839
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6477899293976364838}
+  m_LocalRotation: {x: 0, y: 0.97236997, z: -0.23344536, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.0061}
+  m_LocalScale: {x: 0.002, y: 0.002, z: 1}
+  m_Children:
+  - {fileID: 6477899294067345980}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 27, y: 180, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0, y: 0.0009}
+  m_SizeDelta: {x: 143.5, y: 112}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!223 &6477899293976364834
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6477899293976364838}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &6477899293976364837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6477899293976364838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 1
+--- !u!114 &6477899293976364836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6477899293976364838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!1 &6477899294067345983
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6477899294067345980}
+  m_Layer: 5
+  m_Name: Questions
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6477899294067345980
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6477899294067345983}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1695967835708292735}
+  - {fileID: 1695967836424674528}
+  - {fileID: 1695967836276057725}
+  - {fileID: 1695967835583577645}
+  m_Father: {fileID: 6477899293976364839}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &420718037941250553
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6477899294067345980}
+    m_Modifications:
+    - target: {fileID: 671041008054092333, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_text
+      value: Goedendag meneer Jansen, Hoe voelt u zich vandaag?
+      objectReference: {fileID: 0}
+    - target: {fileID: 671041008054092333, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 6.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 671041008054092333, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 6.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2698063790067311797, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_Name
+      value: QuestionQ1.1U
+      objectReference: {fileID: 0}
+    - target: {fileID: 2698063790067311797, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3711844138152326210, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: answerList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3711844138152326210, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: answerList.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6401692118119881355, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_text
+      value: Wat wil je zeggen tegen meneer Jansen als je bij hem staat?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8195788751955948348, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: stepName
+      value: Disinfect Hands
+      objectReference: {fileID: 0}
+    - target: {fileID: 8195788751955948348, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: successSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 7d9fe5f9c70755b45ad0e073771b3114, type: 3}
+    - target: {fileID: 8683958670578152206, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_text
+      value: Hallo meneer Jansen, vandaag gaan we een neus-maagsonde bij u inbrengen.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683958670578152206, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 6.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683958670578152206, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 6.8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2aae3c8bd43ef0144a632e5f00d7ac61, type: 3}
+--- !u!224 &1695967835708292735 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+    type: 3}
+  m_PrefabInstance: {fileID: 420718037941250553}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &420718038065965483
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6477899294067345980}
+    m_Modifications:
+    - target: {fileID: 671041008054092333, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_text
+      value: Zodat de kans het grootst is dat de sonde in de maag ligt.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2698063790067311797, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_Name
+      value: QuestionQ5.1T
+      objectReference: {fileID: 0}
+    - target: {fileID: 2698063790067311797, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3711844138152326210, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: nurseAnimator
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3711844138152326210, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: answerList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3711844138152326210, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: answerList.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6401692118119881355, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_text
+      value: Waarom is het belangrijk om de sonde correct op te meten?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6774261084538903294, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_Name
+      value: CorrectAnswerB
+      objectReference: {fileID: 0}
+    - target: {fileID: 8195788751955948348, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: stepName
+      value: Prepare Tube
+      objectReference: {fileID: 0}
+    - target: {fileID: 8195788751955948348, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: subSteps
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8195788751955948348, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: successSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 7d9fe5f9c70755b45ad0e073771b3114, type: 3}
+    - target: {fileID: 8321195029631319440, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_Name
+      value: WrongAnswerA
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683958670578152206, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_text
+      value: Wanneer de sonde te kort is, zal de patient zich eerder verslikken.
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2aae3c8bd43ef0144a632e5f00d7ac61, type: 3}
+--- !u!224 &1695967835583577645 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+    type: 3}
+  m_PrefabInstance: {fileID: 420718038065965483}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &420718038298626918
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6477899294067345980}
+    m_Modifications:
+    - target: {fileID: 671041008054092333, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_text
+      value: Als u zich tijdens het inbrengen niet comfortabel voelt, u even uw hand
+        opsteekt zodat we even stoppen.
+      objectReference: {fileID: 0}
+    - target: {fileID: 671041008054092333, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 5.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 671041008054092333, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 5.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2698063790067311797, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_Name
+      value: QuestionQ2.1U
+      objectReference: {fileID: 0}
+    - target: {fileID: 2698063790067311797, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3711844138152326210, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: nurseAnimator
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3711844138152326210, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: answerList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3711844138152326210, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: answerList.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6401692118119881355, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_text
+      value: 'Voordat we beginnen wil ik u informeren dat:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6774261084538903294, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_Name
+      value: CorrectAnswerB
+      objectReference: {fileID: 0}
+    - target: {fileID: 8195788751955948348, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: stepName
+      value: Tools on Tray
+      objectReference: {fileID: 0}
+    - target: {fileID: 8195788751955948348, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: successSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 7d9fe5f9c70755b45ad0e073771b3114, type: 3}
+    - target: {fileID: 8321195029631319440, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_Name
+      value: WrongAnswerA
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683958670578152206, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_text
+      value: Het inbrengen mogelijk een beetje pijn gaat doen.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683958670578152206, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 6.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683958670578152206, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 6.8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2aae3c8bd43ef0144a632e5f00d7ac61, type: 3}
+--- !u!224 &1695967836424674528 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+    type: 3}
+  m_PrefabInstance: {fileID: 420718038298626918}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &420718038448337403
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6477899294067345980}
+    m_Modifications:
+    - target: {fileID: 671041008054092333, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_text
+      value: Een zakdoek geven om uw neus mee te snuiten.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2698063790067311797, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_Name
+      value: QuestionQ3.1U
+      objectReference: {fileID: 0}
+    - target: {fileID: 2698063790067311797, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3711844138152326210, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: nurseAnimator
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3711844138152326210, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: answerList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3711844138152326210, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: answerList.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6401692118119881355, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_text
+      value: Het is belangrijk dat de weg van uw neus naar uw maag zo vrij mogelijk
+        is, daarom ga ik je...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6401692118119881355, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 6.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6401692118119881355, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 6.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6774261084538903294, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_Name
+      value: CorrectAnswerB
+      objectReference: {fileID: 0}
+    - target: {fileID: 8195788751955948348, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: stepName
+      value: Put On Gloves
+      objectReference: {fileID: 0}
+    - target: {fileID: 8195788751955948348, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: successSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 7d9fe5f9c70755b45ad0e073771b3114, type: 3}
+    - target: {fileID: 8321195029631319440, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_Name
+      value: WrongAnswerA
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683958670578152206, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+        type: 3}
+      propertyPath: m_text
+      value: Eerst even een glas water geven om uw slokdarm mee te bevochtigen.
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2aae3c8bd43ef0144a632e5f00d7ac61, type: 3}
+--- !u!224 &1695967836276057725 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1324050668490004358, guid: 2aae3c8bd43ef0144a632e5f00d7ac61,
+    type: 3}
+  m_PrefabInstance: {fileID: 420718038448337403}
+  m_PrefabAsset: {fileID: 0}
