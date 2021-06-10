@@ -47,7 +47,7 @@ public class InformPatientDialog : StepHandler
             Debug.Log("Informing patient about step 11: Secure bandaid.");
             alreadyPlayedStep11 = false;
             audio.PlayOneShot(soundToPlayStep11, volume);
-            CompleteSubStep();
+            // CompleteSubStep();
         }
     }
 }

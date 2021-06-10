@@ -4,19 +4,18 @@ using UnityEngine;
 
 public class StepHandler : MonoBehaviour
 {
+    public GameObject target;
+
     [Header("Step Handler")]
     public string stepName;
     public bool completed;
     public bool active = true;
-    [Header("Substeps")]
-    public int subSteps;
-    //[Header("Questions")]
-    //public List<GameObject> questionsList;
+
     [Header("Audio")]
     public AudioClip successSound;
     public float audioVolume = 10f;
 
-    private bool[] subStepsList;
+    public List<SubStep> subSteps;
     private StepsManager stepsManager;
     private AudioSource audioSource;
     private CheckList checkList;
@@ -28,12 +27,6 @@ public class StepHandler : MonoBehaviour
 
     protected void Instantiate()
     {
-        if (subSteps >= 1)
-        {
-            subStepsList = new bool[subSteps];
-            Debug.Log("Instantiated " + subSteps + "substeps.");
-        }
-
         stepsManager = GameObject.FindWithTag("StepsManager").GetComponent<StepsManager>();
         // checkList = GameObject.FindWithTag("CheckList").GetComponent<CheckList>(); unused for now
         SetAudio();
@@ -45,23 +38,29 @@ public class StepHandler : MonoBehaviour
         // audioSource.Play();
         stepsManager.StepCompleted(this);
         checkList.UpdateCheckList(stepName);
+        Debug.Log("Step completed! (Step)");
     }
 
     public void CompleteSubStep(int index)
     {
-        if (subStepsList == null)
+        if (subSteps == null)
         {
-            Debug.Log("Substep list is null");
-            CompleteStep();
+            Debug.Log("subSteps is null!");
         }
 
-        subStepsList[index - 1] = true;
+        if (subSteps.Count > 0)
+        {
+            Debug.Log("subSteps count:" + subSteps);
+            CompleteStep();
+        }
+        
+        subSteps[index].isComplete = true;
         audioSource.Play();
 
         //Check if all the substeps are completed, if so complete the step
-        for (int i = 0; i < subSteps; i++)
+        for (int i = 0; i < subSteps.Count; i++)
         {
-            if (!subStepsList[i])
+            if (!subSteps[i].isComplete)
             {
                 return;
             }
@@ -70,20 +69,6 @@ public class StepHandler : MonoBehaviour
         //Called only when all the substeps are TRUE
         Debug.Log("All substeps are complete, completing step.");
         CompleteStep(); 
-    }
-
-    // Method overloading so we don't have to give questions a substep number
-    public void CompleteSubStep()
-    {
-        for (int i = 0; i < subSteps; i++)
-        {
-            if (!subStepsList[i])
-            {
-                subStepsList[i] = true;
-                return;
-            }
-        }
-        CompleteStep();
     }
 
     public void ActivateQuestion(QuestionHandler question)
@@ -117,10 +102,10 @@ public class StepHandler : MonoBehaviour
 
     private void SetAudio()
     {
-        TryGetComponent<AudioSource>(out audioSource);
+        target.TryGetComponent<AudioSource>(out audioSource);
         if (audioSource == null)
         {
-            audioSource = gameObject.AddComponent<AudioSource>();
+            audioSource = target.AddComponent<AudioSource>();
         }
 
         audioSource.clip = successSound;
@@ -129,6 +114,6 @@ public class StepHandler : MonoBehaviour
 
     public bool CheckIfSubstepComplete(int index)
     {
-        return subStepsList[index - 1];
+        return subSteps[index - 1].isComplete;
     }
 }

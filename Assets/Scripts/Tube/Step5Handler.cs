@@ -4,8 +4,14 @@ using UnityEngine;
 
 public class Step5Handler : StepHandler
 {
- 
-   public Material WaterMaterial;
+    public int point;
+    public Material markedTube;
+    public GameObject ropeMesh;
+    [SerializeField] public QuestionHandler questionStep5;
+    [SerializeField] public Animator tvAnimator;
+
+
+    public Material WaterMaterial;
     public void TubeMarked() {
         Debug.Log("Tube has been marked");
         CompleteSubStep(1);
@@ -23,5 +29,35 @@ public class Step5Handler : StepHandler
 
     void SnapTube(GameObject tube) {
         this.GetComponentInChildren<MeshRenderer>().material = WaterMaterial;
+    }
+
+    public void DrawMark()
+    {
+        switch (point)
+        {
+            case 0:
+                markedTube.mainTextureOffset = new Vector2(0, -0.225f);
+                break;
+            case 1:
+                markedTube.mainTextureOffset = new Vector2(0, -0.1f);
+                break;
+            case 2:
+                markedTube.mainTextureOffset = new Vector2(0, -0.02f);
+                break;
+            case 3:
+                markedTube.mainTextureOffset = new Vector2(0, 0.125f);
+                break;
+            case 4:
+                markedTube.mainTextureOffset = new Vector2(0, 0.275f);
+                break;
+            default:
+                markedTube.mainTextureOffset = new Vector2(0, 0.125f);
+                break;
+        }
+
+        ropeMesh.GetComponent<MeshRenderer>().material = markedTube;
+        // CompleteSubStep();
+        tvAnimator.SetTrigger("QuestionAsked");
+        ActivateQuestion(questionStep5);
     }
 }

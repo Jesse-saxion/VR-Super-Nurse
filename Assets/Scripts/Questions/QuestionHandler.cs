@@ -35,7 +35,7 @@ public class QuestionHandler : MonoBehaviour
         setQuestionCanvasInactive();
 
         // Play no audio because the StepHandler already does by completing the step.
-        stepHandler.CompleteSubStep();
+        // stepHandler.CompleteSubStep();
 
         // Play the Yes animation 
         nurseAnimator.SetTrigger("Yes");

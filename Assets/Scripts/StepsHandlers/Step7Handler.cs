@@ -13,6 +13,7 @@ public class Step7Handler : StepHandler
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("Instantiated Step7Handler");
         Instantiate();
 
         TubeAnimation = tube.GetComponent<MoveTubeAnimation>();

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TriggerBlowNose : StepHandler
+public class TriggerBlowNose : SubStep
 {
     [SerializeField] private AudioClip A55;
     [SerializeField] private AudioClip A61;
@@ -19,7 +19,10 @@ public class TriggerBlowNose : StepHandler
     {
         audio = GetComponent<AudioSource>();
     }
+    public void BlowNose()
+    {
 
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "tissue")
@@ -32,8 +35,9 @@ public class TriggerBlowNose : StepHandler
                 Invoke("PlaySoundEndStep5", 10f);
                 isPlayed = true;
                 Step4isdone = true;
-                Debug.Log("Completed Subtep 2 of Step 3");
-                CompleteSubStep(2);
+                PlaySoundEndStep4();
+                Debug.Log("Completed Subtep 2 of Step 4");
+                CompleteSubStep();
             }           
         }
         if (Step4isdone == true)
@@ -51,7 +55,6 @@ public class TriggerBlowNose : StepHandler
         audio.PlayOneShot(A55);
         checkList.UpdateCheckList("Blow the patient's nose");
         Invoke("PlaySoundA61", 1f);
-        // GameObject.Find("Patient").GetComponent<InformPatientDialog>(). areadyPlayedStep4 = true;
     }
 
     void PlaySoundA61()

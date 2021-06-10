@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TriggerNoTissue : StepHandler
+public class TriggerNoTissue : SubStep
 {
     [SerializeField] private AudioClip A41;
 
@@ -41,7 +41,7 @@ public class TriggerNoTissue : StepHandler
             //{
             //}
             Debug.Log("Completed Subtep 1 of Step 3");
-            CompleteSubStep(1); // Or 2?
+            CompleteSubStep(); // Or 2?
             Debug.Log("Activated tissue box");
             Tissue();
             tissue.SetActive(true);

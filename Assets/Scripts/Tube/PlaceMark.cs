@@ -35,7 +35,7 @@ public class PlaceMark : StepHandler
         }
 
         ropeMesh.GetComponent<MeshRenderer>().material = markedTube;
-        CompleteSubStep();
+        // CompleteSubStep();
         tvAnimator.SetTrigger("QuestionAsked");
         ActivateQuestion(questionStep5);
     }

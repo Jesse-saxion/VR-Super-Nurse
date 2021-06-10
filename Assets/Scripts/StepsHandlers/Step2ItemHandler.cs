@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Step2ItemHandler : StepHandler
+public class Step2ItemHandler : SubStep
 {
     [Header("Audio queues")]
     [SerializeField] private AudioClip correctItem;
@@ -84,13 +84,14 @@ public class Step2ItemHandler : StepHandler
     {
         Debug.Log("Placed all correct items, moving onto next question step.");
         audio.PlayOneShot(allItems, volume);
-        
-        // button.SetActive(true);
-        Debug.Log("Lowering the TV mount.");
-        tvAnimator.SetTrigger("QuestionAsked");
-        CompleteSubStep(1);
+
+        CompleteSubStep();
         Debug.Log("Completed first substep of Step 2.");
+
         ActivateQuestion(questionStep2);
         Debug.Log("Activated Question2.1U.");
+
+        Debug.Log("Lowering the TV mount.");
+        tvAnimator.SetTrigger("QuestionAsked");
     }
 }

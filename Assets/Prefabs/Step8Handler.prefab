@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6942464902100510608}
-  - component: {fileID: 6942464902100510609}
   m_Layer: 0
   m_Name: Step8Handler
   m_TagString: Untagged
@@ -31,24 +30,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6942464902100510609
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6942464902100510611}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9523b4aeb542cf3479ae05d2eb12ca32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stepName: Insert tube
-  completed: 0
-  active: 1
-  subSteps: 2
-  successSound: {fileID: 8300000, guid: 7d9fe5f9c70755b45ad0e073771b3114, type: 3}
-  audioVolume: 10
-  Nose: {fileID: 0}
-  NoseBandage: {fileID: 0}
-  tube: {fileID: 0}
