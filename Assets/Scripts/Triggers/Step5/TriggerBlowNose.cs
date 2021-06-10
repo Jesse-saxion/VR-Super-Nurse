@@ -19,10 +19,7 @@ public class TriggerBlowNose : SubStep
     {
         audio = GetComponent<AudioSource>();
     }
-    public void BlowNose()
-    {
 
-    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "tissue")

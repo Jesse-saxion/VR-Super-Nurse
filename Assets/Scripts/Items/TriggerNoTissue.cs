@@ -41,11 +41,11 @@ public class TriggerNoTissue : SubStep
             //{
             //}
             Debug.Log("Completed Subtep 1 of Step 3");
-            CompleteSubStep(); // Or 2?
-            Debug.Log("Activated tissue box");
             Tissue();
             tissue.SetActive(true);
             triggerBlowNose.SetActive(true);
+            CompleteSubStep();
+            Debug.Log("Activated tissue box");
         }
     }
 
