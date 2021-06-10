@@ -12,16 +12,20 @@ public class Step5Handler : StepHandler
     }
 
     //This method is called in Tube's children with colliders (it didn't work otherwise)
-    public void CollisionDetected(Collision other)
+    public void OnTriggerEnter(Collider other)
     {    
+        Debug.Log("Collided");
         //When colliding with the snap zone, snap (doesn't apply for Step3 Handler collider)
-        if (other.gameObject.name == "KidneyDish" && CheckIfSubstepComplete(1))
+        if (other.gameObject.tag == "TubeWater" 
+        // && CheckIfSubstepComplete(1)
+        )
         {
-            SnapTube(other.gameObject.GetComponent<GameObject>());
+            Debug.Log("Tube collided with kidney dish. Changing materials...");
+            WaterTube();
         }
     }
 
-    void SnapTube(GameObject tube) {
-        this.GetComponentInChildren<MeshRenderer>().material = WaterMaterial;
+    void WaterTube() {
+        this.GetComponentInChildren<MeshRenderer>().materials[0] = WaterMaterial;
     }
 }
