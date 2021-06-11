@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainRoom_Jesse.unity
+    path: Assets/Scenes/Optimization Iterations/MainRoom_Jesse.unity
     guid: 7e4cfdc78fddc5e43b6b569b6a64a7c7
-  - enabled: 1
+  - enabled: 0
+    path: Assets/Scenes/Optimization Iterations/MainRoom_Empty.unity
+    guid: e8571678c763ed746aa45240693ebf62
+  - enabled: 0
     path: Assets/Scenes/MainRoom.unity
     guid: 6bda21d9bd74c52479eeaa445d3b8b57
   m_configObjects:
