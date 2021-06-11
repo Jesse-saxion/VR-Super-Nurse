@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Step3_Gloves : StepHandler
+public class Step3_Gloves : SubStep
 {
     [SerializeField] private AudioClip gloveSound;
     public GameObject Tissue;
@@ -22,7 +22,7 @@ public class Step3_Gloves : StepHandler
         Tissue.GetComponent<TriggerNoTissue>().isGlove = true;
         audio.PlayOneShot(gloveSound, volume);
         InformPatientScript.GetComponent<InformPatientDialog>().alreadyPlayedStep3 = true;
-        CompleteSubStep(1);
+        CompleteSubStep();
         ActivateQuestion(questionStep3);
     }
 }

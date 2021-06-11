@@ -7908,7 +7908,7 @@ MonoBehaviour:
   completed: 0
   active: 1
   successSound: {fileID: 8300000, guid: 7d9fe5f9c70755b45ad0e073771b3114, type: 3}
-  audioVolume: 10
+  audioVolume: 3
   subSteps: []
 --- !u!114 &133561580
 MonoBehaviour:
@@ -7927,14 +7927,14 @@ MonoBehaviour:
   completed: 0
   active: 1
   successSound: {fileID: 8300000, guid: 7d9fe5f9c70755b45ad0e073771b3114, type: 3}
-  audioVolume: 10
+  audioVolume: 3
   subSteps: []
   soundToPlayStep2: {fileID: 8300000, guid: 0c8e47779890eda4ea4849ad202e11b3, type: 3}
   soundToPlayStep3: {fileID: 8300000, guid: 0c8e47779890eda4ea4849ad202e11b3, type: 3}
   soundToPlayStep11: {fileID: 8300000, guid: 0c8e47779890eda4ea4849ad202e11b3, type: 3}
-  questionStep2: {fileID: 9160796629134229590}
-  questionStep3: {fileID: 0}
-  tvAnimator: {fileID: 0}
+  questionStep2: {fileID: 9160796629417605835}
+  questionStep3: {fileID: 9160796629134229590}
+  tvAnimator: {fileID: 1735843749157811205}
   volume: 3
   alreadyPlayedStep2: 0
   alreadyPlayedStep3: 0
@@ -17994,12 +17994,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  stepName: Put On Gloves
-  completed: 0
-  active: 1
-  successSound: {fileID: 8300000, guid: 7d9fe5f9c70755b45ad0e073771b3114, type: 3}
-  audioVolume: 3
-  subSteps: []
+  isComplete: 0
   gloveSound: {fileID: 8300000, guid: acc6d96e4aca42141875bd77692f8c25, type: 3}
   Tissue: {fileID: 734260641}
   InformPatientScript: {fileID: 133561577}
@@ -18022,7 +18017,7 @@ MonoBehaviour:
   completed: 0
   active: 1
   successSound: {fileID: 8300000, guid: 7d9fe5f9c70755b45ad0e073771b3114, type: 3}
-  audioVolume: 10
+  audioVolume: 3
   subSteps: []
 --- !u!114 &734260656
 MonoBehaviour:
@@ -18084,7 +18079,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isReadyToUnpack: 0
   TubeMeasurement: {fileID: 1392708982}
-  NasogastricTubing: {fileID: 0}
+  NasogastricTubing: {fileID: 734260650}
 --- !u!1 &735217319
 GameObject:
   m_ObjectHideFlags: 0
@@ -30068,17 +30063,17 @@ PrefabInstance:
     - target: {fileID: 7638039987517176174, guid: c55d60d0221a1ab459df6e9059693b0a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.683
+      value: 3.005
       objectReference: {fileID: 0}
     - target: {fileID: 7638039987517176174, guid: c55d60d0221a1ab459df6e9059693b0a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.588
+      value: 0.42
       objectReference: {fileID: 0}
     - target: {fileID: 7638039987517176174, guid: c55d60d0221a1ab459df6e9059693b0a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.588
+      value: 2.191
       objectReference: {fileID: 0}
     - target: {fileID: 7638039987517176174, guid: c55d60d0221a1ab459df6e9059693b0a,
         type: 3}
@@ -34733,6 +34728,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2164670251285106573, guid: cf6672e7f84d0a04daafefe05d25321d,
         type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2164670251285106573, guid: cf6672e7f84d0a04daafefe05d25321d,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -35008,6 +35008,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6666602612097853250, guid: cf6672e7f84d0a04daafefe05d25321d,
         type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6666602612097853250, guid: cf6672e7f84d0a04daafefe05d25321d,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -35025,6 +35030,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7250119466978073237, guid: cf6672e7f84d0a04daafefe05d25321d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7250119466978073237, guid: cf6672e7f84d0a04daafefe05d25321d,
         type: 3}
@@ -35745,7 +35755,7 @@ MonoBehaviour:
   - {fileID: 734260640}
   - {fileID: 734260645}
   - {fileID: 734260636}
-  tvAnimator: {fileID: 0}
+  tvAnimator: {fileID: 1735843749157811205}
 --- !u!65 &2026488399
 BoxCollider:
   m_ObjectHideFlags: 0
