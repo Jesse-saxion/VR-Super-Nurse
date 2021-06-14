@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TriggerBlowNose : MonoBehaviour
+public class TriggerBlowNose : SubStep
 {
     [SerializeField] private AudioClip A55;
     [SerializeField] private AudioClip A61;
     [SerializeField] private AudioClip BlowNoseSound;
-    [SerializeField] private bool Step5isdone = false;
-    [SerializeField] private GameObject Step6_Measuring;
+    [SerializeField] private bool Step4isdone = false;
+    [SerializeField] private GameObject Step5_Measuring;
     [SerializeField] private GameObject tissuenew;
 
     AudioSource audio;
@@ -31,25 +31,27 @@ public class TriggerBlowNose : MonoBehaviour
                 audio.PlayOneShot(BlowNoseSound);
                 Invoke("PlaySoundEndStep5", 10f);
                 isPlayed = true;
-                Step5isdone = true;
+                Step4isdone = true;
+                PlaySoundEndStep4();
+                Debug.Log("Completed Subtep 2 of Step 4");
+                CompleteSubStep();
             }           
         }
-        if (Step5isdone == true)
+        if (Step4isdone == true)
         {
             if (other.tag == "Tube")
             {
-                Step6_Measuring.SetActive(true);
+                Step5_Measuring.SetActive(true);
             }
         }
     }
 
-    void PlaySoundEndStep5()
+    void PlaySoundEndStep4()
     {
         tissuenew.SetActive(false);
         audio.PlayOneShot(A55);
-        checkList.UpdateCheckList("Blow the patient's  nose");
+        checkList.UpdateCheckList("Blow the patient's nose");
         Invoke("PlaySoundA61", 1f);
-        GameObject.Find("Patient").GetComponent<InformPatientDialog>(). areadyPlayedStep5 = true;
     }
 
     void PlaySoundA61()

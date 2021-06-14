@@ -8,7 +8,7 @@ public class TriggerChangeScene : MonoBehaviour
     [SerializeField] private GameObject Player;
     [SerializeField] private GameObject Roomnew;
     [SerializeField] private GameObject Roomold;
-    private float fadeDuration = 2f;
+    // private float fadeDuration = 2f;
 
     private void Start()
     {

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class HandWashingCheck : MonoBehaviour
 {
@@ -11,14 +12,15 @@ public class HandWashingCheck : MonoBehaviour
     [SerializeField] private AudioClip success;
     AudioSource audio;
     public float Volume;
-    public bool audioPlayed = false;
+    public bool stepCompleted = false;
+    public XRSimpleInteractable xRSimpleInteractable;
 
     // Start is called before the first frame update
 
     private void Start()
     {
         audio = GetComponent<AudioSource>();
-       
+        xRSimpleInteractable = GetComponentInChildren<XRSimpleInteractable>();
     }
 
     public void OnKnobRotated()
@@ -79,10 +81,11 @@ public class HandWashingCheck : MonoBehaviour
         //notfinish.SetActive(false);
         //checkList.UpdateCheckList("cleaned hands");
 
-        if (!audioPlayed)
+        if (!stepCompleted)
         {
-        audio.PlayOneShot(success, Volume);
-            audioPlayed = true;
+            audio.PlayOneShot(success, Volume);
+            stepCompleted = true;
+            xRSimpleInteractable.enabled = false;
         }
     }
 }

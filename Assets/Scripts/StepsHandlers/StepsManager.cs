@@ -19,6 +19,7 @@ public class StepsManager : MonoBehaviour
 
         if (!completedSteps.Contains(step))
         {
+            Debug.Log("Fully completed a step (StepManager)");
             completedSteps.Add(step);
         }
     }   

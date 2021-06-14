@@ -21,6 +21,8 @@ public class MoveTubeAnimation : MonoBehaviour
     private bool moving;
     private float startPositionZ;
 
+    public bool tubeInserted = false;
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -38,6 +40,8 @@ public class MoveTubeAnimation : MonoBehaviour
             time = oldTime + positionDiffirence * movingAmplification;
             animator.SetFloat("Time", time);
 
+            tubeInserted = false;
+
             //set time to 0 or 1 to avoid overkill
             if (time < 0)
             {
@@ -46,6 +50,7 @@ public class MoveTubeAnimation : MonoBehaviour
             if (time > 1)
             {
                 time = 1;
+                tubeInserted = true;
             }
         }
 

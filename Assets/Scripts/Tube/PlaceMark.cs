@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlaceMark : MonoBehaviour
+public class PlaceMark : StepHandler
 {
     public int point;
     public Material markedTube;
     public GameObject ropeMesh;
+    [SerializeField] public QuestionHandler questionStep5;
+    [SerializeField] public Animator tvAnimator;
 
     public void DrawMark()
     {
@@ -33,5 +35,8 @@ public class PlaceMark : MonoBehaviour
         }
 
         ropeMesh.GetComponent<MeshRenderer>().material = markedTube;
+        // CompleteSubStep();
+        tvAnimator.SetTrigger("QuestionAsked");
+        ActivateQuestion(questionStep5);
     }
 }

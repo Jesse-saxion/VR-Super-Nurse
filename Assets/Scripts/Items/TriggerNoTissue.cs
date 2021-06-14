@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TriggerNoTissue : MonoBehaviour
+public class TriggerNoTissue : SubStep
 {
     [SerializeField] private AudioClip A41;
 
@@ -40,9 +40,12 @@ public class TriggerNoTissue : MonoBehaviour
             //else
             //{
             //}
+            Debug.Log("Completed Subtep 1 of Step 3");
             Tissue();
             tissue.SetActive(true);
             triggerBlowNose.SetActive(true);
+            CompleteSubStep();
+            Debug.Log("Activated tissue box");
         }
     }
 

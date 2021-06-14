@@ -5,36 +5,25 @@ using UnityEngine;
 public class Triggerinformpatient : MonoBehaviour
 {
     [SerializeField] private AudioClip SoundtoPlay;
-
     AudioSource audio;
     public float Volume;
     public bool alreadyPlayed = false;
-    //  public GameObject UIicon;
+    [SerializeField]
+    private StepHandler stepHandler;
 
     // Start is called before the first frame update
     void Start()
     {
         audio = GetComponent<AudioSource>();
-
-
-        //  UIicon.SetActive(false);
     }
 
-    private void OnTriggerEnter(Collider other)
+    // Inform the patient about the next step in the procedure. Play an audioclip to perform this.
+    public void InformPatient()
     {
-        if (other.CompareTag("Player"))
+        if (!alreadyPlayed)
         {
-            if (!alreadyPlayed)
-            {
-                //GameObject.Find("Sink Environment").GetComponent<AudioSource>().enabled = false;
-                audio.PlayOneShot(SoundtoPlay, Volume);
-                alreadyPlayed = true;
-                // UIicon.SetActive(true);
-
-            }
+            audio.PlayOneShot(SoundtoPlay, Volume);
+            alreadyPlayed = true;
         }
-
     }
-
-
 }

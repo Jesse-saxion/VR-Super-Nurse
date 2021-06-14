@@ -1,65 +1,53 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-
 using UnityEngine;
-//using Valve.VR.InteractionSystem;
 
-public class InformPatientDialog : MonoBehaviour
+public class InformPatientDialog : StepHandler
 {
-    [SerializeField] private AudioClip SoundtoPlay;
+    [SerializeField] private AudioClip soundToPlayStep2;
+    [SerializeField] private AudioClip soundToPlayStep3;
+    [SerializeField] private AudioClip soundToPlayStep11;
+    [SerializeField] public QuestionHandler questionStep2;
+    [SerializeField] public QuestionHandler questionStep3;
     AudioSource audio;
-    public float Volume;
-    public bool alreadyPlayedStep1 = false;
-    public bool alreadyPlayedStep3;
-    public bool areadyPlayedStep5 = false;
+    [SerializeField] public Animator tvAnimator;
 
-    //public Animator canvas;
-    public Animator canvasQuestionOn;
-
-
-    //public Click objects;
-    public List<GameObject> Popup;
-   
-    public GameObject nextStep;
+    public float volume;
+    public bool alreadyPlayedStep2 = false;
+    public bool alreadyPlayedStep3 = false;
+    public bool alreadyPlayedStep11 = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        //canvas = canvas.GetComponent<Animator>();
         audio = GetComponent<AudioSource>();
-        //canvas.gameObject.SetActive(false);
-        canvasQuestionOn = canvasQuestionOn.GetComponent<Animator>();
     }
 
+    // Play an audiofragment to inform the patient about what is happening next.
     public void ClickonPatient()
     {
-        if (!alreadyPlayedStep1)
+        if (!alreadyPlayedStep2)
         {
-            Popup[0].SetActive(true);
-            //canvas.gameObject.SetActive(true);
-            //canvas.Play("User_B2_1");
-            alreadyPlayedStep1 = true;
-            audio.PlayOneShot(SoundtoPlay, Volume);
-            //nextStep.SetActive(true);
+            Debug.Log("Activating question 2.");
+            alreadyPlayedStep2 = true;
+            audio.PlayOneShot(soundToPlayStep2, volume);
+            tvAnimator.SetTrigger("QuestionAsked");
+            ActivateQuestion(questionStep2);
         }
         else if (alreadyPlayedStep3==true)
         {
-            Popup[1].SetActive(true);
-             Popup[1].gameObject.GetComponent<Animator>().Play("User_B2_1");
-            // canvas.Play(0);
+            Debug.Log("Activating question 3.");
             alreadyPlayedStep3 = false;
-           // canvasQuestionOn.Play("QuestionCanvasOn");
-
-            audio.PlayOneShot(SoundtoPlay, Volume);
+            audio.PlayOneShot(soundToPlayStep3, volume);
+            tvAnimator.SetTrigger("QuestionAsked");
+            ActivateQuestion(questionStep3);
         }
-        else if (areadyPlayedStep5 == true)
+        else if (alreadyPlayedStep11 == true)
         {
-            Popup[2].SetActive(true);
-            areadyPlayedStep5 = false;
-            audio.PlayOneShot(SoundtoPlay, Volume);
-            
-            GameObject.Find("Question Canvas").SetActive(false);
+            Debug.Log("Informing patient about step 11: Secure bandaid.");
+            alreadyPlayedStep11 = false;
+            audio.PlayOneShot(soundToPlayStep11, volume);
+            // CompleteSubStep();
         }
-
     }
 }

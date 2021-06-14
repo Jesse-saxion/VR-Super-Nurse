@@ -32,8 +32,10 @@ TagManager:
   - ItemResetZone
   - Item
   - StepsManager
-  - KidneyDish
   - CheckList
+  - NoseBandage
+  - TubeWater
+  - TubePoint
   layers:
   - Default
   - TransparentFX
