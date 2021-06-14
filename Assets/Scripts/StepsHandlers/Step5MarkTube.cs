@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Step5Handler : StepHandler
+public class Step5MarkTube : SubStep
 {
     public int point;
     public Material markedTube;
@@ -12,17 +12,18 @@ public class Step5Handler : StepHandler
 
 
     public Material WaterMaterial;
-    public void TubeMarked() {
+    public void TubeMarked()
+    {
         Debug.Log("Tube has been marked");
-        CompleteSubStep(1);
+        CompleteSubStep();
     }
 
     //This method is called in Tube's children with colliders (it didn't work otherwise)
     public void OnTriggerEnter(Collider other)
-    {    
+    {
         Debug.Log("Collided");
         //When colliding with the snap zone, snap (doesn't apply for Step3 Handler collider)
-        if (other.gameObject.tag == "TubeWater" 
+        if (other.gameObject.tag == "TubeWater"
         // && CheckIfSubstepComplete(1)
         )
         {
@@ -31,7 +32,8 @@ public class Step5Handler : StepHandler
         }
     }
 
-    void WaterTube() {
+    void WaterTube()
+    {
         this.GetComponentInChildren<MeshRenderer>().materials[0] = WaterMaterial;
     }
 

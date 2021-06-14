@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TriggerNoTissue : SubStep
+public class Step4Tissue : StepHandler
 {
     [SerializeField] private AudioClip A41;
 
@@ -21,11 +21,11 @@ public class TriggerNoTissue : SubStep
 
     private void Start()
     {
-        audio = GetComponent<AudioSource>();
+        audio = target.GetComponent<AudioSource>();
     }
 
 
-    public void NoTissue()
+    public void ActivateTissue()
     {
         if (isGlove == false)
         {
@@ -33,23 +33,14 @@ public class TriggerNoTissue : SubStep
         }
         else
         {
-            //if (isTalk == false)
-            //{
-            //    audio.PlayOneShot(A52, Volume);
-            //}
-            //else
-            //{
-            //}
-            Debug.Log("Completed Subtep 1 of Step 3");
-            Tissue();
+            PlayTissueSound();
             tissue.SetActive(true);
             triggerBlowNose.SetActive(true);
-            CompleteSubStep();
             Debug.Log("Activated tissue box");
         }
     }
 
-    public void Tissue()
+    public void PlayTissueSound()
     {
         audio.PlayOneShot(TissueSound, Volume);
     }

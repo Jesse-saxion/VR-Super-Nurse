@@ -28,21 +28,26 @@ public class StepHandler : MonoBehaviour
     protected void Instantiate()
     {
         stepsManager = GameObject.FindWithTag("StepsManager").GetComponent<StepsManager>();
-        // checkList = GameObject.FindWithTag("CheckList").GetComponent<CheckList>(); unused for now
+        checkList = GameObject.FindWithTag("CheckList").GetComponentInChildren<CheckList>(); 
         SetAudio();
     }
 
     public void CompleteStep()
     {
+        if (!active)
+        {
+            return;
+        }
+
         completed = true;
-        // audioSource.Play();
+        //audioSource.Play();
         stepsManager.StepCompleted(this);
-        checkList.UpdateCheckList(stepName);
+        checkList.UpdateCheckList();
         Debug.Log("Step completed! (Step)");
     }
 
     public void CompleteSubStep(int index)
-    {
+    {    
         if (subSteps == null)
         {
             Debug.Log("subSteps is null!");

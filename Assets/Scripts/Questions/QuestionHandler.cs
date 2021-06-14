@@ -8,6 +8,8 @@ public class QuestionHandler : MonoBehaviour
     private bool[] answerList;
     [SerializeField]
     private StepHandler stepHandler;
+    [SerializeField]
+    private int subStepIndex;
     private AudioSource audioSource;
     [Header("Audio")]
     public AudioClip wrongAnswer;
@@ -35,7 +37,7 @@ public class QuestionHandler : MonoBehaviour
         setQuestionCanvasInactive();
 
         // Play no audio because the StepHandler already does by completing the step.
-        // stepHandler.CompleteSubStep();
+        stepHandler.CompleteSubStep(subStepIndex);
 
         // Play the Yes animation 
         nurseAnimator.SetTrigger("Yes");

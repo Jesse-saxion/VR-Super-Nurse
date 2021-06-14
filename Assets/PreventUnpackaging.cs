@@ -9,18 +9,6 @@ public class PreventUnpackaging : MonoBehaviour
     public GameObject TubeMeasurement;
     public GameObject NasogastricTubing;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void setReadyToUnpack()
     {
         isReadyToUnpack = true;

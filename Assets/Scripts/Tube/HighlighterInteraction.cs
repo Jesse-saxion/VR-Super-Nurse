@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MarkTube : MonoBehaviour
+public class HighlighterInteraction : MonoBehaviour
 {
     public bool canMarkSeveralTimes = false;
     bool canMark = true;

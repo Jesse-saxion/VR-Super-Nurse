@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class CheckListItem : MonoBehaviour
 {
-    public Text Text;
-    public GameObject CheckMark;
+    public TextMeshProUGUI Text;
 }

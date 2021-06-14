@@ -50,7 +50,7 @@ public class TriggerBlowNose : SubStep
     {
         tissuenew.SetActive(false);
         audio.PlayOneShot(A55);
-        checkList.UpdateCheckList("Blow the patient's nose");
+        checkList.UpdateCheckList();
         Invoke("PlaySoundA61", 1f);
     }
 

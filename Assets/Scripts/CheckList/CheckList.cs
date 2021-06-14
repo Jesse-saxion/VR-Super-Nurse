@@ -1,23 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class CheckList : MonoBehaviour
 {
-    public List<CheckListItem> CheckListItems;
-    public GameObject clipBoard;
+    public List<GameObject> CheckListItems;
     private int index = 0;
+    private TMP_Text clipboardStepText;
 
-    public void UpdateCheckList(string _text)
+    public void UpdateCheckList()
     {
-        CheckListItems[index].Text.text = _text;
-        CheckListItems[index].CheckMark.SetActive(true);
+        Debug.Log("Updating checklist");
+        clipboardStepText = CheckListItems[index].GetComponent<TextMeshProUGUI>();
+        clipboardStepText.fontStyle = FontStyles.Strikethrough;
         index++;
-
-        //Update the clipboard as well
-        if (clipBoard != null)
-        {
-            clipBoard.GetComponentInChildren<CheckList>().UpdateCheckList(_text);
-        }
+        Debug.Log(index);
     }
 }
