@@ -276,10 +276,10 @@ GameObject:
   - component: {fileID: 384058488802317570}
   - component: {fileID: 8651262697125850932}
   - component: {fileID: 3113109933081351117}
-  - component: {fileID: 3679206638543169327}
+  - component: {fileID: 7043355923027654979}
   - component: {fileID: 3679206638543169324}
-  - component: {fileID: 3679206638543169326}
   - component: {fileID: 3679206638543169325}
+  - component: {fileID: 3947999676270311402}
   m_Layer: 0
   m_Name: MetalBowl
   m_TagString: Item
@@ -353,7 +353,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &3679206638543169327
+--- !u!54 &7043355923027654979
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -382,7 +382,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.028818255, y: 0.028818257, z: 0.011947942}
   m_Center: {x: 0.0000015754053, y: 0.0000005968039, z: 0.005979375}
---- !u!114 &3679206638543169326
+--- !u!114 &3679206638543169325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3679206638543169297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6522818c2d485d04abb552273d5b6231, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Interactable: 0
+--- !u!114 &3947999676270311402
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -408,10 +421,34 @@ MonoBehaviour:
       m_Calls: []
   m_HoverEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   m_HoverExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -432,34 +469,10 @@ MonoBehaviour:
       m_Calls: []
   m_OnHoverEntered:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 509082184936260008}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
   m_OnHoverExited:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 509082184936260008}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_OnSelectEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -475,7 +488,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  m_AttachTransform: {fileID: 509082185622486258}
+  m_AttachTransform: {fileID: 0}
   m_AttachEaseInTime: 0.15
   m_MovementType: 1
   m_VelocityDamping: 1
@@ -512,19 +525,6 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
---- !u!114 &3679206638543169325
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3679206638543169297}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6522818c2d485d04abb552273d5b6231, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Interactable: 0
 --- !u!1 &4225457368309957629
 GameObject:
   m_ObjectHideFlags: 0
@@ -635,7 +635,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da880228ce985d849974f5cc231bfba3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  isComplete: 0
   WaterMaterial: {fileID: 2100000, guid: 8b659742110a72b4197227f511ae6991, type: 2}
+  Step5: {fileID: 0}
   AudioClip: {fileID: 8300000, guid: acb02e84b47ca32498497aeeee331c88, type: 3}
 --- !u!82 &4225457368309957607
 AudioSource:

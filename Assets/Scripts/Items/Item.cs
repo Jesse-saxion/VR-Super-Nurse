@@ -18,7 +18,9 @@ public class Item : MonoBehaviour
         snapPosition = transform.position;
         snapRotation = transform.rotation;
         snapScale = transform.localScale;
+
     }
+
 
     void OnTriggerEnter(Collider other)
     {

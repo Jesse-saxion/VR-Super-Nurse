@@ -76,7 +76,6 @@ public class HandWashingCheck : MonoBehaviour
 
     public void OnHandSanitized() {
         Debug.Log("Hand cleaned using sanitizer, proceeding to next step of the procedure");
-        GameObject.Find("TriggerStep1").GetComponent<AudioSource>().enabled = false;
         //nextStep.SetActive(true);
         //notfinish.SetActive(false);
         //checkList.UpdateCheckList("cleaned hands");
