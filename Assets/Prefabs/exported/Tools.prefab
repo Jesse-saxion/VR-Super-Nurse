@@ -2818,7 +2818,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &4445977083826650047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3469,7 +3469,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Nier schotel
+  m_text: 'Nierbekkentje '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4133896074a19a449a97c93adbad6624, type: 2}
   m_sharedMaterial: {fileID: 7973483899520395170, guid: 4133896074a19a449a97c93adbad6624,
@@ -4478,7 +4478,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &4445977084589491945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5680,7 +5680,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Neusverband
+  m_text: 'Neuspleister '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4133896074a19a449a97c93adbad6624, type: 2}
   m_sharedMaterial: {fileID: 7973483899520395170, guid: 4133896074a19a449a97c93adbad6624,
