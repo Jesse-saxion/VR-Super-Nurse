@@ -10,7 +10,15 @@ public class PlaceMark : MonoBehaviour
     [SerializeField] public QuestionHandler questionStep5;
     [SerializeField] public StepHandler Step5;
     [SerializeField] public Animator tvAnimator;
+    [SerializeField] private AudioClip markingSound;
+    AudioSource audio;
+    public float volume;
 
+    void Start()
+    {
+        audio = GetComponent<AudioSource>();
+    }
+    
     public void DrawMark()
     {
         switch (point)
@@ -34,9 +42,8 @@ public class PlaceMark : MonoBehaviour
                 markedTube.mainTextureOffset = new Vector2(0, 0.125f);
                 break;
         }
-
+        audio.PlayOneShot(markingSound, volume);
         ropeMesh.GetComponent<MeshRenderer>().material = markedTube;
-        // CompleteSubStep();
         tvAnimator.SetTrigger("QuestionAsked");
         Step5.ActivateQuestion(questionStep5);
         Step5.CompleteSubStep(1);

@@ -7650,6 +7650,8 @@ MonoBehaviour:
   questionStep5: {fileID: 9160796629533382662}
   Step5: {fileID: 615161691}
   tvAnimator: {fileID: 1735843749157811205}
+  markingSound: {fileID: 8300000, guid: 5d970a55cdb5d3a40b3b5c465622226a, type: 3}
+  volume: 3
 --- !u!114 &219526517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8522,6 +8524,8 @@ MonoBehaviour:
   questionStep5: {fileID: 9160796629533382662}
   Step5: {fileID: 615161691}
   tvAnimator: {fileID: 1735843749157811205}
+  markingSound: {fileID: 8300000, guid: 5d970a55cdb5d3a40b3b5c465622226a, type: 3}
+  volume: 3
 --- !u!114 &267019999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9671,6 +9675,8 @@ MonoBehaviour:
   questionStep5: {fileID: 9160796629533382662}
   Step5: {fileID: 615161691}
   tvAnimator: {fileID: 1735843749157811205}
+  markingSound: {fileID: 8300000, guid: 5d970a55cdb5d3a40b3b5c465622226a, type: 3}
+  volume: 3
 --- !u!1 &301180912
 GameObject:
   m_ObjectHideFlags: 0
@@ -15917,6 +15923,8 @@ MonoBehaviour:
   questionStep5: {fileID: 9160796629533382662}
   Step5: {fileID: 615161691}
   tvAnimator: {fileID: 1735843749157811205}
+  markingSound: {fileID: 8300000, guid: 5d970a55cdb5d3a40b3b5c465622226a, type: 3}
+  volume: 3
 --- !u!114 &653066426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17157,6 +17165,8 @@ MonoBehaviour:
   isReadyToUnpack: 0
   TubeMeasurement: {fileID: 1392708982}
   NasogastricTubing: {fileID: 4445977083727227481}
+  unwrapSound: {fileID: 8300000, guid: b604e7eba88a989479275a70c15dcb3b, type: 3}
+  volume: 3
 --- !u!1 &735217319
 GameObject:
   m_ObjectHideFlags: 0
@@ -23004,6 +23014,8 @@ MonoBehaviour:
   questionStep5: {fileID: 9160796629533382662}
   Step5: {fileID: 615161691}
   tvAnimator: {fileID: 1735843749157811205}
+  markingSound: {fileID: 8300000, guid: 5d970a55cdb5d3a40b3b5c465622226a, type: 3}
+  volume: 3
 --- !u!114 &1173539194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34177,6 +34189,7 @@ MonoBehaviour:
   correctItem: {fileID: 8300000, guid: 0c8e47779890eda4ea4849ad202e11b3, type: 3}
   wrongItem: {fileID: 8300000, guid: c712eaddd1fe5d94c98853360daef8a8, type: 3}
   allItems: {fileID: 8300000, guid: 8ec1d9af2e4325c4ca0640a501765fb9, type: 3}
+  tvHoist: {fileID: 8300000, guid: 278f0c7fec0782641b98f21f61bb2588, type: 3}
   questionStep2: {fileID: 9160796629417605835}
   volume: 1.7
   requiredItems:
@@ -35827,6 +35840,11 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1392708982}
+    - target: {fileID: 4225457368309957624, guid: d7703694a71e22141bbec2538e1f04ac,
+        type: 3}
+      propertyPath: AudioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e8abb139a96a29c478054b76d0f13fb1, type: 3}
     - target: {fileID: 4225457368309957629, guid: d7703694a71e22141bbec2538e1f04ac,
         type: 3}
       propertyPath: m_IsActive
@@ -39161,6 +39179,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10d3f60267d92ef44862348c1b7f2b01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tvHoist: {fileID: 8300000, guid: 278f0c7fec0782641b98f21f61bb2588, type: 3}
+  volume: 3
   Screen: {fileID: 1735843749157811205}
 --- !u!95 &1735843749157811205
 Animator:
@@ -56446,10 +56466,11 @@ MonoBehaviour:
   answerList: 0001
   stepHandler: {fileID: 1481457911}
   subStepIndex: 1
-  wrongAnswer: {fileID: 8300000, guid: 7c9723e28308ce3448468484887e4e9c, type: 3}
-  audioVolume: 3
   nurseAnimator: {fileID: 1641379758}
   tvAnimator: {fileID: 1735843749157811205}
+  tvHoist: {fileID: 8300000, guid: 278f0c7fec0782641b98f21f61bb2588, type: 3}
+  wrongAnswer: {fileID: 8300000, guid: 7c9723e28308ce3448468484887e4e9c, type: 3}
+  volume: 3
 --- !u!114 &9160796629417605835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56465,10 +56486,11 @@ MonoBehaviour:
   answerList: 0001
   stepHandler: {fileID: 564479560}
   subStepIndex: 1
-  wrongAnswer: {fileID: 8300000, guid: 7c9723e28308ce3448468484887e4e9c, type: 3}
-  audioVolume: 3
   nurseAnimator: {fileID: 1641379758}
   tvAnimator: {fileID: 1735843749157811205}
+  tvHoist: {fileID: 8300000, guid: 278f0c7fec0782641b98f21f61bb2588, type: 3}
+  wrongAnswer: {fileID: 8300000, guid: 7c9723e28308ce3448468484887e4e9c, type: 3}
+  volume: 3
 --- !u!114 &9160796629533382662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56484,10 +56506,11 @@ MonoBehaviour:
   answerList: 0001
   stepHandler: {fileID: 615161691}
   subStepIndex: 2
-  wrongAnswer: {fileID: 8300000, guid: 7c9723e28308ce3448468484887e4e9c, type: 3}
-  audioVolume: 3
   nurseAnimator: {fileID: 1641379758}
   tvAnimator: {fileID: 1735843749157811205}
+  tvHoist: {fileID: 8300000, guid: 278f0c7fec0782641b98f21f61bb2588, type: 3}
+  wrongAnswer: {fileID: 8300000, guid: 7c9723e28308ce3448468484887e4e9c, type: 3}
+  volume: 3
 --- !u!114 &9160796629643417684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56503,10 +56526,11 @@ MonoBehaviour:
   answerList: 0100
   stepHandler: {fileID: 165355593}
   subStepIndex: 0
-  wrongAnswer: {fileID: 8300000, guid: 7c9723e28308ce3448468484887e4e9c, type: 3}
-  audioVolume: 3
   nurseAnimator: {fileID: 1641379758}
   tvAnimator: {fileID: 1735843749157811205}
+  tvHoist: {fileID: 8300000, guid: 278f0c7fec0782641b98f21f61bb2588, type: 3}
+  wrongAnswer: {fileID: 8300000, guid: 7c9723e28308ce3448468484887e4e9c, type: 3}
+  volume: 3
 --- !u!4 &9187421412746433920
 Transform:
   m_ObjectHideFlags: 0
