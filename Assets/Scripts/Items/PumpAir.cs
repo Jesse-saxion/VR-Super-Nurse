@@ -15,7 +15,7 @@ public class PumpAir : MonoBehaviour
     // Start is called before the first frame update
     public void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == TubeCap.name)
+        if (other.gameObject == TubeCap)
         {
             Debug.Log("Collided with tube cap, starting pumping animation");
             animator.SetTrigger("pumpAir");

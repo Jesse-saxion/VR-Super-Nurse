@@ -29,10 +29,9 @@ public class TriggerBlowNose : SubStep
                 Destroy(other.gameObject);
                 tissuenew.SetActive(true);
                 audio.PlayOneShot(BlowNoseSound);
-                Invoke("PlaySoundEndStep5", 10f);
+                Invoke("PlaySoundEndStep4", 10f);
                 isPlayed = true;
                 Step4isdone = true;
-                PlaySoundEndStep4();
                 Debug.Log("Completed Subtep 2 of Step 4");
                 CompleteSubStep();
             }           

@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &472966124691641015
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1959593197180163360}
+  m_Layer: 0
+  m_Name: Tube Container
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1959593197180163360
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472966124691641015}
+  m_LocalRotation: {x: -0.5245219, y: -0.47859758, z: -0.51035887, w: -0.485134}
+  m_LocalPosition: {x: -2.6792774, y: -2.8343182, z: -2.7492526}
+  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_Children:
+  - {fileID: 3330443954304678985}
+  m_Father: {fileID: 3735819993222140606}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &800859641464566428
 GameObject:
   m_ObjectHideFlags: 0
@@ -339,10 +370,10 @@ Transform:
   m_LocalPosition: {x: -0.000391, y: 0.000624, z: 0.001369}
   m_LocalScale: {x: 0.0007346959, y: 0.00073469593, z: 0.0007346956}
   m_Children:
+  - {fileID: 1959593197180163360}
   - {fileID: 352237361980096546}
   - {fileID: 3735819994545034938}
   - {fileID: 3735819994825274044}
-  - {fileID: 3330443954304678985}
   - {fileID: 6410995822846976246}
   - {fileID: 8573493573713008552}
   m_Father: {fileID: 0}
@@ -495,7 +526,7 @@ Transform:
   m_LocalScale: {x: 0.09000418, y: 0.20770195, z: 0.48463818}
   m_Children: []
   m_Father: {fileID: 3735819993222140606}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 23.17, y: 0, z: 0}
 --- !u!65 &3735819994545034937
 BoxCollider:
@@ -574,7 +605,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3735819993222140606}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &3735819994825274042
 BoxCollider:
@@ -1043,7 +1074,7 @@ MonoBehaviour:
   m_CollisionMaterial: {fileID: 0}
   solverIndices: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f000000400000004100000042000000430000004400000045000000460000004700000048000000490000004a0000004b0000004c0000004d0000004e0000004f000000500000005100000052000000530000005400000055000000560000005700000058000000590000005a0000005b0000005c0000005d0000005e0000005f000000600000006100000062000000630000006400000065000000660000006700000068000000690000006a0000006b0000006c0000006d0000006e0000006f000000700000007100000072000000730000007400000075000000760000007700000078000000790000007a0000007b0000007c0000007d0000007e0000007f000000800000008100000082000000830000008400000085000000860000008700000088000000890000008a0000008b0000008c0000008d0000008e0000008f000000900000009100000092000000930000009400000095000000960000009700000098000000990000009a0000009b0000009c0000009d0000009e0000009f000000a0000000a1000000a2000000
   m_SelfCollisions: 0
-  restLength_: 3.6198192
+  restLength_: 3.6199498
   elements:
   - particle1: 0
     particle2: 1
@@ -1117,92 +1148,92 @@ MonoBehaviour:
     tearResistance: 1
   - particle1: 14
     particle2: 15
-    restLength: 0.05986651
+    restLength: 0.059490778
     constraintForce: 0
     tearResistance: 1
   - particle1: 15
     particle2: 16
-    restLength: 0.05942729
+    restLength: 0.059557173
     constraintForce: 0
     tearResistance: 1
   - particle1: 16
     particle2: 17
-    restLength: 0.059759013
+    restLength: 0.059550125
     constraintForce: 0
     tearResistance: 1
   - particle1: 17
     particle2: 18
-    restLength: 0.059515566
+    restLength: 0.059531346
     constraintForce: 0
     tearResistance: 1
   - particle1: 18
     particle2: 19
-    restLength: 0.05956164
+    restLength: 0.059567597
     constraintForce: 0
     tearResistance: 1
   - particle1: 19
     particle2: 20
-    restLength: 0.059451103
+    restLength: 0.05952274
     constraintForce: 0
     tearResistance: 1
   - particle1: 20
     particle2: 21
-    restLength: 0.059582204
+    restLength: 0.059565544
     constraintForce: 0
     tearResistance: 1
   - particle1: 21
     particle2: 22
-    restLength: 0.059519306
+    restLength: 0.059527364
     constraintForce: 0
     tearResistance: 1
   - particle1: 22
     particle2: 23
-    restLength: 0.06008485
+    restLength: 0.059555452
     constraintForce: 0
     tearResistance: 1
   - particle1: 23
     particle2: 24
-    restLength: 0.056622297
+    restLength: 0.059539143
     constraintForce: 0
     tearResistance: 1
   - particle1: 24
     particle2: 25
-    restLength: 0.057121366
+    restLength: 0.059544772
     constraintForce: 0
     tearResistance: 1
   - particle1: 25
     particle2: 26
-    restLength: 0.05702418
+    restLength: 0.059551097
     constraintForce: 0
     tearResistance: 1
   - particle1: 26
     particle2: 27
-    restLength: 0.057020545
+    restLength: 0.059537202
     constraintForce: 0
     tearResistance: 1
   - particle1: 27
     particle2: 28
-    restLength: 0.05704862
+    restLength: 0.059557315
     constraintForce: 0
     tearResistance: 1
   - particle1: 28
     particle2: 29
-    restLength: 0.05702126
+    restLength: 0.053978935
     constraintForce: 0
     tearResistance: 1
   - particle1: 29
     particle2: 30
-    restLength: 0.057024956
+    restLength: 0.0539839
     constraintForce: 0
     tearResistance: 1
   - particle1: 30
     particle2: 31
-    restLength: 0.05711913
+    restLength: 0.053983744
     constraintForce: 0
     tearResistance: 1
   - particle1: 31
     particle2: 32
-    restLength: 0.056622922
+    restLength: 0.053979058
     constraintForce: 0
     tearResistance: 1
   - particle1: 32
@@ -1903,7 +1934,7 @@ GameObject:
   - component: {fileID: 1354397652326417634}
   - component: {fileID: 7622947871705042595}
   m_Layer: 0
-  m_Name: TubeNewPatient
+  m_Name: Tube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1916,13 +1947,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8598595588975407246}
-  m_LocalRotation: {x: 0.025726074, y: -0.025725883, z: 0.70663875, w: 0.7066386}
-  m_LocalPosition: {x: 0.65999705, y: -8.120011, z: -0.74999905}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalRotation: {x: 0.70949185, y: -0.0068419576, z: -0.007981434, w: -0.7046353}
+  m_LocalPosition: {x: -0.5059217, y: 0.23933558, z: 0.3429655}
+  m_LocalScale: {x: 0.3000001, y: 0.30000022, z: 0.29999992}
   m_Children:
   - {fileID: 5912717968730650288}
-  m_Father: {fileID: 3735819993222140606}
-  m_RootOrder: 3
+  m_Father: {fileID: 1959593197180163360}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 4.17, y: 0, z: 90}
 --- !u!114 &8105344527336165832
 MonoBehaviour:
@@ -2485,7 +2516,7 @@ GameObject:
   - component: {fileID: 5083460479901208288}
   - component: {fileID: 5812084142948098610}
   m_Layer: 0
-  m_Name: ChestCollision (1)
+  m_Name: 'ChestCollision '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2806,7 +2837,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 6ebff3a5f8d4dac44a021fedcfe04e32,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 6ebff3a5f8d4dac44a021fedcfe04e32,
         type: 3}
@@ -2971,7 +3002,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: bb65a1eadf5e87c4c8f27780488ad104,
         type: 3}
       propertyPath: m_Name
-      value: NoseBandadeWrapped (1)
+      value: 'NoseBandadeWrapped '
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bb65a1eadf5e87c4c8f27780488ad104,
         type: 3}
@@ -2985,15 +3016,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb65a1eadf5e87c4c8f27780488ad104, type: 3}
---- !u!1 &9057014105364385042 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: bb65a1eadf5e87c4c8f27780488ad104,
-    type: 3}
-  m_PrefabInstance: {fileID: 8174477003999637571}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8573493573713008552 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: bb65a1eadf5e87c4c8f27780488ad104,
+    type: 3}
+  m_PrefabInstance: {fileID: 8174477003999637571}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &9057014105364385042 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: bb65a1eadf5e87c4c8f27780488ad104,
     type: 3}
   m_PrefabInstance: {fileID: 8174477003999637571}
   m_PrefabAsset: {fileID: 0}

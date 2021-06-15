@@ -39,7 +39,6 @@ public class HeadInteractions : MonoBehaviour
 
     public void TiltHead()
     {
-        Debug.Log("Tilt");
         if (!tilted)
         {
             head.transform.Rotate(new Vector3(15f, 0f, 0f), Space.Self);

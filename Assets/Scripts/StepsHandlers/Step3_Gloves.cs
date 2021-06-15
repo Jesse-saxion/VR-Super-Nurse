@@ -16,7 +16,7 @@ public class Step3_Gloves : SubStep
         audio = GetComponent<AudioSource>();
     }
 
-    public void OnObjectClicked()
+    public void PutOnGloves()
     {
         Debug.Log("Activated gloves box");
         Step4Handler.GetComponent<Step4Tissue>().isGlove = true;
