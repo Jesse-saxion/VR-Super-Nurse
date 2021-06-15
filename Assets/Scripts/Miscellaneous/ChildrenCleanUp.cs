@@ -21,7 +21,7 @@ public class ChildrenCleanUp : MonoBehaviour
     void OnDestroy()
     {
         foreach (GameObject child in children)
-        {
+        {          
             Destroy(child);
         }
     }
