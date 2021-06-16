@@ -31,11 +31,18 @@ public class Item : MonoBehaviour
         }
     }
 
+    public void AllowGrab() {
+        if(!Interactable) {
+            GetComponent<XRGrabInteractable>().trackPosition = true;
+            GetComponent<XRGrabInteractable>().trackRotation = true;
+        }
+    }
+
     public void Snap(Vector3 pSnapPosition)
     {
         //Detach the Item from the hand if attached 
         if (GetComponent<XRGrabInteractable>().isSelected)
-        {           
+        {
             GetComponent<XRGrabInteractable>().trackPosition = false;
             GetComponent<XRGrabInteractable>().trackRotation = false;
             
