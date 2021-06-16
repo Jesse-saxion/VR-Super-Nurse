@@ -8,6 +8,7 @@ public class Step2ItemHandler : SubStep
     [SerializeField] private AudioClip correctItem;
     [SerializeField] private AudioClip wrongItem;
     [SerializeField] private AudioClip allItems;
+    [SerializeField] private AudioClip tvHoist;
     [SerializeField] public QuestionHandler questionStep2;
     AudioSource audio;
     public float volume;
@@ -93,5 +94,6 @@ public class Step2ItemHandler : SubStep
 
         Debug.Log("Lowering the TV mount.");
         tvAnimator.SetTrigger("QuestionAsked");
+        audio.PlayOneShot(tvHoist, volume);
     }
 }

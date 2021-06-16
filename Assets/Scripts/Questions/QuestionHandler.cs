@@ -10,14 +10,21 @@ public class QuestionHandler : MonoBehaviour
     private StepHandler stepHandler;
     [SerializeField]
     private int subStepIndex;
-    private AudioSource audioSource;
-    [Header("Audio")]
-    public AudioClip wrongAnswer;
-    public float audioVolume = 10f;
     [Header("Animation")]
     [SerializeField] public Animator nurseAnimator;
     [SerializeField] public Animator tvAnimator;
 
+    [SerializeField] private AudioClip tvHoist;
+    [SerializeField] private AudioClip wrongAnswer;
+    AudioSource audio;
+    public float volume;
+
+    private void Start()
+    {
+        audio = GetComponent<AudioSource>();
+        tvAnimator.SetTrigger("QuestionAsked");
+    }
+    
     public void CheckAnswer(int index)
     {
         // Check if correct button press was done to answer the question.
@@ -42,7 +49,7 @@ public class QuestionHandler : MonoBehaviour
         // Play the Yes animation 
         nurseAnimator.SetTrigger("Yes");
         Debug.Log("Yes Animation Plays");
-
+        audio.PlayOneShot(tvHoist, volume);
         tvAnimator.SetTrigger("QuestionAnsweredCorrect");
         
     }
@@ -55,7 +62,7 @@ public class QuestionHandler : MonoBehaviour
     private void WrongAnswer()
     {
         // Play wrong answer soundclip
-        audioSource.Play();
+        audio.PlayOneShot(wrongAnswer, volume);
 
         // play the No Animation
         nurseAnimator.SetTrigger("No");
@@ -67,33 +74,9 @@ public class QuestionHandler : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        SetAudio();
-        tvAnimator.SetTrigger("QuestionAsked");
-    }
-
     // Update is called once per frame
     void Update()
     {
 
-    }
-
-    public void PlayAudioClip(AudioClip clip)
-    {
-        audioSource.PlayOneShot(clip, audioVolume);
-    }
-
-    private void SetAudio()
-    {
-        TryGetComponent<AudioSource>(out audioSource);
-        if (audioSource == null)
-        {
-            audioSource = gameObject.AddComponent<AudioSource>();
-        }
-
-        audioSource.clip = wrongAnswer;
-        audioSource.volume = audioVolume;
     }
 }

@@ -8,6 +8,14 @@ public class PreventUnpackaging : MonoBehaviour
     public bool isReadyToUnpack;
     public GameObject TubeMeasurement;
     public GameObject NasogastricTubing;
+    [SerializeField] private AudioClip unwrapSound;
+    AudioSource audio;
+    public float volume;
+
+    private void Start()
+    {
+        audio = GetComponent<AudioSource>();
+    }
 
     public void setReadyToUnpack()
     {
@@ -19,6 +27,7 @@ public class PreventUnpackaging : MonoBehaviour
         if (isReadyToUnpack)
         {
             TubeMeasurement.SetActive(true);
+            audio.PlayOneShot(unwrapSound, volume);
             NasogastricTubing.SetActive(false);
         }
     }

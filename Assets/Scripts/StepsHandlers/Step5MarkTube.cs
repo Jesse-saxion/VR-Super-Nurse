@@ -9,6 +9,14 @@ public class Step5MarkTube : SubStep
     public GameObject ropeMesh;
     [SerializeField] public QuestionHandler questionStep5;
     [SerializeField] public Animator tvAnimator;
+    [SerializeField] private AudioClip tvHoist;
+    AudioSource audio;
+    public float volume;
+    private void Start()
+    {
+        audio = GetComponent<AudioSource>();
+    }
+    
 
 
     public Material WaterMaterial;
@@ -64,6 +72,7 @@ public class Step5MarkTube : SubStep
         ropeMesh.GetComponent<MeshRenderer>().material = markedTube;
         // CompleteSubStep();
         tvAnimator.SetTrigger("QuestionAsked");
+        audio.PlayOneShot(tvHoist, volume);
         ActivateQuestion(questionStep5);
     }
 }
