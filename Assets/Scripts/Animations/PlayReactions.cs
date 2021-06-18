@@ -36,6 +36,8 @@ public class PlayReactions : MonoBehaviour
     void Start()
     {
         tubeAnimation = GetComponent<MoveTubeAnimation>();
+        Debug.Log("kut ding");
+        StartSwallowing();
     }
 
     void Update()
@@ -127,15 +129,15 @@ public class PlayReactions : MonoBehaviour
             return;
 
         swallowing = true;
-
         cup.SetActive(true);
         straw.SetActive(true);
+        Animator.SetInteger("FacialExpression", 5);
     }
 
     void StopSwallowing()
     {
         swallowing = false;
-
+        Animator.SetInteger("FacialExpression", 0);
         cup.SetActive(false);
         straw.SetActive(false);
     }
