@@ -16,8 +16,10 @@ public class QuestionHandler : MonoBehaviour
 
     [SerializeField] private AudioClip tvHoist;
     [SerializeField] private AudioClip wrongAnswer;
+    [SerializeField] private AudioClip correctAnswer;
     AudioSource audio;
     public float volume;
+    public float volumeTvHoist;
 
     private void Start()
     {
@@ -46,12 +48,15 @@ public class QuestionHandler : MonoBehaviour
         // Play no audio because the StepHandler already does by completing the step.
         stepHandler.CompleteSubStep(subStepIndex);
 
-        // Play the Yes animation 
-        nurseAnimator.SetTrigger("Yes");
-        Debug.Log("Yes Animation Plays");
-        audio.PlayOneShot(tvHoist, volume);
+        // TV animation and hoist sound.
+        audio.PlayOneShot(tvHoist, volumeTvHoist);
         tvAnimator.SetTrigger("QuestionAnsweredCorrect");
-        
+
+        // Play the Yes animation.
+        nurseAnimator.SetTrigger("Yes");
+        Debug.Log("Yes Animation plays");
+        audio.PlayOneShot(correctAnswer, volume);
+        Debug.Log("Correct answer plays");
     }
 
     public void PlayAnimation()

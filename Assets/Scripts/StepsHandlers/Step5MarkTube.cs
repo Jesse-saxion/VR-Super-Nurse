@@ -10,6 +10,8 @@ public class Step5MarkTube : SubStep
     [SerializeField] public QuestionHandler questionStep5;
     [SerializeField] public Animator tvAnimator;
     [SerializeField] private AudioClip tvHoist;
+    [SerializeField] private AudioClip markingSound;
+    [SerializeField] private AudioClip question5VoiceLine;
     AudioSource audio;
     public float volume;
     private void Start()
@@ -68,11 +70,13 @@ public class Step5MarkTube : SubStep
                 markedTube.mainTextureOffset = new Vector2(0, 0.125f);
                 break;
         }
-
+        audio.PlayOneShot(markingSound, volume);
         ropeMesh.GetComponent<MeshRenderer>().material = markedTube;
         // CompleteSubStep();
         tvAnimator.SetTrigger("QuestionAsked");
         audio.PlayOneShot(tvHoist, volume);
+        
         ActivateQuestion(questionStep5);
+        audio.PlayOneShot(question5VoiceLine, volume);
     }
 }

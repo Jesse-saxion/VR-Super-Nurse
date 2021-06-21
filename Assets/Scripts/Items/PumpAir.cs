@@ -8,9 +8,16 @@ public class PumpAir : MonoBehaviour
 
     public GameObject TubeCap;
 
-    void Start()
+    [SerializeField] private AudioClip airPump;
+    [SerializeField] private AudioClip temporaryEndOfDemoVoiceLine;
+    AudioSource audio;
+    public float volume;
+
+    // Start is called before the first frame update
+        void Start()
     {
         animator = gameObject.GetComponentInChildren<Animator>();
+        audio = GetComponent<AudioSource>();
     }
     // Start is called before the first frame update
     public void OnTriggerEnter(Collider other)
@@ -19,6 +26,8 @@ public class PumpAir : MonoBehaviour
         {
             Debug.Log("Collided with tube cap, starting pumping animation");
             animator.SetTrigger("pumpAir");
+            audio.PlayOneShot(airPump, volume);
+            audio.PlayOneShot(temporaryEndOfDemoVoiceLine, volume);
         }
     }
 }

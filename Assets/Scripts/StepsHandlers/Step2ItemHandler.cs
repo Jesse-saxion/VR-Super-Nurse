@@ -12,6 +12,7 @@ public class Step2ItemHandler : SubStep
     [SerializeField] public QuestionHandler questionStep2;
     AudioSource audio;
     public float volume;
+    public float hoistVolume;
     [Space]
     [SerializeField]
     List<GameObject> requiredItems;
