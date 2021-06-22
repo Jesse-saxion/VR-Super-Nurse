@@ -4,12 +4,9 @@ using UnityEngine;
 
 public class StepHandler : MonoBehaviour
 {
-    public GameObject target;
-
     [Header("Step Handler")]
-    public string stepName;
+    public GameObject target;
     public bool completed;
-    public bool active = true;
 
     [Header("Audio")]
     public AudioClip successSound;
@@ -18,9 +15,8 @@ public class StepHandler : MonoBehaviour
     public List<SubStep> subSteps;
     private StepsManager stepsManager;
     private AudioSource audioSource;
-    private CheckList checkList;
 
-    protected virtual void Start()
+    void Start()
     {
         Instantiate();
     }
@@ -28,21 +24,14 @@ public class StepHandler : MonoBehaviour
     protected void Instantiate()
     {
         stepsManager = GameObject.FindWithTag("StepsManager").GetComponent<StepsManager>();
-        checkList = GameObject.FindWithTag("CheckList").GetComponentInChildren<CheckList>(); 
         SetAudio();
     }
 
     public void CompleteStep()
-    {
-        if (!active)
-        {
-            return;
-        }
-
+    {   
         completed = true;
         //audioSource.Play();
         stepsManager.StepCompleted(this);
-        checkList.UpdateCheckList();
         Debug.Log("Step completed! (Step)");
     }
 
@@ -59,13 +48,13 @@ public class StepHandler : MonoBehaviour
             CompleteStep();
         }
         
-        subSteps[index].isComplete = true;
+        subSteps[index].completed = true;
         audioSource.Play();
 
         //Check if all the substeps are completed, if so complete the step
         for (int i = 0; i < subSteps.Count; i++)
         {
-            if (!subSteps[i].isComplete)
+            if (!subSteps[i].completed)
             {
                 return;
             }
@@ -90,21 +79,6 @@ public class StepHandler : MonoBehaviour
         audioSource.PlayOneShot(clip, audioVolume);
     }
 
-    public bool IsCompleted()
-    {
-        return completed;
-    }
-
-    public void ActivateStep()
-    {
-        active = true;
-    }
-
-    public bool IsActive()
-    {
-        return active;
-    }
-
     private void SetAudio()
     {
         target.TryGetComponent<AudioSource>(out audioSource);
@@ -117,8 +91,13 @@ public class StepHandler : MonoBehaviour
         audioSource.volume = audioVolume;
     }
 
-    public bool CheckIfSubstepComplete(int index)
+    public bool IsCompleted()
     {
-        return subSteps[index - 1].isComplete;
+        return completed;
+    }   
+
+    public bool IsSubStepCompleted(int index)
+    {
+        return subSteps[index - 1].completed;
     }
 }

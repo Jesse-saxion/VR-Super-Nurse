@@ -4,12 +4,20 @@ using UnityEngine;
 
 public class SubStep : MonoBehaviour
 {
+    [Header("SubStep")]
+    [Tooltip("The object that this script is related to (as if this script is its component)")]
     public GameObject target;
-    public bool isComplete;
+    public bool completed;
+
+    [Header("Audio")]
+    public AudioClip successSound;
+    public float audioVolume = 10f;
+
+    private AudioSource audioSource;
 
     public void CompleteSubStep()
     {
-        isComplete = true;
+        completed = true;
     }
 
     public void ActivateQuestion(QuestionHandler question)
@@ -19,5 +27,22 @@ public class SubStep : MonoBehaviour
 
         question.gameObject.SetActive(true);
         question.PlayAnimation();
+    }
+
+    public void PlayAudioClip(AudioClip clip)
+    {
+        audioSource.PlayOneShot(clip, audioVolume);
+    }
+
+    private void SetAudio()
+    {
+        target.TryGetComponent<AudioSource>(out audioSource);
+        if (audioSource == null)
+        {
+            audioSource = target.AddComponent<AudioSource>();
+        }
+
+        audioSource.clip = successSound;
+        audioSource.volume = audioVolume;
     }
 }

@@ -29,7 +29,7 @@ public class Step7Handler : StepHandler
     // Update is called once per frame
     void Update()
     {
-        if(TubeAnimation.tubeInserted && !CheckIfSubstepComplete(2)) {
+        if(TubeAnimation.tubeInserted && !IsSubStepCompleted(2)) {
             //Tube is fully inserted, allowing the syringe to take out stomach fluids
             Debug.Log("Tube fully inserted");
             CompleteSubStep(2);

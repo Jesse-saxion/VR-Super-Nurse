@@ -5,6 +5,7 @@ using UnityEngine;
 public class StepsManager : MonoBehaviour
 {
     public List<StepHandler> steps;
+    public CheckList checkList;
     List<StepHandler> completedSteps;
 
     void Start()
@@ -14,13 +15,13 @@ public class StepsManager : MonoBehaviour
 
     public void StepCompleted(StepHandler step)
     {
-        int completedStepIndex = steps.IndexOf(step);
-        steps[completedStepIndex++].ActivateStep();
+        //int completedStepIndex = steps.IndexOf(step);
 
         if (!completedSteps.Contains(step))
         {
             Debug.Log("Fully completed a step (StepManager)");
             completedSteps.Add(step);
+            checkList.UpdateCheckList();
         }
     }   
 }
