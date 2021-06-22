@@ -7,7 +7,6 @@ public class Step4Tissue : StepHandler
     [SerializeField] private AudioClip A41;
 
     [SerializeField] private AudioClip TissueSound;
-    [SerializeField] private AudioClip A52;
     AudioSource audio;
     public float Volume;
     public bool isGlove = false;
