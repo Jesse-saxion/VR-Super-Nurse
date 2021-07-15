@@ -45,8 +45,6 @@ public class QuestionHandler : MonoBehaviour
         // Make sure to disable the question canvas so the new question can appear.
         setQuestionCanvasInactive();
 
-        // Play no audio because the StepHandler already does by completing the step.
-        stepHandler.CompleteSubStep(subStepIndex);
 
         // TV animation and hoist sound.
         audio.PlayOneShot(tvHoist, volumeTvHoist);
@@ -57,6 +55,9 @@ public class QuestionHandler : MonoBehaviour
         Debug.Log("Yes Animation plays");
         audio.PlayOneShot(correctAnswer, volume);
         Debug.Log("Correct answer plays");
+
+        // Play no audio because the StepHandler already does by completing the step.
+        //stepHandler.CompleteSubStep(subStepIndex);
     }
 
     public void PlayAnimation()

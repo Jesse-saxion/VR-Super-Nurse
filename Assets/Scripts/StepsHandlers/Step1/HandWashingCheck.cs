@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
+
+// This class also inludes depricated hand washing step. In this version it is only used for hand sanitizer, so if you dont need hand washing, you can ignore/delete it 
 public class HandWashingCheck : MonoBehaviour
 {
     private bool[] stepsComplete = new bool[6];
@@ -15,7 +17,6 @@ public class HandWashingCheck : MonoBehaviour
     public bool stepCompleted = false;
     public XRSimpleInteractable xRSimpleInteractable;
 
-    // Start is called before the first frame update
 
     private void Start()
     {
@@ -23,6 +24,7 @@ public class HandWashingCheck : MonoBehaviour
         xRSimpleInteractable = GetComponentInChildren<XRSimpleInteractable>();
     }
 
+    // HAND WASHING BELOW
     public void OnKnobRotated()
     {
         if(stepsComplete[0] == false) {
@@ -74,11 +76,9 @@ public class HandWashingCheck : MonoBehaviour
         }
     }
 
+    // HAND SANITIZING BELOW
     public void OnHandSanitized() {
         Debug.Log("Hand cleaned using sanitizer, proceeding to next step of the procedure");
-        //nextStep.SetActive(true);
-        //notfinish.SetActive(false);
-        //checkList.UpdateCheckList("cleaned hands");
 
         if (!stepCompleted)
         {
