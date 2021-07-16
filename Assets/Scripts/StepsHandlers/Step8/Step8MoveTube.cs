@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class MoveTubeAnimation : MonoBehaviour
+public class Step8MoveTube : SubStep
 {
     private Animator animator;
     private PlayReactions playReactions;
@@ -25,6 +25,7 @@ public class MoveTubeAnimation : MonoBehaviour
 
     void Start()
     {
+        InstantiateSubStep();
         animator = GetComponent<Animator>();
         playReactions = GetComponent<PlayReactions>();
 
@@ -51,6 +52,7 @@ public class MoveTubeAnimation : MonoBehaviour
             {
                 time = 1;
                 tubeInserted = true;
+                CompleteSubStep();
             }
         }
 

@@ -6,27 +6,27 @@ public class QuestionHandler : MonoBehaviour
 {
     [SerializeField]
     private bool[] answerList;
-    [SerializeField]
-    private StepHandler stepHandler;
-    [SerializeField]
-    private int subStepIndex;
     [Header("Animation")]
     [SerializeField] public Animator nurseAnimator;
-    [SerializeField] public Animator tvAnimator;
-
     [SerializeField] private AudioClip tvHoist;
+    [SerializeField] private GameObject TV;
     [SerializeField] private AudioClip wrongAnswer;
     [SerializeField] private AudioClip correctAnswer;
+
+    Animator tvAnimator;
     AudioSource audio;
     public float volume;
     public float volumeTvHoist;
+    private SubStep subStep;
 
     private void Start()
     {
-        audio = GetComponent<AudioSource>();
+        audio = TV.GetComponent<AudioSource>();
+        tvAnimator = TV.GetComponent<Animator>();
         tvAnimator.SetTrigger("QuestionAsked");
+        subStep = GetComponent<SubStep>();
     }
-    
+
     public void CheckAnswer(int index)
     {
         // Check if correct button press was done to answer the question.
@@ -53,11 +53,11 @@ public class QuestionHandler : MonoBehaviour
         // Play the Yes animation.
         nurseAnimator.SetTrigger("Yes");
         Debug.Log("Yes Animation plays");
-        audio.PlayOneShot(correctAnswer, volume);
+        //audio.PlayOneShot(correctAnswer, volume);
         Debug.Log("Correct answer plays");
 
         // Play no audio because the StepHandler already does by completing the step.
-        //stepHandler.CompleteSubStep(subStepIndex);
+        subStep.CompleteSubStep();
     }
 
     public void PlayAnimation()

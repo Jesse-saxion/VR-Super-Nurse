@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HeadInteractions : MonoBehaviour
+public class Step7HeadInteractions : SubStep
 {
     public GameObject tube;
     public GameObject head;
@@ -12,6 +12,7 @@ public class HeadInteractions : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        InstantiateSubStep();
         patientReactions = tube.GetComponent<PlayReactions>();
     }
 
@@ -29,6 +30,7 @@ public class HeadInteractions : MonoBehaviour
         {
             patientReactions.StartSwallowing();
             Destroy(other.gameObject);
+            CompleteSubStep();
         }
 
         if (other.gameObject.name == "Hand")

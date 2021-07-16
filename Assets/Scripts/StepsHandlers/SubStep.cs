@@ -5,8 +5,6 @@ using UnityEngine;
 public class SubStep : MonoBehaviour
 {
     [Header("SubStep")]
-    [Tooltip("The object that this script is related to (as if this script is its component)")]
-    public GameObject target;
     public bool completed;
 
     [Header("Audio")]
@@ -14,10 +12,23 @@ public class SubStep : MonoBehaviour
     public float audioVolume = 10f;
 
     private AudioSource audioSource;
+    [SerializeField] private StepHandler stepHandler;
+
+    private void Start()
+    {
+        InstantiateSubStep();
+    }
+
+    protected void InstantiateSubStep()
+    {
+        SetAudio();
+    }
 
     public void CompleteSubStep()
     {
         completed = true;
+        // Not a very good structure. Probably should not have a double dependency with a stephandler 
+        stepHandler.CheckIfAllSubStepsCompleted();
     }
 
     public void ActivateQuestion(QuestionHandler question)
@@ -35,14 +46,13 @@ public class SubStep : MonoBehaviour
     }
 
     private void SetAudio()
-    {
-        target.TryGetComponent<AudioSource>(out audioSource);
+    {      
+        audioSource = GetComponent<AudioSource>();
+
         if (audioSource == null)
         {
-            audioSource = target.AddComponent<AudioSource>();
+           gameObject.AddComponent<AudioSource>();
+           audioSource =  GetComponent<AudioSource>();
         }
-
-        audioSource.clip = successSound;
-        audioSource.volume = audioVolume;
     }
 }

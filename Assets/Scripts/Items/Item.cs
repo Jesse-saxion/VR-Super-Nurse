@@ -26,12 +26,14 @@ public class Item : MonoBehaviour
         //When colliding with the snap zone, snap (doesn't apply for Step3 Handler collider)
         if (other.tag == "ItemResetZone")
         {
-            Snap(snapPosition);           
+            Snap(snapPosition);
         }
     }
 
-    public void AllowGrab() {
-        if(!Interactable) {
+    public void AllowGrab()
+    {
+        if (!Interactable)
+        {
             GetComponent<XRGrabInteractable>().trackPosition = true;
             GetComponent<XRGrabInteractable>().trackRotation = true;
         }
@@ -44,7 +46,7 @@ public class Item : MonoBehaviour
         {
             GetComponent<XRGrabInteractable>().trackPosition = false;
             GetComponent<XRGrabInteractable>().trackRotation = false;
-            
+
         }
 
         //Set the transform
@@ -65,7 +67,7 @@ public class Item : MonoBehaviour
 
     public void SetSnapLocation(Vector3 pSnapPosition)
     {
-        snapPosition = pSnapPosition;        
+        snapPosition = pSnapPosition;
     }
 
     //Activate items that can be interacted with 

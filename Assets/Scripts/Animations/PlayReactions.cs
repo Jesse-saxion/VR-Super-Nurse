@@ -14,7 +14,7 @@ public class PlayReactions : MonoBehaviour
     public Animator Animator;
     public GameObject cup;
     public GameObject straw;
-    MoveTubeAnimation tubeAnimation;
+    Step8MoveTube tubeAnimation;
 
     [Header("Parameters")]
     [Tooltip("Delay in seconds before the patient swallows again")]
@@ -35,7 +35,7 @@ public class PlayReactions : MonoBehaviour
 
     void Start()
     {
-        tubeAnimation = GetComponent<MoveTubeAnimation>();
+        tubeAnimation = GetComponent<Step8MoveTube>();
         Debug.Log("kut ding");
         StartSwallowing();
     }

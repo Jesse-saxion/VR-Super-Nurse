@@ -7,8 +7,8 @@ public class PlaceMark : MonoBehaviour
     public int point;
     public Material markedTube;
     public GameObject ropeMesh;
-    [SerializeField] public QuestionHandler questionStep5;
-    [SerializeField] public StepHandler Step5;
+    [SerializeField] public QuestionHandler questionStep6;
+    [SerializeField] public SubStep SubStep6;
     [SerializeField] public Animator tvAnimator;
     [SerializeField] private AudioClip markingSound;
     AudioSource audio;
@@ -18,7 +18,7 @@ public class PlaceMark : MonoBehaviour
     {
         audio = GetComponent<AudioSource>();
     }
-    
+
     public void DrawMark()
     {
         switch (point)
@@ -30,13 +30,13 @@ public class PlaceMark : MonoBehaviour
                 markedTube.mainTextureOffset = new Vector2(0, -0.1f);
                 break;
             case 2:
-                markedTube.mainTextureOffset = new Vector2(0, -0.02f); 
+                markedTube.mainTextureOffset = new Vector2(0, -0.02f);
                 break;
             case 3:
                 markedTube.mainTextureOffset = new Vector2(0, 0.125f);
                 break;
             case 4:
-                markedTube.mainTextureOffset = new Vector2(0, 0.275f); 
+                markedTube.mainTextureOffset = new Vector2(0, 0.275f);
                 break;
             default:
                 markedTube.mainTextureOffset = new Vector2(0, 0.125f);
@@ -44,8 +44,12 @@ public class PlaceMark : MonoBehaviour
         }
         audio.PlayOneShot(markingSound, volume);
         ropeMesh.GetComponent<MeshRenderer>().material = markedTube;
-        tvAnimator.SetTrigger("QuestionAsked");
-        Step5.ActivateQuestion(questionStep5);
-        Step5.CompleteSubStep(1);
+
+        if (!SubStep6.completed)
+        {
+            tvAnimator.SetTrigger("QuestionAsked");
+            SubStep6.ActivateQuestion(questionStep6);
+            SubStep6.CompleteSubStep();
+        }
     }
 }

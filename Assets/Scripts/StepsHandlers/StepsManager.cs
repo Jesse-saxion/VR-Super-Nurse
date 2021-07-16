@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class StepsManager : MonoBehaviour
 {
-    public List<StepHandler> steps;
     public CheckList checkList;
     List<StepHandler> completedSteps;
 
@@ -21,7 +20,7 @@ public class StepsManager : MonoBehaviour
         {
             Debug.Log("Fully completed a step (StepManager)");
             completedSteps.Add(step);
-            checkList.UpdateCheckList();
+            checkList.UpdateCheckList(step.StepNumber - 1); // Notice the "- 1"
         }
-    }   
+    }
 }

@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InformPatientDialog : StepHandler
+
+// This class is used in several steps, hense it is not listed as a step in the Step Manager. Posssibly could be improved
+public class InformPatientDialog : MonoBehaviour
 {
     [SerializeField] private AudioClip soundToPlayStep2;
     [SerializeField] private AudioClip soundToPlayStep3;
@@ -49,5 +51,15 @@ public class InformPatientDialog : StepHandler
             audio.PlayOneShot(soundToPlayStep11, volume);
             // CompleteSubStep();
         }
+    }
+
+    // (May the god forgive me for resusing "ActivateQuestion" method from SubStep)
+    public void ActivateQuestion(QuestionHandler question)
+    {
+        if (question == null)
+            return;
+
+        question.gameObject.SetActive(true);
+        question.PlayAnimation();
     }
 }

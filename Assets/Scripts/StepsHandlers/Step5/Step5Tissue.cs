@@ -2,25 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Step4Tissue : StepHandler
+public class Step5Tissue : SubStep
 {
     [SerializeField] private AudioClip A41;
 
     [SerializeField] private AudioClip TissueSound;
-    AudioSource audio;
-    public float Volume;
     public bool isGlove = false;
-    // public bool isPlayed = false;
-    public bool isTalk = false;
 
     [SerializeField] private GameObject tissue;
     [SerializeField] private GameObject triggerBlowNose;
 
-    // Start is called before the first frame update
-
     private void Start()
     {
-        audio = target.GetComponent<AudioSource>();
+        InstantiateSubStep();
     }
 
 
@@ -28,25 +22,20 @@ public class Step4Tissue : StepHandler
     {
         if (isGlove == false)
         {
-            audio.PlayOneShot(A41, Volume);
+            PlayAudioClip(A41);
         }
         else
         {
             PlayTissueSound();
             tissue.SetActive(true);
             triggerBlowNose.SetActive(true);
+            CompleteSubStep();
             Debug.Log("Activated tissue box");
         }
     }
 
     public void PlayTissueSound()
     {
-        audio.PlayOneShot(TissueSound, Volume);
+        PlayAudioClip(TissueSound);
     }
-
-    public void Talking()
-    {
-        isTalk = true;
-    }
-
 }

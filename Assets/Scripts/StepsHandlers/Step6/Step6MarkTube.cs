@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Step5MarkTube : SubStep
+public class Step6MarkTube : SubStep
 {
     public int point;
     public Material markedTube;
@@ -16,10 +16,9 @@ public class Step5MarkTube : SubStep
     public float volume;
     private void Start()
     {
+        InstantiateSubStep();
         audio = GetComponent<AudioSource>();
-    }
-    
-
+    }   
 
     public Material WaterMaterial;
     public void TubeMarked()

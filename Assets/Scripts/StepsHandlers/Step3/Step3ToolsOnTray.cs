@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Step2ItemHandler : SubStep
+public class Step3ToolsOnTray : SubStep
 {
     [Header("Audio queues")]
     [SerializeField] private AudioClip correctItem;
@@ -10,9 +10,6 @@ public class Step2ItemHandler : SubStep
     [SerializeField] private AudioClip allItems;
     [SerializeField] private AudioClip tvHoist;
     [SerializeField] public QuestionHandler questionStep2;
-    AudioSource audio;
-    public float volume;
-    public float hoistVolume;
     [Space]
     [SerializeField]
     List<GameObject> requiredItems;
@@ -20,13 +17,12 @@ public class Step2ItemHandler : SubStep
 
     [SerializeField] public Animator tvAnimator;
 
-    // [SerializeField] GameObject button;
     bool firstItem = true;
 
     public void Start()
     {
+        InstantiateSubStep();
         addedItems = new List<GameObject>();
-        audio = GetComponent<AudioSource>();
     }
 
     void OnTriggerEnter(Collider other)
@@ -59,7 +55,7 @@ public class Step2ItemHandler : SubStep
         pSnapLocation.SnapToSetLocation();
         pSnapLocation.EnableInteractivity();
 
-        audio.PlayOneShot(correctItem, volume);
+        PlayAudioClip(correctItem);
 
         Debug.Log("Placed a correct item on the tray.");
 
@@ -77,7 +73,7 @@ public class Step2ItemHandler : SubStep
 
     void WrongItem(GameObject pOther)
     {
-        audio.PlayOneShot(wrongItem, volume);
+        PlayAudioClip(wrongItem);
         Debug.Log("Placed a wrong item on the tray.");
         pOther.GetComponent<Item>().SnapToSetLocation();
     }
@@ -85,7 +81,7 @@ public class Step2ItemHandler : SubStep
     void AllItems()
     {
         Debug.Log("Placed all correct items, moving onto next question step.");
-        audio.PlayOneShot(allItems, volume);
+        PlayAudioClip(allItems);
 
         CompleteSubStep();
         Debug.Log("Completed first substep of Step 2.");
@@ -95,6 +91,6 @@ public class Step2ItemHandler : SubStep
 
         Debug.Log("Lowering the TV mount.");
         tvAnimator.SetTrigger("QuestionAsked");
-        audio.PlayOneShot(tvHoist, volume);
+        PlayAudioClip(tvHoist);
     }
 }
